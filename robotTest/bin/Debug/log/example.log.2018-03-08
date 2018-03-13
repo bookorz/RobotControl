@@ -1,0 +1,183 @@
+2018-03-08 15:44:35,174 [3] INFO  robotTest.SocketClient - [Rev<--]$1ACK:MODE_(From RBT_001 192.168.0.127:23)
+2018-03-08 15:44:35,201 [3] INFO  robotTest.SocketClient - [Send-->]$1GET:SP___(To RBT_001 192.168.0.127:23)
+2018-03-08 15:44:35,216 [3] INFO  robotTest.SocketClient - [Rev<--]$1ACK:SP___:10(From RBT_001 192.168.0.127:23)
+2018-03-08 15:44:35,217 [3] INFO  robotTest.SocketClient - [Send-->]$1CMD:HOME_(To RBT_001 192.168.0.127:23)
+2018-03-08 15:44:35,236 [3] INFO  robotTest.SocketClient - [Rev<--]$1ACK:HOME_(From RBT_001 192.168.0.127:23)
+2018-03-08 15:44:35,432 [3] INFO  robotTest.SocketClient - [Rev<--]$1FIN:HOME_:00000000(From RBT_001 192.168.0.127:23)
+2018-03-08 15:44:35,435 [3] INFO  robotTest.SocketClient - [Send-->]$1CMD:GET__:0023,1,1,0,0(To RBT_001 192.168.0.127:23)
+2018-03-08 15:44:35,451 [3] INFO  robotTest.SocketClient - [Rev<--]$1ACK:GET__(From RBT_001 192.168.0.127:23)
+2018-03-08 15:44:39,162 [3] INFO  robotTest.SocketClient - [Rev<--]$1FIN:GET__:00000000(From RBT_001 192.168.0.127:23)
+2018-03-08 15:44:39,165 [3] INFO  robotTest.SocketClient - [Send-->]$1CMD:HOME_(To RBT_001 192.168.0.127:23)
+2018-03-08 15:44:39,184 [3] INFO  robotTest.SocketClient - [Rev<--]$1ACK:HOME_(From RBT_001 192.168.0.127:23)
+2018-03-08 15:44:40,176 [3] INFO  robotTest.SocketClient - [Rev<--]$1FIN:HOME_:00000000(From RBT_001 192.168.0.127:23)
+2018-03-08 15:44:40,186 [3] INFO  robotTest.SocketClient - [Send-->]$1CMD:GET__:0024,2,3,0,1(To RBT_001 192.168.0.127:23)
+2018-03-08 15:44:40,197 [3] INFO  robotTest.SocketClient - [Rev<--]$1ACK:GET__(From RBT_001 192.168.0.127:23)
+2018-03-08 15:44:42,608 [3] INFO  robotTest.SocketClient - [Rev<--]$1FIN:GET__:00000000(From RBT_001 192.168.0.127:23)
+2018-03-08 15:44:42,616 [3] INFO  robotTest.SocketClient - [Send-->]$1CMD:GET__:0024,2,3,0,2(To RBT_001 192.168.0.127:23)
+2018-03-08 15:44:42,632 [3] INFO  robotTest.SocketClient - [Rev<--]$1ACK:GET__(From RBT_001 192.168.0.127:23)
+2018-03-08 15:44:43,543 [3] INFO  robotTest.SocketClient - [Rev<--]$1FIN:GET__:00000000(From RBT_001 192.168.0.127:23)
+2018-03-08 15:44:43,546 [3] INFO  robotTest.SocketClient - [Send-->]$1CMD:GET__:0024,2,3,0,3(To RBT_001 192.168.0.127:23)
+2018-03-08 15:44:43,564 [3] INFO  robotTest.SocketClient - [Rev<--]$1ACK:GET__(From RBT_001 192.168.0.127:23)
+2018-03-08 15:44:44,761 [3] INFO  robotTest.SocketClient - [Rev<--]$1FIN:GET__:00000000(From RBT_001 192.168.0.127:23)
+2018-03-08 15:44:44,777 [3] INFO  robotTest.SocketClient - [Send-->]$1CMD:HOME_(To RBT_001 192.168.0.127:23)
+2018-03-08 15:44:44,797 [3] INFO  robotTest.SocketClient - [Rev<--]$1ACK:HOME_(From RBT_001 192.168.0.127:23)
+2018-03-08 15:44:45,783 [3] INFO  robotTest.SocketClient - [Rev<--]$1FIN:HOME_:00000000(From RBT_001 192.168.0.127:23)
+2018-03-08 15:44:45,830 [3] INFO  robotTest.Command - RunScript:Finished
+2018-03-08 15:45:39,560 [1] INFO  robotTest.Form1 - initial complete.
+2018-03-08 15:45:41,397 [1] INFO  robotTest.SocketClient - Connected! 192.168.0.127:23
+2018-03-08 15:45:41,413 [1] INFO  robotTest.SocketClient - Connected! 192.168.0.127:8900
+2018-03-08 15:46:01,095 [1] INFO  robotTest.SocketClient - [Send-->]$1SET:SP___:10(To RBT_001 192.168.0.127:23)
+2018-03-08 15:46:01,116 [3] INFO  robotTest.SocketClient - [Rev<--]$1ACK:SP___(From RBT_001 192.168.0.127:23)
+2018-03-08 15:46:02,149 [3] INFO  robotTest.SocketClient - [Send-->]$1SET:MODE_:1(To RBT_001 192.168.0.127:23)
+2018-03-08 15:46:02,157 [3] INFO  robotTest.SocketClient - [Rev<--]$1ACK:MODE_(From RBT_001 192.168.0.127:23)
+2018-03-08 15:46:03,186 [3] INFO  robotTest.SocketClient - [Send-->]$1GET:SP___(To RBT_001 192.168.0.127:23)
+2018-03-08 15:46:03,204 [3] INFO  robotTest.SocketClient - [Rev<--]$1ACK:SP___:10(From RBT_001 192.168.0.127:23)
+2018-03-08 15:46:04,219 [3] INFO  robotTest.SocketClient - [Send-->]$1CMD:HOME_(To RBT_001 192.168.0.127:23)
+2018-03-08 15:46:04,238 [3] INFO  robotTest.SocketClient - [Rev<--]$1ACK:HOME_(From RBT_001 192.168.0.127:23)
+2018-03-08 15:46:05,254 [3] INFO  robotTest.SocketClient - [Rev<--]$1FIN:HOME_:00000000(From RBT_001 192.168.0.127:23)
+2018-03-08 15:46:06,267 [3] INFO  robotTest.SocketClient - [Send-->]$1CMD:GET__:0023,1,1,0,0(To RBT_001 192.168.0.127:23)
+2018-03-08 15:46:06,288 [3] INFO  robotTest.SocketClient - [Rev<--]$1ACK:GET__(From RBT_001 192.168.0.127:23)
+2018-03-08 15:46:09,990 [3] INFO  robotTest.SocketClient - [Rev<--]$1FIN:GET__:00000000(From RBT_001 192.168.0.127:23)
+2018-03-08 15:46:11,009 [3] INFO  robotTest.SocketClient - [Send-->]$1CMD:HOME_(To RBT_001 192.168.0.127:23)
+2018-03-08 15:46:11,027 [3] INFO  robotTest.SocketClient - [Rev<--]$1ACK:HOME_(From RBT_001 192.168.0.127:23)
+2018-03-08 15:46:12,043 [3] INFO  robotTest.SocketClient - [Rev<--]$1FIN:HOME_:00000000(From RBT_001 192.168.0.127:23)
+2018-03-08 15:46:13,060 [3] INFO  robotTest.SocketClient - [Send-->]$1CMD:GET__:0024,2,3,0,1(To RBT_001 192.168.0.127:23)
+2018-03-08 15:46:13,078 [3] INFO  robotTest.SocketClient - [Rev<--]$1ACK:GET__(From RBT_001 192.168.0.127:23)
+2018-03-08 15:46:15,480 [3] INFO  robotTest.SocketClient - [Rev<--]$1FIN:GET__:00000000(From RBT_001 192.168.0.127:23)
+2018-03-08 15:46:16,495 [3] INFO  robotTest.SocketClient - [Send-->]$1CMD:GET__:0024,2,3,0,2(To RBT_001 192.168.0.127:23)
+2018-03-08 15:46:16,516 [3] INFO  robotTest.SocketClient - [Rev<--]$1ACK:GET__(From RBT_001 192.168.0.127:23)
+2018-03-08 15:46:17,536 [3] INFO  robotTest.SocketClient - [Rev<--]$1FIN:GET__:00000000(From RBT_001 192.168.0.127:23)
+2018-03-08 15:46:18,548 [3] INFO  robotTest.SocketClient - [Send-->]$1CMD:GET__:0024,2,3,0,3(To RBT_001 192.168.0.127:23)
+2018-03-08 15:46:18,565 [3] INFO  robotTest.SocketClient - [Rev<--]$1ACK:GET__(From RBT_001 192.168.0.127:23)
+2018-03-08 15:46:19,771 [3] INFO  robotTest.SocketClient - [Rev<--]$1FIN:GET__:00000000(From RBT_001 192.168.0.127:23)
+2018-03-08 15:46:20,782 [3] INFO  robotTest.SocketClient - [Send-->]$1CMD:HOME_(To RBT_001 192.168.0.127:23)
+2018-03-08 15:46:20,800 [3] INFO  robotTest.SocketClient - [Rev<--]$1ACK:HOME_(From RBT_001 192.168.0.127:23)
+2018-03-08 15:46:21,822 [3] INFO  robotTest.SocketClient - [Rev<--]$1FIN:HOME_:00000000(From RBT_001 192.168.0.127:23)
+2018-03-08 15:46:22,857 [3] INFO  robotTest.Command - RunScript:Finished
+2018-03-08 15:46:51,846 [4] ERROR robotTest.SocketClient - (From RBTSTS_001 192.168.0.127:8900)   於 System.Net.Sockets.Socket.Receive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
+   於 System.Net.Sockets.Socket.Receive(Byte[] buffer)
+   於 robotTest.SocketClient.SckSReceiveProc() 於 C:\Users\ethan_huang\source\repos\robotTest\robotTest\SocketClient.cs: 行 97
+2018-03-08 15:46:51,847 [3] ERROR robotTest.SocketClient - (From RBT_001 192.168.0.127:23)   於 System.Net.Sockets.Socket.Receive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
+   於 System.Net.Sockets.Socket.Receive(Byte[] buffer)
+   於 robotTest.SocketClient.SckSReceiveProc() 於 C:\Users\ethan_huang\source\repos\robotTest\robotTest\SocketClient.cs: 行 97
+2018-03-08 17:26:15,514 [1] INFO  robotTest.Form1 - initial complete.
+2018-03-08 17:26:25,150 [1] ERROR robotTest.SocketClient - (ConnectServer  192.168.0.127:23)   於 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   於 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   於 robotTest.SocketClient.ConnectServer() 於 C:\Users\ethan_huang\source\repos\robotTest\robotTest\SocketClient.cs: 行 50
+2018-03-08 17:26:25,154 [1] INFO  robotTest.SocketClient - Connected! 192.168.0.127:8900
+2018-03-08 17:26:46,770 [3] ERROR robotTest.SocketClient - (From RBTSTS_001 192.168.0.127:8900)   於 System.Net.Sockets.Socket.Receive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
+   於 System.Net.Sockets.Socket.Receive(Byte[] buffer)
+   於 robotTest.SocketClient.SckSReceiveProc() 於 C:\Users\ethan_huang\source\repos\robotTest\robotTest\SocketClient.cs: 行 97
+2018-03-08 17:27:07,861 [1] INFO  robotTest.Form1 - initial complete.
+2018-03-08 17:27:11,304 [1] ERROR robotTest.SocketClient - (ConnectServer  192.168.0.127:23)   於 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   於 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   於 robotTest.SocketClient.ConnectServer() 於 C:\Users\ethan_huang\source\repos\robotTest\robotTest\SocketClient.cs: 行 50
+2018-03-08 17:27:32,338 [1] ERROR robotTest.SocketClient - (ConnectServer  192.168.0.127:8900)   於 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   於 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   於 robotTest.SocketClient.ConnectServer() 於 C:\Users\ethan_huang\source\repos\robotTest\robotTest\SocketClient.cs: 行 50
+2018-03-08 17:27:43,562 [1] INFO  robotTest.Form1 - initial complete.
+2018-03-08 17:27:46,339 [1] INFO  robotTest.SocketClient - Connected! 192.168.0.127:23
+2018-03-08 17:27:46,350 [1] INFO  robotTest.SocketClient - Connected! 192.168.0.127:8900
+2018-03-08 17:27:51,598 [1] INFO  robotTest.SocketClient - [Send-->]$1SET:SP___:10(To RBT_001 192.168.0.127:23)
+2018-03-08 17:27:51,618 [3] INFO  robotTest.SocketClient - [Rev<--]$1NAK:SP___:84806000(From RBT_001 192.168.0.127:23)
+2018-03-08 17:27:52,626 [3] ERROR robotTest.Command - Error happen:error code=84806000
+2018-03-08 17:27:59,330 [1] INFO  robotTest.SocketClient - [Send-->]$1SET:SP___:10(To RBT_001 192.168.0.127:23)
+2018-03-08 17:27:59,345 [3] INFO  robotTest.SocketClient - [Rev<--]$1NAK:SP___:84806000(From RBT_001 192.168.0.127:23)
+2018-03-08 17:28:00,354 [3] ERROR robotTest.Command - Error happen:error code=84806000
+2018-03-08 17:28:17,862 [1] INFO  robotTest.SocketClient - [Send-->]$1SET:SP___:10(To RBT_001 192.168.0.127:23)
+2018-03-08 17:28:17,881 [3] INFO  robotTest.SocketClient - [Rev<--]$1ACK:SP___(From RBT_001 192.168.0.127:23)
+2018-03-08 17:28:18,882 [3] INFO  robotTest.SocketClient - [Send-->]$1SET:MODE_:1(To RBT_001 192.168.0.127:23)
+2018-03-08 17:28:18,901 [3] INFO  robotTest.SocketClient - [Rev<--]$1ACK:MODE_(From RBT_001 192.168.0.127:23)
+2018-03-08 17:28:19,904 [3] INFO  robotTest.SocketClient - [Send-->]$1GET:SP___(To RBT_001 192.168.0.127:23)
+2018-03-08 17:28:19,917 [3] INFO  robotTest.SocketClient - [Rev<--]$1ACK:SP___:10(From RBT_001 192.168.0.127:23)
+2018-03-08 17:28:20,924 [3] INFO  robotTest.SocketClient - [Send-->]$1CMD:HOME_(To RBT_001 192.168.0.127:23)
+2018-03-08 17:28:20,942 [3] INFO  robotTest.SocketClient - [Rev<--]$1ACK:HOME_(From RBT_001 192.168.0.127:23)
+2018-03-08 17:28:22,136 [3] INFO  robotTest.SocketClient - [Rev<--]$1FIN:HOME_:00000000(From RBT_001 192.168.0.127:23)
+2018-03-08 17:28:23,141 [3] ERROR robotTest.Command - Error happen:error code=00000000
+2018-03-08 17:29:31,758 [1] INFO  robotTest.Form1 - initial complete.
+2018-03-08 17:29:33,909 [1] INFO  robotTest.SocketClient - Connected! 192.168.0.127:23
+2018-03-08 17:29:33,918 [1] INFO  robotTest.SocketClient - Connected! 192.168.0.127:8900
+2018-03-08 17:29:35,524 [1] INFO  robotTest.SocketClient - [Send-->]$1SET:SP___:10(To RBT_001 192.168.0.127:23)
+2018-03-08 17:29:35,543 [3] INFO  robotTest.SocketClient - [Rev<--]$1ACK:SP___(From RBT_001 192.168.0.127:23)
+2018-03-08 17:29:36,555 [3] INFO  robotTest.SocketClient - [Send-->]$1SET:MODE_:1(To RBT_001 192.168.0.127:23)
+2018-03-08 17:29:36,574 [3] INFO  robotTest.SocketClient - [Rev<--]$1ACK:MODE_(From RBT_001 192.168.0.127:23)
+2018-03-08 17:29:37,579 [3] INFO  robotTest.SocketClient - [Send-->]$1GET:SP___(To RBT_001 192.168.0.127:23)
+2018-03-08 17:29:37,596 [3] INFO  robotTest.SocketClient - [Rev<--]$1ACK:SP___:10(From RBT_001 192.168.0.127:23)
+2018-03-08 17:29:38,601 [3] INFO  robotTest.SocketClient - [Send-->]$1CMD:HOME_(To RBT_001 192.168.0.127:23)
+2018-03-08 17:29:38,620 [3] INFO  robotTest.SocketClient - [Rev<--]$1ACK:HOME_(From RBT_001 192.168.0.127:23)
+2018-03-08 17:29:39,625 [3] INFO  robotTest.SocketClient - [Rev<--]$1FIN:HOME_:00000000(From RBT_001 192.168.0.127:23)
+2018-03-08 17:29:59,850 [3] ERROR robotTest.Command - Error happen:error code=00000000
+2018-03-08 17:30:03,123 [4] ERROR robotTest.SocketClient - (From RBTSTS_001 192.168.0.127:8900)   於 System.Net.Sockets.Socket.Receive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
+   於 System.Net.Sockets.Socket.Receive(Byte[] buffer)
+   於 robotTest.SocketClient.SckSReceiveProc() 於 C:\Users\ethan_huang\source\repos\robotTest\robotTest\SocketClient.cs: 行 97
+2018-03-08 17:30:03,123 [3] ERROR robotTest.SocketClient - (From RBT_001 192.168.0.127:23)   於 System.Net.Sockets.Socket.Receive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
+   於 System.Net.Sockets.Socket.Receive(Byte[] buffer)
+   於 robotTest.SocketClient.SckSReceiveProc() 於 C:\Users\ethan_huang\source\repos\robotTest\robotTest\SocketClient.cs: 行 97
+2018-03-08 17:30:41,604 [1] INFO  robotTest.Form1 - initial complete.
+2018-03-08 17:30:44,697 [1] INFO  robotTest.SocketClient - Connected! 192.168.0.127:23
+2018-03-08 17:30:44,707 [1] INFO  robotTest.SocketClient - Connected! 192.168.0.127:8900
+2018-03-08 17:30:47,043 [1] INFO  robotTest.SocketClient - [Send-->]$1SET:SP___:10(To RBT_001 192.168.0.127:23)
+2018-03-08 17:30:47,062 [3] INFO  robotTest.SocketClient - [Rev<--]$1ACK:SP___(From RBT_001 192.168.0.127:23)
+2018-03-08 17:30:48,070 [3] INFO  robotTest.SocketClient - [Send-->]$1SET:MODE_:1(To RBT_001 192.168.0.127:23)
+2018-03-08 17:30:48,089 [3] INFO  robotTest.SocketClient - [Rev<--]$1ACK:MODE_(From RBT_001 192.168.0.127:23)
+2018-03-08 17:30:49,091 [3] INFO  robotTest.SocketClient - [Send-->]$1GET:SP___(To RBT_001 192.168.0.127:23)
+2018-03-08 17:30:49,108 [3] INFO  robotTest.SocketClient - [Rev<--]$1ACK:SP___:10(From RBT_001 192.168.0.127:23)
+2018-03-08 17:30:50,111 [3] INFO  robotTest.SocketClient - [Send-->]$1CMD:HOME_(To RBT_001 192.168.0.127:23)
+2018-03-08 17:30:50,130 [3] INFO  robotTest.SocketClient - [Rev<--]$1ACK:HOME_(From RBT_001 192.168.0.127:23)
+2018-03-08 17:30:51,134 [3] INFO  robotTest.SocketClient - [Rev<--]$1FIN:HOME_:00000000(From RBT_001 192.168.0.127:23)
+2018-03-08 17:30:56,624 [3] INFO  robotTest.SocketClient - [Send-->]$1CMD:GET__:0023,1,1,0,0(To RBT_001 192.168.0.127:23)
+2018-03-08 17:30:56,649 [3] INFO  robotTest.SocketClient - [Rev<--]$1ACK:GET__(From RBT_001 192.168.0.127:23)
+2018-03-08 17:31:00,343 [3] INFO  robotTest.SocketClient - [Rev<--]$1FIN:GET__:00000000(From RBT_001 192.168.0.127:23)
+2018-03-08 17:31:01,345 [3] INFO  robotTest.SocketClient - [Send-->]$1CMD:HOME_(To RBT_001 192.168.0.127:23)
+2018-03-08 17:31:01,365 [3] INFO  robotTest.SocketClient - [Rev<--]$1ACK:HOME_(From RBT_001 192.168.0.127:23)
+2018-03-08 17:31:02,376 [3] INFO  robotTest.SocketClient - [Rev<--]$1FIN:HOME_:00000000(From RBT_001 192.168.0.127:23)
+2018-03-08 17:31:03,379 [3] INFO  robotTest.SocketClient - [Send-->]$1CMD:GET__:0024,2,3,0,1(To RBT_001 192.168.0.127:23)
+2018-03-08 17:31:03,405 [3] INFO  robotTest.SocketClient - [Rev<--]$1ACK:GET__(From RBT_001 192.168.0.127:23)
+2018-03-08 17:31:05,800 [3] INFO  robotTest.SocketClient - [Rev<--]$1FIN:GET__:00000000(From RBT_001 192.168.0.127:23)
+2018-03-08 17:31:06,803 [3] INFO  robotTest.SocketClient - [Send-->]$1CMD:GET__:0024,2,3,0,3(To RBT_001 192.168.0.127:23)
+2018-03-08 17:31:06,828 [3] INFO  robotTest.SocketClient - [Rev<--]$1ACK:GET__(From RBT_001 192.168.0.127:23)
+2018-03-08 17:31:08,828 [3] INFO  robotTest.SocketClient - [Rev<--]$1FIN:GET__:00000000(From RBT_001 192.168.0.127:23)
+2018-03-08 17:31:09,832 [3] INFO  robotTest.SocketClient - [Send-->]$1CMD:HOME_(To RBT_001 192.168.0.127:23)
+2018-03-08 17:31:09,851 [3] INFO  robotTest.SocketClient - [Rev<--]$1ACK:HOME_(From RBT_001 192.168.0.127:23)
+2018-03-08 17:31:10,855 [3] INFO  robotTest.SocketClient - [Rev<--]$1FIN:HOME_:00000000(From RBT_001 192.168.0.127:23)
+2018-03-08 17:31:11,910 [3] INFO  robotTest.Command - RunScript:Finished
+2018-03-08 17:31:22,007 [1] INFO  robotTest.SocketClient - [Send-->]$1GET:STS__(To RBTSTS_001 192.168.0.127:8900)
+2018-03-08 17:31:22,017 [4] INFO  robotTest.SocketClient - [Rev<--]$1ACK:STS__:11000000011100101111000011110000(From RBTSTS_001 192.168.0.127:8900)
+2018-03-08 17:31:23,033 [4] INFO  robotTest.Command - RunScript:Finished
+2018-03-08 17:31:27,889 [3] ERROR robotTest.SocketClient - (From RBT_001 192.168.0.127:23)   於 System.Net.Sockets.Socket.Receive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
+   於 System.Net.Sockets.Socket.Receive(Byte[] buffer)
+   於 robotTest.SocketClient.SckSReceiveProc() 於 C:\Users\ethan_huang\source\repos\robotTest\robotTest\SocketClient.cs: 行 97
+2018-03-08 17:31:27,890 [4] ERROR robotTest.SocketClient - (From RBTSTS_001 192.168.0.127:8900)   於 System.Net.Sockets.Socket.Receive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
+   於 System.Net.Sockets.Socket.Receive(Byte[] buffer)
+   於 robotTest.SocketClient.SckSReceiveProc() 於 C:\Users\ethan_huang\source\repos\robotTest\robotTest\SocketClient.cs: 行 97
+2018-03-08 17:32:29,404 [1] INFO  robotTest.Form1 - initial complete.
+2018-03-08 17:32:31,985 [1] INFO  robotTest.SocketClient - Connected! 192.168.0.127:23
+2018-03-08 17:32:31,993 [1] INFO  robotTest.SocketClient - Connected! 192.168.0.127:8900
+2018-03-08 17:32:33,402 [1] INFO  robotTest.SocketClient - [Send-->]$1SET:SP___:10(To RBT_001 192.168.0.127:23)
+2018-03-08 17:32:33,421 [3] INFO  robotTest.SocketClient - [Rev<--]$1ACK:SP___(From RBT_001 192.168.0.127:23)
+2018-03-08 17:32:34,430 [3] INFO  robotTest.SocketClient - [Send-->]$1SET:MODE_:1(To RBT_001 192.168.0.127:23)
+2018-03-08 17:32:34,450 [3] INFO  robotTest.SocketClient - [Rev<--]$1ACK:MODE_(From RBT_001 192.168.0.127:23)
+2018-03-08 17:32:35,457 [3] INFO  robotTest.SocketClient - [Send-->]$1GET:SP___(To RBT_001 192.168.0.127:23)
+2018-03-08 17:32:35,472 [3] INFO  robotTest.SocketClient - [Rev<--]$1ACK:SP___:10(From RBT_001 192.168.0.127:23)
+2018-03-08 17:32:36,479 [3] INFO  robotTest.SocketClient - [Send-->]$1CMD:HOME_(To RBT_001 192.168.0.127:23)
+2018-03-08 17:32:36,499 [3] INFO  robotTest.SocketClient - [Rev<--]$1ACK:HOME_(From RBT_001 192.168.0.127:23)
+2018-03-08 17:32:37,503 [3] INFO  robotTest.SocketClient - [Rev<--]$1FIN:HOME_:00000000(From RBT_001 192.168.0.127:23)
+2018-03-08 17:32:38,509 [3] INFO  robotTest.SocketClient - [Send-->]$1CMD:GET__:0023,1,1,0,0(To RBT_001 192.168.0.127:23)
+2018-03-08 17:32:38,534 [3] INFO  robotTest.SocketClient - [Rev<--]$1ACK:GET__(From RBT_001 192.168.0.127:23)
+2018-03-08 17:32:42,227 [3] INFO  robotTest.SocketClient - [Rev<--]$1FIN:GET__:00000000(From RBT_001 192.168.0.127:23)
+2018-03-08 17:32:43,236 [3] INFO  robotTest.SocketClient - [Send-->]$1CMD:HOME_(To RBT_001 192.168.0.127:23)
+2018-03-08 17:32:43,253 [3] INFO  robotTest.SocketClient - [Rev<--]$1ACK:HOME_(From RBT_001 192.168.0.127:23)
+2018-03-08 17:32:44,265 [3] INFO  robotTest.SocketClient - [Rev<--]$1FIN:HOME_:00000000(From RBT_001 192.168.0.127:23)
+2018-03-08 17:32:45,268 [3] INFO  robotTest.SocketClient - [Send-->]$1CMD:GET__:0024,2,3,0,1(To RBT_001 192.168.0.127:23)
+2018-03-08 17:32:45,292 [3] INFO  robotTest.SocketClient - [Rev<--]$1ACK:GET__(From RBT_001 192.168.0.127:23)
+2018-03-08 17:32:47,690 [3] INFO  robotTest.SocketClient - [Rev<--]$1FIN:GET__:00000000(From RBT_001 192.168.0.127:23)
+2018-03-08 17:32:48,693 [3] INFO  robotTest.SocketClient - [Send-->]$1CMD:GET__:0024,2,3,0,3(To RBT_001 192.168.0.127:23)
+2018-03-08 17:32:48,718 [3] INFO  robotTest.SocketClient - [Rev<--]$1ACK:GET__(From RBT_001 192.168.0.127:23)
+2018-03-08 17:32:50,720 [3] INFO  robotTest.SocketClient - [Rev<--]$1FIN:GET__:00000000(From RBT_001 192.168.0.127:23)
+2018-03-08 17:32:51,724 [3] INFO  robotTest.SocketClient - [Send-->]$1CMD:HOME_(To RBT_001 192.168.0.127:23)
+2018-03-08 17:32:51,741 [3] INFO  robotTest.SocketClient - [Rev<--]$1ACK:HOME_(From RBT_001 192.168.0.127:23)
+2018-03-08 17:32:52,750 [3] INFO  robotTest.SocketClient - [Rev<--]$1FIN:HOME_:00000000(From RBT_001 192.168.0.127:23)
+2018-03-08 17:32:53,810 [3] INFO  robotTest.Command - RunScript:Finished
+2018-03-08 17:33:03,570 [3] ERROR robotTest.SocketClient - (From RBT_001 192.168.0.127:23)   於 System.Net.Sockets.Socket.Receive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
+   於 System.Net.Sockets.Socket.Receive(Byte[] buffer)
+   於 robotTest.SocketClient.SckSReceiveProc() 於 C:\Users\ethan_huang\source\repos\robotTest\robotTest\SocketClient.cs: 行 97

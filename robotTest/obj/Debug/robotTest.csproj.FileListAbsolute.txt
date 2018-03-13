@@ -1,0 +1,14 @@
+C:\Users\ethan_huang\source\repos\robotTest\robotTest\bin\Debug\robotTest.exe.config
+C:\Users\ethan_huang\source\repos\robotTest\robotTest\bin\Debug\robotTest.exe
+C:\Users\ethan_huang\source\repos\robotTest\robotTest\bin\Debug\robotTest.pdb
+C:\Users\ethan_huang\source\repos\robotTest\robotTest\bin\Debug\log4net.dll
+C:\Users\ethan_huang\source\repos\robotTest\robotTest\bin\Debug\log4net.pdb
+C:\Users\ethan_huang\source\repos\robotTest\robotTest\bin\Debug\log4net.xml
+C:\Users\ethan_huang\source\repos\robotTest\robotTest\obj\Debug\robotTest.Form1.resources
+C:\Users\ethan_huang\source\repos\robotTest\robotTest\obj\Debug\robotTest.Properties.Resources.resources
+C:\Users\ethan_huang\source\repos\robotTest\robotTest\obj\Debug\robotTest.csproj.GenerateResource.cache
+C:\Users\ethan_huang\source\repos\robotTest\robotTest\obj\Debug\robotTest.csproj.CoreCompileInputs.cache
+C:\Users\ethan_huang\source\repos\robotTest\robotTest\obj\Debug\robotTest.csproj.CopyComplete
+C:\Users\ethan_huang\source\repos\robotTest\robotTest\obj\Debug\robotTest.exe
+C:\Users\ethan_huang\source\repos\robotTest\robotTest\obj\Debug\robotTest.pdb
+C:\Users\ethan_huang\source\repos\robotTest\robotTest\obj\Debug\robotTest.csprojResolveAssemblyReference.cache

@@ -1,0 +1,1 @@
+[{IPAdress:"192.168.0.127",Port:23,ControllerType:"Robot",ControllerName:"Robot_Cmd_001",CommandTimeout:10000,DeviceNo:"1"},{IPAdress:"192.168.0.127",Port:8900,ControllerType:"Robot",ControllerName:"Robot_Read_001",CommandTimeout:10000,DeviceNo:"1"}]
