@@ -1,0 +1,1 @@
+[{"Controller":"Robot_Read_001","ADR":"1","FLG":"GET","CMD":"PNSTS","DAT":"1"},{"Controller":"Robot_Read_001","ADR":"1","FLG":"GET","CMD":"PNSTS","DAT":"2"},{"Controller":"Robot_Read_001","ADR":"1","FLG":"GET","CMD":"POS__","DAT":"2,1"}]

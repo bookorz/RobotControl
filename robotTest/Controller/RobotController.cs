@@ -18,7 +18,7 @@ namespace robotTest
         string ControllerName = "";
         Command LastSendCommand;
         int Timeout = 0;
-        
+
         ICommandReport tObj;
 
         //逾時
@@ -79,18 +79,18 @@ namespace robotTest
 
         private void TimeOutMonitor(object sender, System.Timers.ElapsedEventArgs e)
         {
-            timeOutTimer.Enabled = false;SetStatus(Idle);
+            timeOutTimer.Enabled = false; SetStatus(Idle);
             logger.Error("Time out! Send to:" + IP + ":" + Port + " Command:" + LastSendCommand);
             tObj.On_Command_TimeOut(ControllerName, LastSendCommand);
-            
+
         }
 
         private void ActionTimeOutMonitor(object sender, System.Timers.ElapsedEventArgs e)
         {
-            actionTimeOutTimer.Enabled = false;SetStatus(Idle);
+            actionTimeOutTimer.Enabled = false; SetStatus(Idle);
             logger.Error("Action time out! Send to:" + IP + ":" + Port + " Command:" + LastSendCommand);
             tObj.On_Command_TimeOut(ControllerName, LastSendCommand);
-            
+
         }
 
 
@@ -145,67 +145,74 @@ namespace robotTest
 
         void ISocketMessage.OnSocketMessage(string Msg)
         {
-            string[] MsgList = Msg.Split('\n');
-
-            foreach (string each in MsgList)
+            try
             {
-                //logger.Debug("OnSocketMessage:" + each);
-                if (each.Trim().Equals(""))
+                string[] MsgList = Msg.Split('\n');
+
+                foreach (string each in MsgList)
                 {
-                    continue;
-                }
-                ReturnMsg eachMsg = new ReturnMsg(each);
-                timeOutTimer.Enabled = false;
-                switch (eachMsg.GetFLG())
-                {
-                    case "ACK":
-                        
-                        if (LastSendCommand.FLG.Equals("CMD"))//如果送出的指令不是CMD，就做下一步，否則必須等待FIN才能繼續
-                        {
-                            SetStatus(Runing);
-                            actionTimeOutTimer.Enabled = true;
-                            tObj.On_Command_Excuted(ControllerName, eachMsg, LastSendCommand);
-                        }
-                        else
-                        {
+                    //logger.Debug("OnSocketMessage:" + each);
+                    if (each.Trim().Equals(""))
+                    {
+                        continue;
+                    }
+                    ReturnMsg eachMsg = new ReturnMsg(each);
+                    timeOutTimer.Enabled = false;
+                    switch (eachMsg.GetFLG())
+                    {
+                        case "ACK":
+
+                            if (LastSendCommand.FLG.Equals("CMD"))//如果送出的指令不是CMD，就做下一步，否則必須等待FIN才能繼續
+                            {
+                                SetStatus(Runing);
+                                actionTimeOutTimer.Enabled = true;
+                                tObj.On_Command_Excuted(ControllerName, eachMsg, LastSendCommand);
+                            }
+                            else
+                            {
+                                SetStatus(Idle);
+                                tObj.On_Command_Finished(ControllerName, eachMsg, LastSendCommand);
+                            }
+
+                            break;
+                        case "NAK":
                             SetStatus(Idle);
-                            tObj.On_Command_Finished(ControllerName, eachMsg, LastSendCommand);
-                        }
-                        
-                        break;
-                    case "NAK":
-                        SetStatus(Idle);
-                        tObj.On_Command_Error(ControllerName, eachMsg, LastSendCommand);
-                        //錯誤發生
-                        logger.Error("Error happen:error code=" + eachMsg.GetDAT());
-                        break;
-                    case "FIN":
-                        actionTimeOutTimer.Enabled = false;
-                        SetStatus(Idle);
-                        //下一步
-                        if (eachMsg.GetDAT().Equals("00000000"))
-                        {
-                            tObj.On_Command_Finished(ControllerName, eachMsg, LastSendCommand);
-                        }
-                        else
-                        {
-                            //錯誤發生
                             tObj.On_Command_Error(ControllerName, eachMsg, LastSendCommand);
+                            //錯誤發生
                             logger.Error("Error happen:error code=" + eachMsg.GetDAT());
-                        }
+                            break;
+                        case "FIN":
+                            actionTimeOutTimer.Enabled = false;
+                            SetStatus(Idle);
+                            //下一步
+                            if (eachMsg.GetDAT().Equals("00000000"))
+                            {
+                                tObj.On_Command_Finished(ControllerName, eachMsg, LastSendCommand);
+                            }
+                            else
+                            {
+                                //錯誤發生
+                                tObj.On_Command_Error(ControllerName, eachMsg, LastSendCommand);
+                                logger.Error("Error happen:error code=" + eachMsg.GetDAT());
+                            }
 
-                        break;
+                            break;
+                    }
+
                 }
-
+            }
+            catch (Exception ex)
+            {
+                logger.Error("OnSocketMessage:" + ex.Message + "\n" + ex.StackTrace);
             }
         }
 
         void ISocketMessage.OnConnected()
         {
             StatusLock.EnterWriteLock();
-            
+
             Status = Idle;
-            
+
             StatusLock.ExitWriteLock();
             tObj.On_Status_Changed(ControllerName, GetStatus());
 
@@ -215,14 +222,19 @@ namespace robotTest
         {
             cmdSck.Close();
             SetStatus(Disconnected);
-            
-            
+
+
         }
 
         void ISocketMessage.OnConnecting()
         {
             SetStatus(Connecting);
-            
+
+        }
+
+        void IController.SetReportTarget(ICommandReport target)
+        {
+            tObj = target;
         }
     }
 }

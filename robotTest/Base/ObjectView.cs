@@ -6,10 +6,9 @@ using System.Threading.Tasks;
 
 namespace robotTest.Base
 {
-    class Job
+    class ObjectView
     {
-        public string JobID { get; set; }
-        public string status { get; set; }
-        
+        public string Name { get; set; }
+        public string Value { get; set; }
     }
 }

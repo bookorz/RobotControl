@@ -6,8 +6,9 @@ using System.Threading.Tasks;
 
 namespace robotTest.Controller
 {
-    interface IController
+    public interface IController
     {
+        void SetReportTarget(ICommandReport target);
         bool SendCommand(Command command);
         void Connect();
         void Close();

@@ -21,13 +21,15 @@ namespace robotTest
         ILog logger = LogManager.GetLogger(typeof(Form1));
         delegate void UpdateController(string Device_ID, string Detail);
         delegate void UpdateScriptController(int Idx);
+        delegate void UpdateMapResultDG();
         Dictionary<string, IController> ControllerList = new Dictionary<string, IController>();
         Dictionary<string, ControllerInfo> ControllerStatus = new Dictionary<string, ControllerInfo>();
         List<Command> cmdList = new List<Command>();
-        
+        List<Job> cassette1 = new List<Job>();
 
         int RunIdx = 0;
         string ScriptPath = "";
+        bool running = false;
 
         public Form1()
         {
@@ -68,7 +70,7 @@ namespace robotTest
 
             Conn_gv.AutoGenerateColumns = true;
             Conn_gv.DataSource = ControllerStatus.Values.ToList();
-
+            Conn_gv.ClearSelection();
             ConfigReader<Common> CommandTypeCfg = new ConfigReader<Common>();
             foreach (Common each in CommandTypeCfg.ReadFile("config/Command/CommandType.json"))
             //foreach (Common each in CommandTypeCfg.ReadFile("config/controllers.json"))
@@ -109,66 +111,21 @@ namespace robotTest
             }
         }
 
-        //private void button1_Click(object sender, EventArgs e)
-        //{
-        //    List<Command> cmdList = new List<Command>();
-
-        //    cmdList.Add(new Command().SetParam("1", 1, "1", "1", "SET", "SP___", "10"));
-        //    cmdList.Add(new Command().SetParam("1", 2, "1", "1", "SET", "MODE_", "1"));
-        //    cmdList.Add(new Command().SetParam("1", 3, "1", "1", "GET", "SP___", ""));
-        //    cmdList.Add(new Command().SetParam("1", 4, "1", "1", "CMD", "HOME_", ""));
-        //    cmdList.Add(new Command().SetParam("1", 5, "1", "1", "CMD", "GET__", "0023,1,1,0,0"));
-        //    cmdList.Add(new Command().SetParam("1", 6, "1", "1", "CMD", "HOME_", ""));
-        //    cmdList.Add(new Command().SetParam("1", 7, "1", "1", "CMD", "GET__", "0024,2,3,0,1"));
-        //    cmdList.Add(new Command().SetParam("1", 8, "1", "1", "CMD", "GET__", "0024,2,3,0,3"));
-        //    cmdList.Add(new Command().SetParam("1", 9, "1", "1", "CMD", "HOME_", ""));
-
-        //    //rbt.SetScript(cmdList);
-        //    //rbt.RunScript(1);
-        //}
-
-        //private void button2_Click(object sender, EventArgs e)
-        //{
-        //    List<Command> cmdList = new List<Command>();
-
-        //    cmdList.Add(new Command().SetParam("1", 1, "1", "1", "GET", "STS__", ""));
-
-        //    //rbtSts.SetScript(cmdList);
-        //    //rbtSts.RunScript(1);
-        //}
-
-        void ICommandReport.On_Command_Excuted(string Device_ID, ReturnMsg Msg, Command Cmd)
+        private void UpdateMapResult()
         {
-
-        }
-
-        void ICommandReport.On_Command_Error(string Device_ID, ReturnMsg Msg, Command Cmd)
-        {
-
-        }
-
-        void ICommandReport.On_Command_Finished(string Device_ID, ReturnMsg Msg, Command Cmd)
-        {
-            RunIdx++;
-            if (RunIdx < cmdList.Count)
+            if (Port1_gv.InvokeRequired)
             {
-                Run(cmdList[RunIdx]);
-                UpdateScriptProgress(RunIdx);
+                //當InvokeRequired為true時，表示在不同的執行緒上，所以進行委派的動作!!
+                UpdateMapResultDG ph = new UpdateMapResultDG(UpdateMapResult);
+                Port1_gv.Invoke(ph);
             }
             else
             {
-                logger.Info("Script Finished!");
+                Port1_gv.DataSource = cassette1;
+                Conn_gv.Refresh();
+                Conn_gv.ClearSelection();
+
             }
-        }
-
-        void ICommandReport.On_Command_TimeOut(string Device_ID, Command Cmd)
-        {
-
-        }
-
-        void ICommandReport.On_Status_Changed(string Device_ID, string Status)
-        {
-            UpdateControllerStatus(Device_ID, Status);
         }
 
         private void UpdateControllerStatus(string Device_ID, string Status)
@@ -187,7 +144,7 @@ namespace robotTest
                     target.Status = Status;
                     Conn_gv.DataSource = ControllerStatus.Values.ToList();
                     //Conn_gv.Refresh();
-
+                    Conn_gv.ClearSelection();
                 }
             }
         }
@@ -287,6 +244,7 @@ namespace robotTest
                 Cmd.FLG = CmdType_cb.Text;
                 Cmd.CMD = Instruc_cb.Text;
                 Cmd.DAT = param_tb.Text;
+                TargetController.SetReportTarget(this);
                 TargetController.SendCommand(Cmd);
             }
             else
@@ -390,6 +348,7 @@ namespace robotTest
 
         private void RunScript_bt_Click(object sender, EventArgs e)
         {
+            running = true;
             RunIdx = 0;
             Run(cmdList[RunIdx]);
             UpdateScriptProgress(RunIdx);
@@ -448,7 +407,102 @@ namespace robotTest
                 logger.Error("Down_bt_Click:" + ex.Message + "\n" + ex.StackTrace);
             }
         }
+        void ICommandReport.On_Command_Excuted(string Device_ID, ReturnMsg Msg, Command Cmd)
+        {
 
+        }
 
+        void ICommandReport.On_Command_Error(string Device_ID, ReturnMsg Msg, Command Cmd)
+        {
+            MessageBox.Show(Device_ID + "錯誤發生，錯誤碼:" + Msg.GetDAT());
+        }
+
+        void ICommandReport.On_Command_Finished(string Device_ID, ReturnMsg Msg, Command Cmd)
+        {
+            if (!Cmd.FLG.Equals("DELAY"))
+            {
+                if (Msg.GetFLG().Equals("ACK"))
+                {
+                    switch (Msg.GetCMD())
+                    {
+                        case "MAP__":
+                            string[] mapResult = Msg.GetDAT().Split(',');
+                            for (int i = 1; i < mapResult.Count(); i++)
+                            {
+                                string status = mapResult[i];
+                                Job eachJob = new Job();
+                                switch (status)
+                                {
+                                    case "0":
+                                        status = "無";
+                                        break;
+                                    case "1":
+                                        status = "有";
+                                        break;
+                                    case "W":
+                                        status = "厚度異常";
+                                        break;
+                                    case "E":
+                                        status = "傾斜異常";
+                                        break;
+                                }
+                                eachJob.JobID = "Panel-" + i.ToString();
+                                eachJob.status = status;
+                                cassette1.Add(eachJob);
+                            }
+                            UpdateMapResult();
+                            break;
+                    }
+                }
+            }
+
+            if (running)
+            {
+                RunIdx++;
+                if (RunIdx < cmdList.Count)
+                {
+                    Run(cmdList[RunIdx]);
+                    UpdateScriptProgress(RunIdx);
+                }
+                else
+                {
+                    RunIdx = 0;
+                    Run(cmdList[RunIdx]);
+                    UpdateScriptProgress(RunIdx);
+
+                }
+            }
+        }
+
+        void ICommandReport.On_Command_TimeOut(string Device_ID, Command Cmd)
+        {
+
+        }
+
+        void ICommandReport.On_Status_Changed(string Device_ID, string Status)
+        {
+            UpdateControllerStatus(Device_ID, Status);
+        }
+
+        void ICommandReport.On_Event_Trigger(string Device_ID, string Event)
+        {
+
+        }
+
+        private void Conn_gv_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            ControllerInfo controller = ((List<ControllerInfo>)Conn_gv.DataSource)[e.RowIndex];
+            IController target;
+            if (ControllerList.TryGetValue(controller.ControllerName, out target))
+            {
+                RobotStatusFrm status_frm = new RobotStatusFrm(target, this);
+                status_frm.Show();
+            }
+        }
+
+        private void Stop_bt_Click(object sender, EventArgs e)
+        {
+            running = false;
+        }
     }
 }

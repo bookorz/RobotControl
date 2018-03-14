@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace robotTest
 {
-    class ReturnMsg
+    public class ReturnMsg
     {
         ILog logger = LogManager.GetLogger(typeof(ReturnMsg));
         private string ADR { get; set; }
