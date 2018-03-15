@@ -1,284 +1,13 @@
-2018-03-14 17:08:00,908 [5] INFO  robotTest.SocketClient - [Rev<--]$1ACK:HOME_(From Robot_Cmd_001 192.168.0.127:23)
-2018-03-14 17:08:01,900 [5] INFO  robotTest.SocketClient - [Rev<--]$1FIN:HOME_:00000000(From Robot_Cmd_001 192.168.0.127:23)
-2018-03-14 17:08:01,940 [5] INFO  robotTest.SocketClient - [Snd-->]$1SET:SP___:10(To Robot_Cmd_001 192.168.0.127:23)
-2018-03-14 17:08:02,048 [5] INFO  robotTest.SocketClient - [Rev<--]$1ACK:SP___(From Robot_Cmd_001 192.168.0.127:23)
-2018-03-14 17:08:02,279 [5] INFO  robotTest.SocketClient - [Snd-->]$1SET:MODE_:1(To Robot_Cmd_001 192.168.0.127:23)
-2018-03-14 17:08:02,379 [5] INFO  robotTest.SocketClient - [Rev<--]$1ACK:MODE_(From Robot_Cmd_001 192.168.0.127:23)
-2018-03-14 17:08:02,622 [5] INFO  robotTest.SocketClient - [Snd-->]$1GET:SP___(To Robot_Cmd_001 192.168.0.127:23)
-2018-03-14 17:08:02,716 [5] INFO  robotTest.SocketClient - [Rev<--]$1ACK:SP___:10(From Robot_Cmd_001 192.168.0.127:23)
-2018-03-14 17:08:02,756 [5] INFO  robotTest.SocketClient - [Snd-->]$1CMD:HOME_(To Robot_Cmd_001 192.168.0.127:23)
-2018-03-14 17:08:02,926 [5] INFO  robotTest.SocketClient - [Rev<--]$1ACK:HOME_(From Robot_Cmd_001 192.168.0.127:23)
-2018-03-14 17:08:03,124 [5] INFO  robotTest.SocketClient - [Rev<--]$1FIN:HOME_:00000000(From Robot_Cmd_001 192.168.0.127:23)
-2018-03-14 17:08:03,252 [5] INFO  robotTest.SocketClient - [Snd-->]$1CMD:GET__:0023,1,1,0,0(To Robot_Cmd_001 192.168.0.127:23)
-2018-03-14 17:08:03,338 [5] INFO  robotTest.SocketClient - [Rev<--]$1ACK:GET__(From Robot_Cmd_001 192.168.0.127:23)
-2018-03-14 17:08:07,026 [5] INFO  robotTest.SocketClient - [Rev<--]$1FIN:GET__:00000000(From Robot_Cmd_001 192.168.0.127:23)
-2018-03-14 17:08:10,785 [1] INFO  robotTest.SocketClient - [Snd-->]$1SET:SP___:10(To Robot_Cmd_001 192.168.0.127:23)
-2018-03-14 17:08:10,811 [5] INFO  robotTest.SocketClient - [Rev<--]$1ACK:SP___(From Robot_Cmd_001 192.168.0.127:23)
-2018-03-14 17:08:11,219 [5] INFO  robotTest.SocketClient - [Snd-->]$1SET:MODE_:1(To Robot_Cmd_001 192.168.0.127:23)
-2018-03-14 17:08:11,316 [5] INFO  robotTest.SocketClient - [Rev<--]$1ACK:MODE_(From Robot_Cmd_001 192.168.0.127:23)
-2018-03-14 17:08:11,621 [5] INFO  robotTest.SocketClient - [Snd-->]$1GET:SP___(To Robot_Cmd_001 192.168.0.127:23)
-2018-03-14 17:08:11,701 [5] INFO  robotTest.SocketClient - [Rev<--]$1ACK:SP___:10(From Robot_Cmd_001 192.168.0.127:23)
-2018-03-14 17:08:11,969 [5] INFO  robotTest.SocketClient - [Snd-->]$1CMD:HOME_(To Robot_Cmd_001 192.168.0.127:23)
-2018-03-14 17:08:12,087 [5] INFO  robotTest.SocketClient - [Rev<--]$1ACK:HOME_(From Robot_Cmd_001 192.168.0.127:23)
-2018-03-14 17:08:13,080 [5] INFO  robotTest.SocketClient - [Rev<--]$1FIN:HOME_:00000000(From Robot_Cmd_001 192.168.0.127:23)
-2018-03-14 17:08:13,194 [5] INFO  robotTest.SocketClient - [Snd-->]$1CMD:GET__:0023,1,1,0,0(To Robot_Cmd_001 192.168.0.127:23)
-2018-03-14 17:08:13,295 [5] INFO  robotTest.SocketClient - [Rev<--]$1ACK:GET__(From Robot_Cmd_001 192.168.0.127:23)
-2018-03-14 17:08:15,960 [1] INFO  robotTest.SocketClient - [Snd-->]$1GET:PNSTS:1(To Robot_Read_001 192.168.0.127:8900)
-2018-03-14 17:08:16,088 [6] INFO  robotTest.SocketClient - [Rev<--]$1ACK:PNSTS:1,0000000000000000,0000000000000000(From Robot_Read_001 192.168.0.127:8900)
-2018-03-14 17:08:16,121 [6] INFO  robotTest.SocketClient - [Snd-->]$1GET:PNSTS:2(To Robot_Read_001 192.168.0.127:8900)
-2018-03-14 17:08:16,141 [6] INFO  robotTest.SocketClient - [Rev<--]$1ACK:PNSTS:2,0000000000000000,0000000000000000(From Robot_Read_001 192.168.0.127:8900)
-2018-03-14 17:08:16,285 [6] INFO  robotTest.SocketClient - [Snd-->]$1GET:POS__:2,1(To Robot_Read_001 192.168.0.127:8900)
-2018-03-14 17:08:16,389 [6] INFO  robotTest.SocketClient - [Rev<--]$1ACK:POS__:+00252996,+00000000,+00023628,+00068563,+00000000,+00000000(From Robot_Read_001 192.168.0.127:8900)
-2018-03-14 17:08:16,564 [6] INFO  robotTest.SocketClient - [Snd-->]$1GET:PNSTS:1(To Robot_Read_001 192.168.0.127:8900)
-2018-03-14 17:08:16,579 [6] INFO  robotTest.SocketClient - [Rev<--]$1ACK:PNSTS:1,0000000000000000,0000000000000000(From Robot_Read_001 192.168.0.127:8900)
-2018-03-14 17:08:16,730 [6] INFO  robotTest.SocketClient - [Snd-->]$1GET:PNSTS:2(To Robot_Read_001 192.168.0.127:8900)
-2018-03-14 17:08:16,800 [6] INFO  robotTest.SocketClient - [Rev<--]$1ACK:PNSTS:2,0000000000000000,0000000000000000(From Robot_Read_001 192.168.0.127:8900)
-2018-03-14 17:08:16,903 [6] INFO  robotTest.SocketClient - [Snd-->]$1GET:POS__:2,1(To Robot_Read_001 192.168.0.127:8900)
-2018-03-14 17:08:16,994 [6] INFO  robotTest.SocketClient - [Rev<--]$1ACK:POS__:+00000025,+00000000,+00023628,+00068562,+00000000,+00000000(From Robot_Read_001 192.168.0.127:8900)
-2018-03-14 17:08:16,998 [5] INFO  robotTest.SocketClient - [Rev<--]$1FIN:GET__:00000000(From Robot_Cmd_001 192.168.0.127:23)
-2018-03-14 17:08:17,219 [6] INFO  robotTest.SocketClient - [Snd-->]$1GET:PNSTS:1(To Robot_Read_001 192.168.0.127:8900)
-2018-03-14 17:08:17,226 [5] INFO  robotTest.SocketClient - [Snd-->]$1CMD:HOME_(To Robot_Cmd_001 192.168.0.127:23)
-2018-03-14 17:08:17,239 [6] INFO  robotTest.SocketClient - [Rev<--]$1ACK:PNSTS:1,0000000000000000,0000000000000000(From Robot_Read_001 192.168.0.127:8900)
-2018-03-14 17:08:17,331 [6] INFO  robotTest.SocketClient - [Snd-->]$1GET:PNSTS:2(To Robot_Read_001 192.168.0.127:8900)
-2018-03-14 17:08:17,394 [5] INFO  robotTest.SocketClient - [Rev<--]$1ACK:HOME_(From Robot_Cmd_001 192.168.0.127:23)
-2018-03-14 17:08:17,429 [6] INFO  robotTest.SocketClient - [Rev<--]$1ACK:PNSTS:2,0000000000000000,0000000000000000(From Robot_Read_001 192.168.0.127:8900)
-2018-03-14 17:08:17,580 [6] INFO  robotTest.SocketClient - [Snd-->]$1GET:POS__:2,1(To Robot_Read_001 192.168.0.127:8900)
-2018-03-14 17:08:17,653 [6] INFO  robotTest.SocketClient - [Rev<--]$1ACK:POS__:-00000008,+00000004,+00013630,+00050411,+00000000,+00000000(From Robot_Read_001 192.168.0.127:8900)
-2018-03-14 17:08:17,790 [6] INFO  robotTest.SocketClient - [Snd-->]$1GET:PNSTS:1(To Robot_Read_001 192.168.0.127:8900)
-2018-03-14 17:08:17,867 [6] INFO  robotTest.SocketClient - [Rev<--]$1ACK:PNSTS:1,0000000000000000,0000000000000000(From Robot_Read_001 192.168.0.127:8900)
-2018-03-14 17:08:17,957 [6] INFO  robotTest.SocketClient - [Snd-->]$1GET:PNSTS:2(To Robot_Read_001 192.168.0.127:8900)
-2018-03-14 17:08:18,069 [6] INFO  robotTest.SocketClient - [Rev<--]$1ACK:PNSTS:2,0000000000000000,0000000000000000(From Robot_Read_001 192.168.0.127:8900)
-2018-03-14 17:08:18,097 [6] INFO  robotTest.SocketClient - [Snd-->]$1GET:POS__:2,1(To Robot_Read_001 192.168.0.127:8900)
-2018-03-14 17:08:18,162 [6] INFO  robotTest.SocketClient - [Rev<--]$1ACK:POS__:+00000008,+00000004,-00000001,+00001147,+00000000,+00000000(From Robot_Read_001 192.168.0.127:8900)
-2018-03-14 17:08:18,311 [6] INFO  robotTest.SocketClient - [Snd-->]$1GET:PNSTS:1(To Robot_Read_001 192.168.0.127:8900)
-2018-03-14 17:08:18,355 [5] INFO  robotTest.SocketClient - [Rev<--]$1FIN:HOME_:00000000(From Robot_Cmd_001 192.168.0.127:23)
-2018-03-14 17:08:18,398 [6] INFO  robotTest.SocketClient - [Rev<--]$1ACK:PNSTS:1,0000000000000000,0000000000000000(From Robot_Read_001 192.168.0.127:8900)
-2018-03-14 17:08:18,527 [5] INFO  robotTest.SocketClient - [Snd-->]$1CMD:GET__:0024,2,3,0,1(To Robot_Cmd_001 192.168.0.127:23)
-2018-03-14 17:08:18,651 [6] INFO  robotTest.SocketClient - [Snd-->]$1GET:PNSTS:2(To Robot_Read_001 192.168.0.127:8900)
-2018-03-14 17:08:18,658 [5] INFO  robotTest.SocketClient - [Rev<--]$1ACK:GET__(From Robot_Cmd_001 192.168.0.127:23)
-2018-03-14 17:08:18,796 [6] INFO  robotTest.SocketClient - [Rev<--]$1ACK:PNSTS:2,0000000000000000,0000000000000000(From Robot_Read_001 192.168.0.127:8900)
-2018-03-14 17:08:18,949 [6] INFO  robotTest.SocketClient - [Snd-->]$1GET:POS__:2,1(To Robot_Read_001 192.168.0.127:8900)
-2018-03-14 17:08:19,020 [6] INFO  robotTest.SocketClient - [Rev<--]$1ACK:POS__:+00000000,+00000000,-00008872,+00011678,+00000000,+00000000(From Robot_Read_001 192.168.0.127:8900)
-2018-03-14 17:08:19,182 [6] INFO  robotTest.SocketClient - [Snd-->]$1GET:PNSTS:1(To Robot_Read_001 192.168.0.127:8900)
-2018-03-14 17:08:19,250 [6] INFO  robotTest.SocketClient - [Rev<--]$1ACK:PNSTS:1,0000000000000000,0000000000000000(From Robot_Read_001 192.168.0.127:8900)
-2018-03-14 17:08:19,363 [6] INFO  robotTest.SocketClient - [Snd-->]$1GET:PNSTS:2(To Robot_Read_001 192.168.0.127:8900)
-2018-03-14 17:08:19,429 [6] INFO  robotTest.SocketClient - [Rev<--]$1ACK:PNSTS:2,0000000000000000,0000000000000000(From Robot_Read_001 192.168.0.127:8900)
-2018-03-14 17:08:19,451 [6] INFO  robotTest.SocketClient - [Snd-->]$1GET:POS__:2,1(To Robot_Read_001 192.168.0.127:8900)
-2018-03-14 17:08:19,524 [6] INFO  robotTest.SocketClient - [Rev<--]$1ACK:POS__:+00000004,+00000000,-00041670,+00036927,+00000000,+00000000(From Robot_Read_001 192.168.0.127:8900)
-2018-03-14 17:08:19,661 [6] INFO  robotTest.SocketClient - [Snd-->]$1GET:PNSTS:1(To Robot_Read_001 192.168.0.127:8900)
-2018-03-14 17:08:19,752 [6] INFO  robotTest.SocketClient - [Rev<--]$1ACK:PNSTS:1,0000000000000000,0000000000000000(From Robot_Read_001 192.168.0.127:8900)
-2018-03-14 17:08:19,777 [6] INFO  robotTest.SocketClient - [Snd-->]$1GET:PNSTS:2(To Robot_Read_001 192.168.0.127:8900)
-2018-03-14 17:08:19,862 [6] INFO  robotTest.SocketClient - [Rev<--]$1ACK:PNSTS:2,0000000000000000,0000000000000000(From Robot_Read_001 192.168.0.127:8900)
-2018-03-14 17:08:19,884 [6] INFO  robotTest.SocketClient - [Snd-->]$1GET:POS__:2,1(To Robot_Read_001 192.168.0.127:8900)
-2018-03-14 17:08:19,979 [6] INFO  robotTest.SocketClient - [Rev<--]$1ACK:POS__:+00000773,+00000634,-00056632,+00048703,+00000000,+00000000(From Robot_Read_001 192.168.0.127:8900)
-2018-03-14 17:08:20,116 [6] INFO  robotTest.SocketClient - [Snd-->]$1GET:PNSTS:1(To Robot_Read_001 192.168.0.127:8900)
-2018-03-14 17:08:20,208 [6] INFO  robotTest.SocketClient - [Rev<--]$1ACK:PNSTS:1,0000000000000000,0000000000000000(From Robot_Read_001 192.168.0.127:8900)
-2018-03-14 17:08:20,287 [6] INFO  robotTest.SocketClient - [Snd-->]$1GET:PNSTS:2(To Robot_Read_001 192.168.0.127:8900)
-2018-03-14 17:08:20,367 [6] INFO  robotTest.SocketClient - [Rev<--]$1ACK:PNSTS:2,0000000000000000,0000000000000000(From Robot_Read_001 192.168.0.127:8900)
-2018-03-14 17:08:20,464 [6] INFO  robotTest.SocketClient - [Snd-->]$1GET:POS__:2,1(To Robot_Read_001 192.168.0.127:8900)
-2018-03-14 17:08:20,535 [6] INFO  robotTest.SocketClient - [Rev<--]$1ACK:POS__:+00406464,+00432864,-00056646,+00048691,+00000000,+00000000(From Robot_Read_001 192.168.0.127:8900)
-2018-03-14 17:08:20,693 [6] INFO  robotTest.SocketClient - [Snd-->]$1GET:PNSTS:1(To Robot_Read_001 192.168.0.127:8900)
-2018-03-14 17:08:20,760 [6] INFO  robotTest.SocketClient - [Rev<--]$1ACK:PNSTS:1,0000000000000000,0000000000000000(From Robot_Read_001 192.168.0.127:8900)
-2018-03-14 17:08:20,866 [6] INFO  robotTest.SocketClient - [Snd-->]$1GET:PNSTS:2(To Robot_Read_001 192.168.0.127:8900)
-2018-03-14 17:08:20,930 [6] INFO  robotTest.SocketClient - [Rev<--]$1ACK:PNSTS:2,0000000000000000,0000000000000000(From Robot_Read_001 192.168.0.127:8900)
-2018-03-14 17:08:21,030 [6] INFO  robotTest.SocketClient - [Snd-->]$1GET:POS__:2,1(To Robot_Read_001 192.168.0.127:8900)
-2018-03-14 17:08:21,056 [5] INFO  robotTest.SocketClient - [Rev<--]$1FIN:GET__:00000000(From Robot_Cmd_001 192.168.0.127:23)
-2018-03-14 17:08:21,102 [6] INFO  robotTest.SocketClient - [Rev<--]$1ACK:POS__:+00505615,+00505646,-00056646,+00048692,+00000000,+00000000(From Robot_Read_001 192.168.0.127:8900)
-2018-03-14 17:08:21,343 [6] INFO  robotTest.SocketClient - [Snd-->]$1GET:PNSTS:1(To Robot_Read_001 192.168.0.127:8900)
-2018-03-14 17:08:21,546 [6] INFO  robotTest.SocketClient - [Rev<--]$1ACK:PNSTS:1,0000000000000000,0000000000000000(From Robot_Read_001 192.168.0.127:8900)
-2018-03-14 17:08:21,648 [6] INFO  robotTest.SocketClient - [Snd-->]$1GET:PNSTS:2(To Robot_Read_001 192.168.0.127:8900)
-2018-03-14 17:08:21,739 [6] INFO  robotTest.SocketClient - [Rev<--]$1ACK:PNSTS:2,0000000000000000,0000000000000000(From Robot_Read_001 192.168.0.127:8900)
-2018-03-14 17:08:21,803 [6] INFO  robotTest.SocketClient - [Snd-->]$1GET:POS__:2,1(To Robot_Read_001 192.168.0.127:8900)
-2018-03-14 17:08:21,885 [6] INFO  robotTest.SocketClient - [Rev<--]$1ACK:POS__:+00505636,+00505632,-00056646,+00048692,+00000000,+00000000(From Robot_Read_001 192.168.0.127:8900)
-2018-03-14 17:08:22,092 [6] INFO  robotTest.SocketClient - [Snd-->]$1GET:PNSTS:1(To Robot_Read_001 192.168.0.127:8900)
-2018-03-14 17:08:22,161 [6] INFO  robotTest.SocketClient - [Rev<--]$1ACK:PNSTS:1,0000000000000000,0000000000000000(From Robot_Read_001 192.168.0.127:8900)
-2018-03-14 17:08:22,284 [6] INFO  robotTest.SocketClient - [Snd-->]$1GET:PNSTS:2(To Robot_Read_001 192.168.0.127:8900)
-2018-03-14 17:08:22,376 [6] INFO  robotTest.SocketClient - [Rev<--]$1ACK:PNSTS:2,0000000000000000,0000000000000000(From Robot_Read_001 192.168.0.127:8900)
-2018-03-14 17:08:22,501 [6] INFO  robotTest.SocketClient - [Snd-->]$1GET:POS__:2,1(To Robot_Read_001 192.168.0.127:8900)
-2018-03-14 17:08:22,589 [6] INFO  robotTest.SocketClient - [Rev<--]$1ACK:POS__:+00505632,+00505632,-00056646,+00048692,+00000000,+00000000(From Robot_Read_001 192.168.0.127:8900)
-2018-03-14 17:08:22,773 [6] INFO  robotTest.SocketClient - [Snd-->]$1GET:PNSTS:1(To Robot_Read_001 192.168.0.127:8900)
-2018-03-14 17:08:22,865 [6] INFO  robotTest.SocketClient - [Rev<--]$1ACK:PNSTS:1,0000000000000000,0000000000000000(From Robot_Read_001 192.168.0.127:8900)
-2018-03-14 17:08:22,918 [6] INFO  robotTest.SocketClient - [Snd-->]$1GET:PNSTS:2(To Robot_Read_001 192.168.0.127:8900)
-2018-03-14 17:08:23,008 [6] INFO  robotTest.SocketClient - [Rev<--]$1ACK:PNSTS:2,0000000000000000,0000000000000000(From Robot_Read_001 192.168.0.127:8900)
-2018-03-14 17:08:23,038 [6] INFO  robotTest.SocketClient - [Snd-->]$1GET:POS__:2,1(To Robot_Read_001 192.168.0.127:8900)
-2018-03-14 17:08:23,148 [6] INFO  robotTest.SocketClient - [Rev<--]$1ACK:POS__:+00505632,+00505632,-00056646,+00048692,+00000000,+00000000(From Robot_Read_001 192.168.0.127:8900)
-2018-03-14 17:08:23,329 [6] INFO  robotTest.SocketClient - [Snd-->]$1GET:PNSTS:1(To Robot_Read_001 192.168.0.127:8900)
-2018-03-14 17:08:23,431 [6] INFO  robotTest.SocketClient - [Rev<--]$1ACK:PNSTS:1,0000000000000000,0000000000000000(From Robot_Read_001 192.168.0.127:8900)
-2018-03-14 17:08:23,468 [6] INFO  robotTest.SocketClient - [Snd-->]$1GET:PNSTS:2(To Robot_Read_001 192.168.0.127:8900)
-2018-03-14 17:08:23,577 [6] INFO  robotTest.SocketClient - [Rev<--]$1ACK:PNSTS:2,0000000000000000,0000000000000000(From Robot_Read_001 192.168.0.127:8900)
-2018-03-14 17:08:23,693 [6] INFO  robotTest.SocketClient - [Snd-->]$1GET:POS__:2,1(To Robot_Read_001 192.168.0.127:8900)
-2018-03-14 17:08:23,800 [6] INFO  robotTest.SocketClient - [Rev<--]$1ACK:POS__:+00505632,+00505632,-00056646,+00048692,+00000000,+00000000(From Robot_Read_001 192.168.0.127:8900)
-2018-03-14 17:08:24,052 [6] INFO  robotTest.SocketClient - [Snd-->]$1GET:PNSTS:1(To Robot_Read_001 192.168.0.127:8900)
-2018-03-14 17:08:24,145 [6] INFO  robotTest.SocketClient - [Rev<--]$1ACK:PNSTS:1,0000000000000000,0000000000000000(From Robot_Read_001 192.168.0.127:8900)
-2018-03-14 17:08:24,245 [6] INFO  robotTest.SocketClient - [Snd-->]$1GET:PNSTS:2(To Robot_Read_001 192.168.0.127:8900)
-2018-03-14 17:08:24,357 [6] INFO  robotTest.SocketClient - [Rev<--]$1ACK:PNSTS:2,0000000000000000,0000000000000000(From Robot_Read_001 192.168.0.127:8900)
-2018-03-14 17:08:24,363 [4] INFO  robotTest.SocketClient - [Snd-->]$1CMD:GET__:0024,2,3,0,3(To Robot_Cmd_001 192.168.0.127:23)
-2018-03-14 17:08:24,412 [6] INFO  robotTest.SocketClient - [Snd-->]$1GET:POS__:2,1(To Robot_Read_001 192.168.0.127:8900)
-2018-03-14 17:08:24,422 [5] INFO  robotTest.SocketClient - [Rev<--]$1ACK:GET__(From Robot_Cmd_001 192.168.0.127:23)
-2018-03-14 17:08:24,458 [6] INFO  robotTest.SocketClient - [Rev<--]$1ACK:POS__:+00505632,+00505632,-00056646,+00048697,+00000000,+00000000(From Robot_Read_001 192.168.0.127:8900)
-2018-03-14 17:08:24,923 [6] INFO  robotTest.SocketClient - [Snd-->]$1GET:PNSTS:1(To Robot_Read_001 192.168.0.127:8900)
-2018-03-14 17:08:25,009 [6] INFO  robotTest.SocketClient - [Rev<--]$1ACK:PNSTS:1,0000000000000000,0000000000000000(From Robot_Read_001 192.168.0.127:8900)
-2018-03-14 17:08:25,065 [6] INFO  robotTest.SocketClient - [Snd-->]$1GET:PNSTS:2(To Robot_Read_001 192.168.0.127:8900)
-2018-03-14 17:08:25,156 [6] INFO  robotTest.SocketClient - [Rev<--]$1ACK:PNSTS:2,0000000000000000,0000000000000000(From Robot_Read_001 192.168.0.127:8900)
-2018-03-14 17:08:25,269 [6] INFO  robotTest.SocketClient - [Snd-->]$1GET:POS__:2,1(To Robot_Read_001 192.168.0.127:8900)
-2018-03-14 17:08:25,359 [6] INFO  robotTest.SocketClient - [Rev<--]$1ACK:POS__:+00504822,+00502771,-00056646,+00068693,+00000000,+00000000(From Robot_Read_001 192.168.0.127:8900)
-2018-03-14 17:08:25,585 [6] INFO  robotTest.SocketClient - [Snd-->]$1GET:PNSTS:1(To Robot_Read_001 192.168.0.127:8900)
-2018-03-14 17:08:25,659 [6] INFO  robotTest.SocketClient - [Rev<--]$1ACK:PNSTS:1,0000000000000000,0000000000000000(From Robot_Read_001 192.168.0.127:8900)
-2018-03-14 17:08:25,682 [6] INFO  robotTest.SocketClient - [Snd-->]$1GET:PNSTS:2(To Robot_Read_001 192.168.0.127:8900)
-2018-03-14 17:08:25,756 [6] INFO  robotTest.SocketClient - [Rev<--]$1ACK:PNSTS:2,0000000000000000,0000000000000000(From Robot_Read_001 192.168.0.127:8900)
-2018-03-14 17:08:25,889 [6] INFO  robotTest.SocketClient - [Snd-->]$1GET:POS__:2,1(To Robot_Read_001 192.168.0.127:8900)
-2018-03-14 17:08:25,976 [6] INFO  robotTest.SocketClient - [Rev<--]$1ACK:POS__:+00192230,+00020481,-00056646,+00068692,+00000000,+00000000(From Robot_Read_001 192.168.0.127:8900)
-2018-03-14 17:08:26,185 [6] INFO  robotTest.SocketClient - [Snd-->]$1GET:PNSTS:1(To Robot_Read_001 192.168.0.127:8900)
-2018-03-14 17:08:26,279 [6] INFO  robotTest.SocketClient - [Rev<--]$1ACK:PNSTS:1,0000000000000000,0000000000000000(From Robot_Read_001 192.168.0.127:8900)
-2018-03-14 17:08:26,390 [6] INFO  robotTest.SocketClient - [Snd-->]$1GET:PNSTS:2(To Robot_Read_001 192.168.0.127:8900)
-2018-03-14 17:08:26,424 [5] INFO  robotTest.SocketClient - [Rev<--]$1FIN:GET__:00000000(From Robot_Cmd_001 192.168.0.127:23)
-2018-03-14 17:08:26,474 [6] INFO  robotTest.SocketClient - [Rev<--]$1ACK:PNSTS:2,0000000000000000,0000000000000000(From Robot_Read_001 192.168.0.127:8900)
-2018-03-14 17:08:26,504 [5] INFO  robotTest.SocketClient - [Snd-->]$1CMD:HOME_(To Robot_Cmd_001 192.168.0.127:23)
-2018-03-14 17:08:26,617 [6] INFO  robotTest.SocketClient - [Snd-->]$1GET:POS__:2,1(To Robot_Read_001 192.168.0.127:8900)
-2018-03-14 17:08:26,622 [5] INFO  robotTest.SocketClient - [Rev<--]$1ACK:HOME_(From Robot_Cmd_001 192.168.0.127:23)
-2018-03-14 17:08:26,782 [6] INFO  robotTest.SocketClient - [Rev<--]$1ACK:POS__:-00000025,+00000000,-00055298,+00064222,+00000000,+00000000(From Robot_Read_001 192.168.0.127:8900)
-2018-03-14 17:08:27,089 [6] INFO  robotTest.SocketClient - [Snd-->]$1GET:PNSTS:1(To Robot_Read_001 192.168.0.127:8900)
-2018-03-14 17:08:27,182 [6] INFO  robotTest.SocketClient - [Rev<--]$1ACK:PNSTS:1,0000000000000000,0000000000000000(From Robot_Read_001 192.168.0.127:8900)
-2018-03-14 17:08:27,217 [6] INFO  robotTest.SocketClient - [Snd-->]$1GET:PNSTS:2(To Robot_Read_001 192.168.0.127:8900)
-2018-03-14 17:08:27,340 [6] INFO  robotTest.SocketClient - [Rev<--]$1ACK:PNSTS:2,0000000000000000,0000000000000000(From Robot_Read_001 192.168.0.127:8900)
-2018-03-14 17:08:27,450 [6] INFO  robotTest.SocketClient - [Snd-->]$1GET:POS__:2,1(To Robot_Read_001 192.168.0.127:8900)
-2018-03-14 17:08:27,590 [6] INFO  robotTest.SocketClient - [Rev<--]$1ACK:POS__:-00000004,+00000008,+00000000,-00000025,+00000000,+00000000(From Robot_Read_001 192.168.0.127:8900)
-2018-03-14 17:08:27,624 [5] INFO  robotTest.SocketClient - [Rev<--]$1FIN:HOME_:00000000(From Robot_Cmd_001 192.168.0.127:23)
-2018-03-14 17:08:27,818 [6] INFO  robotTest.SocketClient - [Snd-->]$1GET:PNSTS:1(To Robot_Read_001 192.168.0.127:8900)
-2018-03-14 17:08:27,837 [5] INFO  robotTest.SocketClient - [Snd-->]$1SET:SP___:10(To Robot_Cmd_001 192.168.0.127:23)
-2018-03-14 17:08:27,839 [6] INFO  robotTest.SocketClient - [Rev<--]$1ACK:PNSTS:1,0000000000000000,0000000000000000(From Robot_Read_001 192.168.0.127:8900)
-2018-03-14 17:08:27,945 [5] INFO  robotTest.SocketClient - [Rev<--]$1ACK:SP___(From Robot_Cmd_001 192.168.0.127:23)
-2018-03-14 17:08:28,117 [6] INFO  robotTest.SocketClient - [Snd-->]$1GET:PNSTS:2(To Robot_Read_001 192.168.0.127:8900)
-2018-03-14 17:08:28,136 [5] INFO  robotTest.SocketClient - [Snd-->]$1SET:MODE_:1(To Robot_Cmd_001 192.168.0.127:23)
-2018-03-14 17:08:28,139 [6] INFO  robotTest.SocketClient - [Rev<--]$1ACK:PNSTS:2,0000000000000000,0000000000000000(From Robot_Read_001 192.168.0.127:8900)
-2018-03-14 17:08:28,242 [5] INFO  robotTest.SocketClient - [Rev<--]$1ACK:MODE_(From Robot_Cmd_001 192.168.0.127:23)
-2018-03-14 17:08:28,480 [6] INFO  robotTest.SocketClient - [Snd-->]$1GET:POS__:2,1(To Robot_Read_001 192.168.0.127:8900)
-2018-03-14 17:08:28,499 [5] INFO  robotTest.SocketClient - [Snd-->]$1GET:SP___(To Robot_Cmd_001 192.168.0.127:23)
-2018-03-14 17:08:28,500 [6] INFO  robotTest.SocketClient - [Rev<--]$1ACK:POS__:+00000000,+00000004,+00000000,+00000000,+00000000,+00000000(From Robot_Read_001 192.168.0.127:8900)
-2018-03-14 17:08:28,595 [5] INFO  robotTest.SocketClient - [Rev<--]$1ACK:SP___:10(From Robot_Cmd_001 192.168.0.127:23)
-2018-03-14 17:08:28,893 [6] INFO  robotTest.SocketClient - [Snd-->]$1GET:PNSTS:1(To Robot_Read_001 192.168.0.127:8900)
-2018-03-14 17:08:28,900 [5] INFO  robotTest.SocketClient - [Snd-->]$1CMD:HOME_(To Robot_Cmd_001 192.168.0.127:23)
-2018-03-14 17:08:28,913 [6] INFO  robotTest.SocketClient - [Rev<--]$1ACK:PNSTS:1,0000000000000000,0000000000000000(From Robot_Read_001 192.168.0.127:8900)
-2018-03-14 17:08:29,005 [6] INFO  robotTest.SocketClient - [Snd-->]$1GET:PNSTS:2(To Robot_Read_001 192.168.0.127:8900)
-2018-03-14 17:08:29,007 [5] INFO  robotTest.SocketClient - [Rev<--]$1ACK:HOME_(From Robot_Cmd_001 192.168.0.127:23)
-2018-03-14 17:08:29,183 [6] INFO  robotTest.SocketClient - [Rev<--]$1ACK:PNSTS:2,0000000000000000,0000000000000000(From Robot_Read_001 192.168.0.127:8900)
-2018-03-14 17:08:29,257 [5] INFO  robotTest.SocketClient - [Rev<--]$1FIN:HOME_:00000000(From Robot_Cmd_001 192.168.0.127:23)
-2018-03-14 17:08:29,324 [6] INFO  robotTest.SocketClient - [Snd-->]$1GET:POS__:2,1(To Robot_Read_001 192.168.0.127:8900)
-2018-03-14 17:08:29,366 [5] INFO  robotTest.SocketClient - [Snd-->]$1CMD:GET__:0023,1,1,0,0(To Robot_Cmd_001 192.168.0.127:23)
-2018-03-14 17:08:29,369 [6] INFO  robotTest.SocketClient - [Rev<--]$1ACK:POS__:+00000000,+00000000,+00000000,+00000000,+00000000,+00000000(From Robot_Read_001 192.168.0.127:8900)
-2018-03-14 17:08:29,451 [5] INFO  robotTest.SocketClient - [Rev<--]$1ACK:GET__(From Robot_Cmd_001 192.168.0.127:23)
-2018-03-14 17:08:29,788 [6] INFO  robotTest.SocketClient - [Snd-->]$1GET:PNSTS:1(To Robot_Read_001 192.168.0.127:8900)
-2018-03-14 17:08:29,899 [6] INFO  robotTest.SocketClient - [Rev<--]$1ACK:PNSTS:1,0000000000000000,0000000000000000(From Robot_Read_001 192.168.0.127:8900)
-2018-03-14 17:08:29,932 [6] INFO  robotTest.SocketClient - [Snd-->]$1GET:PNSTS:2(To Robot_Read_001 192.168.0.127:8900)
-2018-03-14 17:08:30,048 [6] INFO  robotTest.SocketClient - [Rev<--]$1ACK:PNSTS:2,0000000000000000,0000000000000000(From Robot_Read_001 192.168.0.127:8900)
-2018-03-14 17:08:30,087 [6] INFO  robotTest.SocketClient - [Snd-->]$1GET:POS__:2,1(To Robot_Read_001 192.168.0.127:8900)
-2018-03-14 17:08:30,211 [6] INFO  robotTest.SocketClient - [Rev<--]$1ACK:POS__:+00000012,+00000000,+00023573,+00028555,+00000000,+00000000(From Robot_Read_001 192.168.0.127:8900)
-2018-03-14 17:08:30,471 [6] INFO  robotTest.SocketClient - [Snd-->]$1GET:PNSTS:1(To Robot_Read_001 192.168.0.127:8900)
-2018-03-14 17:08:30,565 [6] INFO  robotTest.SocketClient - [Rev<--]$1ACK:PNSTS:1,0000000000000000,0000000000000000(From Robot_Read_001 192.168.0.127:8900)
-2018-03-14 17:08:30,622 [6] INFO  robotTest.SocketClient - [Snd-->]$1GET:PNSTS:2(To Robot_Read_001 192.168.0.127:8900)
-2018-03-14 17:08:30,709 [6] INFO  robotTest.SocketClient - [Rev<--]$1ACK:PNSTS:2,0000000000000000,0000000000000000(From Robot_Read_001 192.168.0.127:8900)
-2018-03-14 17:08:30,839 [6] INFO  robotTest.SocketClient - [Snd-->]$1GET:POS__:2,1(To Robot_Read_001 192.168.0.127:8900)
-2018-03-14 17:08:30,930 [6] INFO  robotTest.SocketClient - [Rev<--]$1ACK:POS__:+00287542,+00000000,+00023628,+00028561,+00000000,+00000000(From Robot_Read_001 192.168.0.127:8900)
-2018-03-14 17:08:31,202 [6] INFO  robotTest.SocketClient - [Snd-->]$1GET:PNSTS:1(To Robot_Read_001 192.168.0.127:8900)
-2018-03-14 17:08:31,292 [6] INFO  robotTest.SocketClient - [Rev<--]$1ACK:PNSTS:1,0000000000000000,0000000000000000(From Robot_Read_001 192.168.0.127:8900)
-2018-03-14 17:08:31,426 [6] INFO  robotTest.SocketClient - [Snd-->]$1GET:PNSTS:2(To Robot_Read_001 192.168.0.127:8900)
-2018-03-14 17:08:31,509 [6] INFO  robotTest.SocketClient - [Rev<--]$1ACK:PNSTS:2,0000000000000000,0000000000000000(From Robot_Read_001 192.168.0.127:8900)
-2018-03-14 17:08:31,638 [6] INFO  robotTest.SocketClient - [Snd-->]$1GET:POS__:2,1(To Robot_Read_001 192.168.0.127:8900)
-2018-03-14 17:08:31,709 [6] INFO  robotTest.SocketClient - [Rev<--]$1ACK:POS__:+00291374,+00000000,+00023628,+00048651,+00000000,+00000000(From Robot_Read_001 192.168.0.127:8900)
-2018-03-14 17:08:31,885 [6] INFO  robotTest.SocketClient - [Snd-->]$1GET:PNSTS:1(To Robot_Read_001 192.168.0.127:8900)
-2018-03-14 17:08:31,959 [6] INFO  robotTest.SocketClient - [Rev<--]$1ACK:PNSTS:1,0000000000000000,0000000000000000(From Robot_Read_001 192.168.0.127:8900)
-2018-03-14 17:08:32,069 [6] INFO  robotTest.SocketClient - [Snd-->]$1GET:PNSTS:2(To Robot_Read_001 192.168.0.127:8900)
-2018-03-14 17:08:32,144 [6] INFO  robotTest.SocketClient - [Rev<--]$1ACK:PNSTS:2,0000000000000000,0000000000000000(From Robot_Read_001 192.168.0.127:8900)
-2018-03-14 17:08:32,199 [6] INFO  robotTest.SocketClient - [Snd-->]$1GET:POS__:2,1(To Robot_Read_001 192.168.0.127:8900)
-2018-03-14 17:08:32,308 [6] INFO  robotTest.SocketClient - [Rev<--]$1ACK:POS__:+00290850,+00000000,+00023628,+00068581,+00000000,+00000000(From Robot_Read_001 192.168.0.127:8900)
-2018-03-14 17:08:32,572 [6] INFO  robotTest.SocketClient - [Snd-->]$1GET:PNSTS:1(To Robot_Read_001 192.168.0.127:8900)
-2018-03-14 17:08:32,681 [6] INFO  robotTest.SocketClient - [Rev<--]$1ACK:PNSTS:1,0000000000000000,0000000000000000(From Robot_Read_001 192.168.0.127:8900)
-2018-03-14 17:08:32,719 [6] INFO  robotTest.SocketClient - [Snd-->]$1GET:PNSTS:2(To Robot_Read_001 192.168.0.127:8900)
-2018-03-14 17:08:32,808 [6] INFO  robotTest.SocketClient - [Rev<--]$1ACK:PNSTS:2,0000000000000000,0000000000000000(From Robot_Read_001 192.168.0.127:8900)
-2018-03-14 17:08:32,924 [6] INFO  robotTest.SocketClient - [Snd-->]$1GET:POS__:2,1(To Robot_Read_001 192.168.0.127:8900)
-2018-03-14 17:08:33,042 [6] INFO  robotTest.SocketClient - [Rev<--]$1ACK:POS__:+00000987,+00000000,+00023628,+00068562,+00000000,+00000000(From Robot_Read_001 192.168.0.127:8900)
-2018-03-14 17:08:33,156 [5] INFO  robotTest.SocketClient - [Rev<--]$1FIN:GET__:00000000(From Robot_Cmd_001 192.168.0.127:23)
-2018-03-14 17:08:33,327 [6] INFO  robotTest.SocketClient - [Snd-->]$1GET:PNSTS:1(To Robot_Read_001 192.168.0.127:8900)
-2018-03-14 17:08:33,358 [6] INFO  robotTest.SocketClient - [Rev<--]$1ACK:PNSTS:1,0000000000000000,0000000000000000(From Robot_Read_001 192.168.0.127:8900)
-2018-03-14 17:08:33,360 [5] INFO  robotTest.SocketClient - [Snd-->]$1CMD:HOME_(To Robot_Cmd_001 192.168.0.127:23)
-2018-03-14 17:08:33,428 [6] INFO  robotTest.SocketClient - [Snd-->]$1GET:PNSTS:2(To Robot_Read_001 192.168.0.127:8900)
-2018-03-14 17:08:33,464 [5] INFO  robotTest.SocketClient - [Rev<--]$1ACK:HOME_(From Robot_Cmd_001 192.168.0.127:23)
-2018-03-14 17:08:33,614 [6] INFO  robotTest.SocketClient - [Rev<--]$1ACK:PNSTS:2,0000000000000000,0000000000000000(From Robot_Read_001 192.168.0.127:8900)
-2018-03-14 17:08:33,763 [6] INFO  robotTest.SocketClient - [Snd-->]$1GET:POS__:2,1(To Robot_Read_001 192.168.0.127:8900)
-2018-03-14 17:08:33,856 [6] INFO  robotTest.SocketClient - [Rev<--]$1ACK:POS__:-00000033,+00000004,+00006150,+00040974,+00000000,+00000000(From Robot_Read_001 192.168.0.127:8900)
-2018-03-14 17:08:34,056 [6] INFO  robotTest.SocketClient - [Snd-->]$1GET:PNSTS:1(To Robot_Read_001 192.168.0.127:8900)
-2018-03-14 17:08:34,142 [6] INFO  robotTest.SocketClient - [Rev<--]$1ACK:PNSTS:1,0000000000000000,0000000000000000(From Robot_Read_001 192.168.0.127:8900)
-2018-03-14 17:08:34,231 [6] INFO  robotTest.SocketClient - [Snd-->]$1GET:PNSTS:2(To Robot_Read_001 192.168.0.127:8900)
-2018-03-14 17:08:34,326 [6] INFO  robotTest.SocketClient - [Rev<--]$1ACK:PNSTS:2,0000000000000000,0000000000000000(From Robot_Read_001 192.168.0.127:8900)
-2018-03-14 17:08:34,350 [6] INFO  robotTest.SocketClient - [Snd-->]$1GET:POS__:2,1(To Robot_Read_001 192.168.0.127:8900)
-2018-03-14 17:08:34,445 [6] INFO  robotTest.SocketClient - [Rev<--]$1ACK:POS__:+00000004,+00000004,+00000000,-00000024,+00000000,+00000000(From Robot_Read_001 192.168.0.127:8900)
-2018-03-14 17:08:34,461 [5] INFO  robotTest.SocketClient - [Rev<--]$1FIN:HOME_:00000000(From Robot_Cmd_001 192.168.0.127:23)
-2018-03-14 17:08:34,674 [6] INFO  robotTest.SocketClient - [Snd-->]$1GET:PNSTS:1(To Robot_Read_001 192.168.0.127:8900)
-2018-03-14 17:08:34,711 [5] INFO  robotTest.SocketClient - [Snd-->]$1CMD:GET__:0024,2,3,0,1(To Robot_Cmd_001 192.168.0.127:23)
-2018-03-14 17:08:34,713 [6] INFO  robotTest.SocketClient - [Rev<--]$1ACK:PNSTS:1,0000000000000000,0000000000000000(From Robot_Read_001 192.168.0.127:8900)
-2018-03-14 17:08:34,801 [5] INFO  robotTest.SocketClient - [Rev<--]$1ACK:GET__(From Robot_Cmd_001 192.168.0.127:23)
-2018-03-14 17:08:34,974 [6] INFO  robotTest.SocketClient - [Snd-->]$1GET:PNSTS:2(To Robot_Read_001 192.168.0.127:8900)
-2018-03-14 17:08:35,014 [6] INFO  robotTest.SocketClient - [Rev<--]$1ACK:PNSTS:2,0000000000000000,0000000000000000(From Robot_Read_001 192.168.0.127:8900)
-2018-03-14 17:08:35,153 [6] INFO  robotTest.SocketClient - [Snd-->]$1GET:POS__:2,1(To Robot_Read_001 192.168.0.127:8900)
-2018-03-14 17:08:35,244 [6] INFO  robotTest.SocketClient - [Rev<--]$1ACK:POS__:+00000000,+00000000,-00014189,+00015789,+00000000,+00000000(From Robot_Read_001 192.168.0.127:8900)
-2018-03-14 17:08:35,487 [6] INFO  robotTest.SocketClient - [Snd-->]$1GET:PNSTS:1(To Robot_Read_001 192.168.0.127:8900)
-2018-03-14 17:08:35,598 [6] INFO  robotTest.SocketClient - [Rev<--]$1ACK:PNSTS:1,0000000000000000,0000000000000000(From Robot_Read_001 192.168.0.127:8900)
-2018-03-14 17:08:35,648 [6] INFO  robotTest.SocketClient - [Snd-->]$1GET:PNSTS:2(To Robot_Read_001 192.168.0.127:8900)
-2018-03-14 17:08:35,740 [6] INFO  robotTest.SocketClient - [Rev<--]$1ACK:PNSTS:2,0000000000000000,0000000000000000(From Robot_Read_001 192.168.0.127:8900)
-2018-03-14 17:08:35,869 [6] INFO  robotTest.SocketClient - [Snd-->]$1GET:POS__:2,1(To Robot_Read_001 192.168.0.127:8900)
-2018-03-14 17:08:35,964 [6] INFO  robotTest.SocketClient - [Rev<--]$1ACK:POS__:+00000000,+00000004,-00056005,+00048670,+00000000,+00000000(From Robot_Read_001 192.168.0.127:8900)
-2018-03-14 17:08:36,163 [6] INFO  robotTest.SocketClient - [Snd-->]$1GET:PNSTS:1(To Robot_Read_001 192.168.0.127:8900)
-2018-03-14 17:08:36,256 [6] INFO  robotTest.SocketClient - [Rev<--]$1ACK:PNSTS:1,0000000000000000,0000000000000000(From Robot_Read_001 192.168.0.127:8900)
-2018-03-14 17:08:36,321 [6] INFO  robotTest.SocketClient - [Snd-->]$1GET:PNSTS:2(To Robot_Read_001 192.168.0.127:8900)
-2018-03-14 17:08:36,414 [6] INFO  robotTest.SocketClient - [Rev<--]$1ACK:PNSTS:2,0000000000000000,0000000000000000(From Robot_Read_001 192.168.0.127:8900)
-2018-03-14 17:08:36,466 [6] INFO  robotTest.SocketClient - [Snd-->]$1GET:POS__:2,1(To Robot_Read_001 192.168.0.127:8900)
-2018-03-14 17:08:36,576 [6] INFO  robotTest.SocketClient - [Rev<--]$1ACK:POS__:+00335851,+00348200,-00056646,+00048691,+00000000,+00000000(From Robot_Read_001 192.168.0.127:8900)
-2018-03-14 17:08:36,816 [6] INFO  robotTest.SocketClient - [Snd-->]$1GET:PNSTS:1(To Robot_Read_001 192.168.0.127:8900)
-2018-03-14 17:08:36,908 [6] INFO  robotTest.SocketClient - [Rev<--]$1ACK:PNSTS:1,0000000000000000,0000000000000000(From Robot_Read_001 192.168.0.127:8900)
-2018-03-14 17:08:36,998 [6] INFO  robotTest.SocketClient - [Snd-->]$1GET:PNSTS:2(To Robot_Read_001 192.168.0.127:8900)
-2018-03-14 17:08:37,089 [6] INFO  robotTest.SocketClient - [Rev<--]$1ACK:PNSTS:2,0000000000000000,0000000000000000(From Robot_Read_001 192.168.0.127:8900)
-2018-03-14 17:08:37,175 [6] INFO  robotTest.SocketClient - [Snd-->]$1GET:POS__:2,1(To Robot_Read_001 192.168.0.127:8900)
-2018-03-14 17:08:37,205 [5] INFO  robotTest.SocketClient - [Rev<--]$1FIN:GET__:00000000(From Robot_Cmd_001 192.168.0.127:23)
-2018-03-14 17:08:37,264 [6] INFO  robotTest.SocketClient - [Rev<--]$1ACK:POS__:+00505622,+00505646,-00056646,+00048692,+00000000,+00000000(From Robot_Read_001 192.168.0.127:8900)
-2018-03-14 17:08:37,424 [6] INFO  robotTest.SocketClient - [Snd-->]$1GET:PNSTS:1(To Robot_Read_001 192.168.0.127:8900)
-2018-03-14 17:08:37,612 [6] INFO  robotTest.SocketClient - [Rev<--]$1ACK:PNSTS:1,0000000000000000,0000000000000000(From Robot_Read_001 192.168.0.127:8900)
-2018-03-14 17:08:37,756 [6] INFO  robotTest.SocketClient - [Snd-->]$1GET:PNSTS:2(To Robot_Read_001 192.168.0.127:8900)
-2018-03-14 17:08:37,858 [6] INFO  robotTest.SocketClient - [Rev<--]$1ACK:PNSTS:2,0000000000000000,0000000000000000(From Robot_Read_001 192.168.0.127:8900)
-2018-03-14 17:08:37,900 [6] INFO  robotTest.SocketClient - [Snd-->]$1GET:POS__:2,1(To Robot_Read_001 192.168.0.127:8900)
-2018-03-14 17:08:38,014 [6] INFO  robotTest.SocketClient - [Rev<--]$1ACK:POS__:+00505636,+00505632,-00056646,+00048692,+00000000,+00000000(From Robot_Read_001 192.168.0.127:8900)
-2018-03-14 17:08:38,200 [6] INFO  robotTest.SocketClient - [Snd-->]$1GET:PNSTS:1(To Robot_Read_001 192.168.0.127:8900)
-2018-03-14 17:08:38,297 [6] INFO  robotTest.SocketClient - [Rev<--]$1ACK:PNSTS:1,0000000000000000,0000000000000000(From Robot_Read_001 192.168.0.127:8900)
-2018-03-14 17:08:38,428 [6] INFO  robotTest.SocketClient - [Snd-->]$1GET:PNSTS:2(To Robot_Read_001 192.168.0.127:8900)
-2018-03-14 17:08:38,512 [6] INFO  robotTest.SocketClient - [Rev<--]$1ACK:PNSTS:2,0000000000000000,0000000000000000(From Robot_Read_001 192.168.0.127:8900)
-2018-03-14 17:08:38,656 [6] INFO  robotTest.SocketClient - [Snd-->]$1GET:POS__:2,1(To Robot_Read_001 192.168.0.127:8900)
-2018-03-14 17:08:38,742 [6] INFO  robotTest.SocketClient - [Rev<--]$1ACK:POS__:+00505632,+00505632,-00056646,+00048692,+00000000,+00000000(From Robot_Read_001 192.168.0.127:8900)
-2018-03-14 17:08:38,950 [6] INFO  robotTest.SocketClient - [Snd-->]$1GET:PNSTS:1(To Robot_Read_001 192.168.0.127:8900)
-2018-03-14 17:08:39,044 [6] INFO  robotTest.SocketClient - [Rev<--]$1ACK:PNSTS:1,0000000000000000,0000000000000000(From Robot_Read_001 192.168.0.127:8900)
-2018-03-14 17:08:39,162 [6] INFO  robotTest.SocketClient - [Snd-->]$1GET:PNSTS:2(To Robot_Read_001 192.168.0.127:8900)
-2018-03-14 17:08:39,275 [6] INFO  robotTest.SocketClient - [Rev<--]$1ACK:PNSTS:2,0000000000000000,0000000000000000(From Robot_Read_001 192.168.0.127:8900)
-2018-03-14 17:08:39,518 [6] ERROR robotTest.Command - OnSocketMessage:並未將物件參考設定為物件的執行個體。
-   於 robotTest.RobotStatusFrm.robotTest.Controller.ICommandReport.On_Command_Finished(String Device_ID, ReturnMsg Msg, Command Cmd) 於 C:\Users\ethan_huang\source\repos\robotTest\robotTest\RobotStatusFrm.cs: 行 108
-   於 robotTest.RobotController.robotTest.ISocketMessage.OnSocketMessage(String Msg) 於 C:\Users\ethan_huang\source\repos\robotTest\robotTest\Controller\RobotController.cs: 行 174
-2018-03-14 17:08:40,330 [4] INFO  robotTest.SocketClient - [Snd-->]$1CMD:GET__:0024,2,3,0,3(To Robot_Cmd_001 192.168.0.127:23)
-2018-03-14 17:08:40,444 [5] INFO  robotTest.SocketClient - [Rev<--]$1ACK:GET__(From Robot_Cmd_001 192.168.0.127:23)
-2018-03-14 17:08:42,440 [5] INFO  robotTest.SocketClient - [Rev<--]$1FIN:GET__:00000000(From Robot_Cmd_001 192.168.0.127:23)
-2018-03-14 17:08:42,582 [5] INFO  robotTest.SocketClient - [Snd-->]$1CMD:HOME_(To Robot_Cmd_001 192.168.0.127:23)
-2018-03-14 17:08:42,665 [5] INFO  robotTest.SocketClient - [Rev<--]$1ACK:HOME_(From Robot_Cmd_001 192.168.0.127:23)
-2018-03-14 17:08:43,651 [5] INFO  robotTest.SocketClient - [Rev<--]$1FIN:HOME_:00000000(From Robot_Cmd_001 192.168.0.127:23)
-2018-03-14 17:08:43,702 [5] INFO  robotTest.SocketClient - [Snd-->]$1SET:SP___:10(To Robot_Cmd_001 192.168.0.127:23)
-2018-03-14 17:08:43,808 [5] INFO  robotTest.SocketClient - [Rev<--]$1ACK:SP___(From Robot_Cmd_001 192.168.0.127:23)
-2018-03-14 17:08:44,113 [5] INFO  robotTest.SocketClient - [Snd-->]$1SET:MODE_:1(To Robot_Cmd_001 192.168.0.127:23)
-2018-03-14 17:08:44,212 [5] INFO  robotTest.SocketClient - [Rev<--]$1ACK:MODE_(From Robot_Cmd_001 192.168.0.127:23)
-2018-03-14 17:08:44,443 [5] INFO  robotTest.SocketClient - [Snd-->]$1GET:SP___(To Robot_Cmd_001 192.168.0.127:23)
-2018-03-14 17:08:44,548 [5] INFO  robotTest.SocketClient - [Rev<--]$1ACK:SP___:10(From Robot_Cmd_001 192.168.0.127:23)
-2018-03-14 17:08:44,763 [5] INFO  robotTest.SocketClient - [Snd-->]$1CMD:HOME_(To Robot_Cmd_001 192.168.0.127:23)
-2018-03-14 17:08:44,887 [5] INFO  robotTest.SocketClient - [Rev<--]$1ACK:HOME_(From Robot_Cmd_001 192.168.0.127:23)
-2018-03-14 17:08:45,086 [5] INFO  robotTest.SocketClient - [Rev<--]$1FIN:HOME_:00000000(From Robot_Cmd_001 192.168.0.127:23)
-2018-03-14 17:08:45,212 [5] INFO  robotTest.SocketClient - [Snd-->]$1CMD:GET__:0023,1,1,0,0(To Robot_Cmd_001 192.168.0.127:23)
-2018-03-14 17:08:45,322 [5] INFO  robotTest.SocketClient - [Rev<--]$1ACK:GET__(From Robot_Cmd_001 192.168.0.127:23)
-2018-03-14 17:08:49,025 [5] INFO  robotTest.SocketClient - [Rev<--]$1FIN:GET__:00000000(From Robot_Cmd_001 192.168.0.127:23)
-2018-03-14 17:09:12,199 [1] INFO  robotTest.SocketClient - [Snd-->]$1GET:MAP__(To Robot_Cmd_001 192.168.0.127:23)
-2018-03-14 17:09:12,257 [5] INFO  robotTest.SocketClient - [Rev<--]$1NAK:MAP__:8480b000(From Robot_Cmd_001 192.168.0.127:23)
-2018-03-14 17:09:14,754 [5] ERROR robotTest.Command - Error happen:error code=8480b000
-2018-03-14 17:09:27,361 [1] INFO  robotTest.SocketClient - [Snd-->]$1GET:MAP__:1(To Robot_Cmd_001 192.168.0.127:23)
-2018-03-14 17:09:27,388 [5] INFO  robotTest.SocketClient - [Rev<--]$1ACK:MAP__:1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0(From Robot_Cmd_001 192.168.0.127:23)
+2018-03-15 18:05:53,639 [6] INFO  robotTest.SocketClient - [Snd-->]$1CMD:PUT__:1204,1,1,0(To Robot_Cmd_001 192.168.0.127:23)
+2018-03-15 18:05:53,743 [6] INFO  robotTest.SocketClient - [Rev<--]$1ACK:PUT__(From Robot_Cmd_001 192.168.0.127:23)
+2018-03-15 18:06:02,941 [6] INFO  robotTest.SocketClient - [Rev<--]$1FIN:PUT__:00000000(From Robot_Cmd_001 192.168.0.127:23)
+2018-03-15 18:06:03,081 [6] INFO  robotTest.SocketClient - [Snd-->]$1CMD:GET__:1201,2,1,0,0(To Robot_Cmd_001 192.168.0.127:23)
+2018-03-15 18:06:03,176 [6] INFO  robotTest.SocketClient - [Rev<--]$1ACK:GET__(From Robot_Cmd_001 192.168.0.127:23)
+2018-03-15 18:06:07,087 [6] ERROR robotTest.SocketClient - (From Robot_Cmd_001 192.168.0.127:23)連線已被您主機上的軟體中止。
+   於 System.Net.Sockets.Socket.Receive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
+   於 System.Net.Sockets.Socket.Receive(Byte[] buffer)
+   於 robotTest.SocketClient.SckSReceiveProc() 於 C:\Users\ethan_huang\source\repos\robotTest\robotTest\Communication\SocketClient.cs: 行 103
+2018-03-15 18:06:07,087 [5] ERROR robotTest.SocketClient - (From Robot_Read_001 192.168.0.127:8900)連線已被您主機上的軟體中止。
+   於 System.Net.Sockets.Socket.Receive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
+   於 System.Net.Sockets.Socket.Receive(Byte[] buffer)
+   於 robotTest.SocketClient.SckSReceiveProc() 於 C:\Users\ethan_huang\source\repos\robotTest\robotTest\Communication\SocketClient.cs: 行 103

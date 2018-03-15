@@ -34,6 +34,7 @@
             this.log_rt = new System.Windows.Forms.RichTextBox();
             this.Script_gv = new System.Windows.Forms.DataGridView();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.Stop_bt = new System.Windows.Forms.Button();
             this.Delete_bt = new System.Windows.Forms.Button();
             this.Down_bt = new System.Windows.Forms.Button();
             this.Up_bt = new System.Windows.Forms.Button();
@@ -53,10 +54,19 @@
             this.label1 = new System.Windows.Forms.Label();
             this.DeviceNo_cb = new System.Windows.Forms.ComboBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.ProcessStart_bt = new System.Windows.Forms.Button();
+            this.DataReq_bt = new System.Windows.Forms.Button();
+            this.LDCM_bt = new System.Windows.Forms.Button();
             this.Port1_gv = new System.Windows.Forms.DataGridView();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.Stage1_gv = new System.Windows.Forms.DataGridView();
-            this.Stop_bt = new System.Windows.Forms.Button();
+            this.Port2_gv = new System.Windows.Forms.DataGridView();
+            this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.ALComplete_bt = new System.Windows.Forms.Button();
+            this.Aligner_gv = new System.Windows.Forms.DataGridView();
+            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.label6 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Conn_gv)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Script_gv)).BeginInit();
@@ -64,14 +74,19 @@
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Port1_gv)).BeginInit();
             this.groupBox4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.Stage1_gv)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Port2_gv)).BeginInit();
+            this.tabControl1.SuspendLayout();
+            this.tabPage2.SuspendLayout();
+            this.groupBox5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Aligner_gv)).BeginInit();
+            this.tabPage1.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.Conn_gv);
             this.groupBox1.Controls.Add(this.Connect);
-            this.groupBox1.Location = new System.Drawing.Point(823, 12);
+            this.groupBox1.Location = new System.Drawing.Point(825, 11);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(756, 259);
             this.groupBox1.TabIndex = 6;
@@ -85,6 +100,7 @@
             this.Conn_gv.MultiSelect = false;
             this.Conn_gv.Name = "Conn_gv";
             this.Conn_gv.ReadOnly = true;
+            this.Conn_gv.RowHeadersVisible = false;
             this.Conn_gv.RowTemplate.Height = 24;
             this.Conn_gv.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.Conn_gv.Size = new System.Drawing.Size(739, 204);
@@ -105,7 +121,7 @@
             // 
             // log_rt
             // 
-            this.log_rt.Location = new System.Drawing.Point(823, 277);
+            this.log_rt.Location = new System.Drawing.Point(825, 276);
             this.log_rt.Name = "log_rt";
             this.log_rt.Size = new System.Drawing.Size(748, 496);
             this.log_rt.TabIndex = 8;
@@ -114,10 +130,10 @@
             // Script_gv
             // 
             this.Script_gv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.Script_gv.Location = new System.Drawing.Point(12, 350);
+            this.Script_gv.Location = new System.Drawing.Point(5, 343);
             this.Script_gv.Name = "Script_gv";
             this.Script_gv.RowTemplate.Height = 24;
-            this.Script_gv.Size = new System.Drawing.Size(805, 423);
+            this.Script_gv.Size = new System.Drawing.Size(788, 384);
             this.Script_gv.TabIndex = 9;
             // 
             // groupBox2
@@ -141,13 +157,23 @@
             this.groupBox2.Controls.Add(this.label2);
             this.groupBox2.Controls.Add(this.label1);
             this.groupBox2.Controls.Add(this.DeviceNo_cb);
-            this.groupBox2.Location = new System.Drawing.Point(13, 13);
+            this.groupBox2.Location = new System.Drawing.Point(6, 6);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(422, 331);
             this.groupBox2.TabIndex = 10;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Command";
             this.groupBox2.Enter += new System.EventHandler(this.groupBox2_Enter);
+            // 
+            // Stop_bt
+            // 
+            this.Stop_bt.Location = new System.Drawing.Point(91, 262);
+            this.Stop_bt.Name = "Stop_bt";
+            this.Stop_bt.Size = new System.Drawing.Size(75, 23);
+            this.Stop_bt.TabIndex = 18;
+            this.Stop_bt.Text = "Stop Script";
+            this.Stop_bt.UseVisualStyleBackColor = true;
+            this.Stop_bt.Click += new System.EventHandler(this.Stop_bt_Click);
             // 
             // Delete_bt
             // 
@@ -317,61 +343,162 @@
             // 
             // groupBox3
             // 
+            this.groupBox3.Controls.Add(this.ProcessStart_bt);
+            this.groupBox3.Controls.Add(this.DataReq_bt);
+            this.groupBox3.Controls.Add(this.LDCM_bt);
             this.groupBox3.Controls.Add(this.Port1_gv);
-            this.groupBox3.Location = new System.Drawing.Point(451, 13);
+            this.groupBox3.Location = new System.Drawing.Point(6, 6);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(202, 296);
+            this.groupBox3.Size = new System.Drawing.Size(291, 353);
             this.groupBox3.TabIndex = 11;
             this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "cassette 1";
+            this.groupBox3.Text = "Port1";
+            // 
+            // ProcessStart_bt
+            // 
+            this.ProcessStart_bt.Location = new System.Drawing.Point(171, 323);
+            this.ProcessStart_bt.Name = "ProcessStart_bt";
+            this.ProcessStart_bt.Size = new System.Drawing.Size(75, 23);
+            this.ProcessStart_bt.TabIndex = 15;
+            this.ProcessStart_bt.Text = "Start";
+            this.ProcessStart_bt.UseVisualStyleBackColor = true;
+            this.ProcessStart_bt.Click += new System.EventHandler(this.ProcessStart_bt_Click);
+            // 
+            // DataReq_bt
+            // 
+            this.DataReq_bt.Location = new System.Drawing.Point(89, 323);
+            this.DataReq_bt.Name = "DataReq_bt";
+            this.DataReq_bt.Size = new System.Drawing.Size(75, 23);
+            this.DataReq_bt.TabIndex = 14;
+            this.DataReq_bt.Text = "DATA REQ";
+            this.DataReq_bt.UseVisualStyleBackColor = true;
+            this.DataReq_bt.Click += new System.EventHandler(this.DataReq_bt_Click);
+            // 
+            // LDCM_bt
+            // 
+            this.LDCM_bt.Location = new System.Drawing.Point(7, 323);
+            this.LDCM_bt.Name = "LDCM_bt";
+            this.LDCM_bt.Size = new System.Drawing.Size(75, 23);
+            this.LDCM_bt.TabIndex = 13;
+            this.LDCM_bt.Text = "LDCM";
+            this.LDCM_bt.UseVisualStyleBackColor = true;
+            this.LDCM_bt.Click += new System.EventHandler(this.LDCM_bt_Click);
             // 
             // Port1_gv
             // 
             this.Port1_gv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.Port1_gv.Location = new System.Drawing.Point(6, 19);
+            this.Port1_gv.Enabled = false;
+            this.Port1_gv.Location = new System.Drawing.Point(6, 24);
             this.Port1_gv.Name = "Port1_gv";
+            this.Port1_gv.RowHeadersVisible = false;
             this.Port1_gv.RowTemplate.Height = 24;
-            this.Port1_gv.Size = new System.Drawing.Size(190, 266);
+            this.Port1_gv.Size = new System.Drawing.Size(279, 292);
             this.Port1_gv.TabIndex = 12;
             // 
             // groupBox4
             // 
-            this.groupBox4.Controls.Add(this.Stage1_gv);
-            this.groupBox4.Location = new System.Drawing.Point(659, 13);
+            this.groupBox4.Controls.Add(this.Port2_gv);
+            this.groupBox4.Location = new System.Drawing.Point(6, 374);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(158, 296);
+            this.groupBox4.Size = new System.Drawing.Size(291, 353);
             this.groupBox4.TabIndex = 12;
             this.groupBox4.TabStop = false;
-            this.groupBox4.Text = "Stage 1";
+            this.groupBox4.Text = "Port2";
             // 
-            // Stage1_gv
+            // Port2_gv
             // 
-            this.Stage1_gv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.Stage1_gv.Location = new System.Drawing.Point(6, 19);
-            this.Stage1_gv.Name = "Stage1_gv";
-            this.Stage1_gv.RowTemplate.Height = 24;
-            this.Stage1_gv.Size = new System.Drawing.Size(146, 266);
-            this.Stage1_gv.TabIndex = 0;
+            this.Port2_gv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.Port2_gv.Enabled = false;
+            this.Port2_gv.Location = new System.Drawing.Point(6, 19);
+            this.Port2_gv.Name = "Port2_gv";
+            this.Port2_gv.RowHeadersVisible = false;
+            this.Port2_gv.RowTemplate.Height = 24;
+            this.Port2_gv.Size = new System.Drawing.Size(279, 328);
+            this.Port2_gv.TabIndex = 0;
             // 
-            // Stop_bt
+            // tabControl1
             // 
-            this.Stop_bt.Location = new System.Drawing.Point(91, 262);
-            this.Stop_bt.Name = "Stop_bt";
-            this.Stop_bt.Size = new System.Drawing.Size(75, 23);
-            this.Stop_bt.TabIndex = 18;
-            this.Stop_bt.Text = "Stop Script";
-            this.Stop_bt.UseVisualStyleBackColor = true;
-            this.Stop_bt.Click += new System.EventHandler(this.Stop_bt_Click);
+            this.tabControl1.Controls.Add(this.tabPage2);
+            this.tabControl1.Controls.Add(this.tabPage1);
+            this.tabControl1.Location = new System.Drawing.Point(12, 13);
+            this.tabControl1.Name = "tabControl1";
+            this.tabControl1.SelectedIndex = 0;
+            this.tabControl1.Size = new System.Drawing.Size(807, 759);
+            this.tabControl1.TabIndex = 13;
+            // 
+            // tabPage2
+            // 
+            this.tabPage2.Controls.Add(this.groupBox5);
+            this.tabPage2.Controls.Add(this.groupBox3);
+            this.tabPage2.Controls.Add(this.groupBox4);
+            this.tabPage2.Location = new System.Drawing.Point(4, 22);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(799, 733);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "自動模式";
+            this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // groupBox5
+            // 
+            this.groupBox5.Controls.Add(this.label6);
+            this.groupBox5.Controls.Add(this.ALComplete_bt);
+            this.groupBox5.Controls.Add(this.Aligner_gv);
+            this.groupBox5.Location = new System.Drawing.Point(502, 6);
+            this.groupBox5.Name = "groupBox5";
+            this.groupBox5.Size = new System.Drawing.Size(291, 353);
+            this.groupBox5.TabIndex = 13;
+            this.groupBox5.TabStop = false;
+            this.groupBox5.Text = "Aligner";
+            // 
+            // ALComplete_bt
+            // 
+            this.ALComplete_bt.Location = new System.Drawing.Point(7, 322);
+            this.ALComplete_bt.Name = "ALComplete_bt";
+            this.ALComplete_bt.Size = new System.Drawing.Size(75, 23);
+            this.ALComplete_bt.TabIndex = 1;
+            this.ALComplete_bt.Text = "Complete";
+            this.ALComplete_bt.UseVisualStyleBackColor = true;
+            this.ALComplete_bt.Click += new System.EventHandler(this.ALComplete_bt_Click);
+            // 
+            // Aligner_gv
+            // 
+            this.Aligner_gv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.Aligner_gv.Enabled = false;
+            this.Aligner_gv.Location = new System.Drawing.Point(7, 22);
+            this.Aligner_gv.Name = "Aligner_gv";
+            this.Aligner_gv.RowHeadersVisible = false;
+            this.Aligner_gv.RowTemplate.Height = 24;
+            this.Aligner_gv.Size = new System.Drawing.Size(278, 294);
+            this.Aligner_gv.TabIndex = 0;
+            // 
+            // tabPage1
+            // 
+            this.tabPage1.Controls.Add(this.groupBox2);
+            this.tabPage1.Controls.Add(this.Script_gv);
+            this.tabPage1.Location = new System.Drawing.Point(4, 22);
+            this.tabPage1.Name = "tabPage1";
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage1.Size = new System.Drawing.Size(799, 733);
+            this.tabPage1.TabIndex = 0;
+            this.tabPage1.Text = "跑Script";
+            this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(114, 328);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(33, 12);
+            this.label6.TabIndex = 2;
+            this.label6.Text = "label6";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1591, 785);
-            this.Controls.Add(this.groupBox4);
-            this.Controls.Add(this.groupBox3);
-            this.Controls.Add(this.groupBox2);
-            this.Controls.Add(this.Script_gv);
+            this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.log_rt);
             this.Controls.Add(this.groupBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
@@ -387,7 +514,13 @@
             this.groupBox3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.Port1_gv)).EndInit();
             this.groupBox4.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.Stage1_gv)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Port2_gv)).EndInit();
+            this.tabControl1.ResumeLayout(false);
+            this.tabPage2.ResumeLayout(false);
+            this.groupBox5.ResumeLayout(false);
+            this.groupBox5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Aligner_gv)).EndInit();
+            this.tabPage1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -420,8 +553,18 @@
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.DataGridView Port1_gv;
         private System.Windows.Forms.GroupBox groupBox4;
-        private System.Windows.Forms.DataGridView Stage1_gv;
+        private System.Windows.Forms.DataGridView Port2_gv;
         private System.Windows.Forms.Button Stop_bt;
+        private System.Windows.Forms.TabControl tabControl1;
+        private System.Windows.Forms.TabPage tabPage2;
+        private System.Windows.Forms.TabPage tabPage1;
+        private System.Windows.Forms.GroupBox groupBox5;
+        private System.Windows.Forms.DataGridView Aligner_gv;
+        private System.Windows.Forms.Button ProcessStart_bt;
+        private System.Windows.Forms.Button DataReq_bt;
+        private System.Windows.Forms.Button LDCM_bt;
+        private System.Windows.Forms.Button ALComplete_bt;
+        private System.Windows.Forms.Label label6;
     }
 }
 

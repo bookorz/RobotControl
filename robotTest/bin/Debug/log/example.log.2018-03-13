@@ -1,695 +1,0 @@
-2018-03-13 11:32:29,298 [1] INFO  robotTest.Form1 - initial complete.
-2018-03-13 11:33:08,856 [1] INFO  robotTest.Form1 - initial complete.
-2018-03-13 11:34:34,922 [1] INFO  robotTest.Form1 - initial complete.
-2018-03-13 11:34:39,933 [3] INFO  robotTest.SocketClient - Connected! 127.0.0.1:23
-2018-03-13 11:34:39,933 [1] INFO  robotTest.SocketClient - Connected! 127.0.0.1:23
-2018-03-13 11:38:46,503 [1] INFO  robotTest.Form1 - initial complete.
-2018-03-13 11:38:51,161 [3] INFO  robotTest.SocketClient - Connected! 127.0.0.1:23
-2018-03-13 11:38:51,241 [5] ERROR robotTest.SocketClient - (From Robot_Cmd_001 127.0.0.1:23)遠端主機已強制關閉一個現存的連線。
-   於 System.Net.Sockets.Socket.Receive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
-   於 System.Net.Sockets.Socket.Receive(Byte[] buffer)
-   於 robotTest.SocketClient.SckSReceiveProc() 於 C:\Users\ethan_huang\source\repos\robotTest\robotTest\Communication\SocketClient.cs: 行 102
-2018-03-13 11:38:52,176 [4] ERROR robotTest.SocketClient - (ConnectServer Robot_Read_001 127.0.0.1:8900)無法連線，因為目標電腦拒絕連線。 127.0.0.1:8900
-   於 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
-   於 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
-   於 robotTest.SocketClient.ConnectServer() 於 C:\Users\ethan_huang\source\repos\robotTest\robotTest\Communication\SocketClient.cs: 行 53
-2018-03-13 11:41:34,119 [1] INFO  robotTest.Form1 - initial complete.
-2018-03-13 11:41:40,259 [4] ERROR robotTest.SocketClient - (ConnectServer Robot_Read_001 127.0.0.1:8900)無法連線，因為目標電腦拒絕連線。 127.0.0.1:8900
-   於 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
-   於 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
-   於 robotTest.SocketClient.ConnectServer() 於 C:\Users\ethan_huang\source\repos\robotTest\robotTest\Communication\SocketClient.cs: 行 53
-2018-03-13 11:41:40,259 [3] ERROR robotTest.SocketClient - (ConnectServer Robot_Cmd_001 127.0.0.1:23)無法連線，因為目標電腦拒絕連線。 127.0.0.1:23
-   於 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
-   於 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
-   於 robotTest.SocketClient.ConnectServer() 於 C:\Users\ethan_huang\source\repos\robotTest\robotTest\Communication\SocketClient.cs: 行 53
-2018-03-13 11:42:24,552 [5] INFO  robotTest.SocketClient - Connected! 127.0.0.1:23
-2018-03-13 11:42:25,575 [6] ERROR robotTest.SocketClient - (ConnectServer Robot_Read_001 127.0.0.1:8900)無法連線，因為目標電腦拒絕連線。 127.0.0.1:8900
-   於 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
-   於 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
-   於 robotTest.SocketClient.ConnectServer() 於 C:\Users\ethan_huang\source\repos\robotTest\robotTest\Communication\SocketClient.cs: 行 53
-2018-03-13 11:42:36,540 [7] ERROR robotTest.SocketClient - (From Robot_Cmd_001 127.0.0.1:23)連線已被您主機上的軟體中止。
-   於 System.Net.Sockets.Socket.Receive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
-   於 System.Net.Sockets.Socket.Receive(Byte[] buffer)
-   於 robotTest.SocketClient.SckSReceiveProc() 於 C:\Users\ethan_huang\source\repos\robotTest\robotTest\Communication\SocketClient.cs: 行 103
-2018-03-13 11:43:49,253 [1] INFO  robotTest.Form1 - initial complete.
-2018-03-13 11:44:03,232 [1] INFO  robotTest.Form1 - initial complete.
-2018-03-13 11:44:46,524 [1] INFO  robotTest.Form1 - initial complete.
-2018-03-13 11:44:50,211 [3] INFO  robotTest.SocketClient - Connected! 127.0.0.1:23
-2018-03-13 11:44:51,254 [4] ERROR robotTest.SocketClient - (ConnectServer Robot_Read_001 127.0.0.1:8900)無法連線，因為目標電腦拒絕連線。 127.0.0.1:8900
-   於 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
-   於 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
-   於 robotTest.SocketClient.ConnectServer() 於 C:\Users\ethan_huang\source\repos\robotTest\robotTest\Communication\SocketClient.cs: 行 53
-2018-03-13 11:45:07,822 [5] ERROR robotTest.SocketClient - (From Robot_Cmd_001 127.0.0.1:23)連線已被您主機上的軟體中止。
-   於 System.Net.Sockets.Socket.Receive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
-   於 System.Net.Sockets.Socket.Receive(Byte[] buffer)
-   於 robotTest.SocketClient.SckSReceiveProc() 於 C:\Users\ethan_huang\source\repos\robotTest\robotTest\Communication\SocketClient.cs: 行 103
-2018-03-13 11:54:08,586 [1] INFO  robotTest.Form1 - initial complete.
-2018-03-13 11:54:46,471 [1] INFO  robotTest.Form1 - initial complete.
-2018-03-13 11:55:01,548 [1] INFO  robotTest.Form1 - initial complete.
-2018-03-13 11:55:25,672 [1] INFO  robotTest.Form1 - initial complete.
-2018-03-13 11:58:50,786 [1] INFO  robotTest.Form1 - initial complete.
-2018-03-13 13:09:25,627 [1] INFO  robotTest.Form1 - initial complete.
-2018-03-13 13:39:40,582 [1] INFO  robotTest.Form1 - initial complete.
-2018-03-13 13:40:33,845 [3] INFO  robotTest.SocketClient - Connected! 127.0.0.1:23
-2018-03-13 13:40:34,946 [4] ERROR robotTest.SocketClient - (ConnectServer Robot_Read_001 127.0.0.1:8900)無法連線，因為目標電腦拒絕連線。 127.0.0.1:8900
-   於 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
-   於 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
-   於 robotTest.SocketClient.ConnectServer() 於 C:\Users\ethan_huang\source\repos\robotTest\robotTest\Communication\SocketClient.cs: 行 53
-2018-03-13 13:41:22,828 [5] ERROR robotTest.SocketClient - (From Robot_Cmd_001 127.0.0.1:23)連線已被您主機上的軟體中止。
-   於 System.Net.Sockets.Socket.Receive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
-   於 System.Net.Sockets.Socket.Receive(Byte[] buffer)
-   於 robotTest.SocketClient.SckSReceiveProc() 於 C:\Users\ethan_huang\source\repos\robotTest\robotTest\Communication\SocketClient.cs: 行 103
-2018-03-13 13:41:54,773 [1] INFO  robotTest.Form1 - initial complete.
-2018-03-13 13:41:58,734 [3] INFO  robotTest.SocketClient - Connected! 127.0.0.1:23
-2018-03-13 13:41:59,779 [4] ERROR robotTest.SocketClient - (ConnectServer Robot_Read_001 127.0.0.1:8900)無法連線，因為目標電腦拒絕連線。 127.0.0.1:8900
-   於 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
-   於 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
-   於 robotTest.SocketClient.ConnectServer() 於 C:\Users\ethan_huang\source\repos\robotTest\robotTest\Communication\SocketClient.cs: 行 53
-2018-03-13 13:42:05,905 [5] ERROR robotTest.SocketClient - (From Robot_Cmd_001 127.0.0.1:23)連線已被您主機上的軟體中止。
-   於 System.Net.Sockets.Socket.Receive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
-   於 System.Net.Sockets.Socket.Receive(Byte[] buffer)
-   於 robotTest.SocketClient.SckSReceiveProc() 於 C:\Users\ethan_huang\source\repos\robotTest\robotTest\Communication\SocketClient.cs: 行 103
-2018-03-13 13:46:57,496 [1] INFO  robotTest.Form1 - initial complete.
-2018-03-13 13:47:03,719 [3] INFO  robotTest.SocketClient - Connected! 127.0.0.1:23
-2018-03-13 13:47:04,743 [4] ERROR robotTest.SocketClient - (ConnectServer Robot_Read_001 127.0.0.1:8900)無法連線，因為目標電腦拒絕連線。 127.0.0.1:8900
-   於 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
-   於 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
-   於 robotTest.SocketClient.ConnectServer() 於 C:\Users\ethan_huang\source\repos\robotTest\robotTest\Communication\SocketClient.cs: 行 53
-2018-03-13 13:47:26,257 [5] ERROR robotTest.SocketClient - (From Robot_Cmd_001 127.0.0.1:23)連線已被您主機上的軟體中止。
-   於 System.Net.Sockets.Socket.Receive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
-   於 System.Net.Sockets.Socket.Receive(Byte[] buffer)
-   於 robotTest.SocketClient.SckSReceiveProc() 於 C:\Users\ethan_huang\source\repos\robotTest\robotTest\Communication\SocketClient.cs: 行 103
-2018-03-13 13:56:31,430 [1] INFO  robotTest.Form1 - initial complete.
-2018-03-13 13:57:02,162 [1] INFO  robotTest.Form1 - initial complete.
-2018-03-13 13:58:36,998 [1] INFO  robotTest.Form1 - initial complete.
-2018-03-13 13:59:50,839 [1] INFO  robotTest.Form1 - initial complete.
-2018-03-13 14:00:36,098 [1] INFO  robotTest.Form1 - initial complete.
-2018-03-13 14:01:17,006 [1] INFO  robotTest.Form1 - initial complete.
-2018-03-13 14:03:51,299 [1] INFO  robotTest.Form1 - initial complete.
-2018-03-13 14:04:31,214 [1] INFO  robotTest.Form1 - initial complete.
-2018-03-13 14:04:48,745 [1] INFO  robotTest.Form1 - initial complete.
-2018-03-13 14:05:19,814 [1] ERROR robotTest.FileHandle.ConfigReader`1[[robotTest.Base.Common, robotTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] - ReadFile:找不到檔案 'C:\Users\ethan_huang\source\repos\robotTest\robotTest\bin\Debug\config\Command\.json'。
-   於 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
-   於 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
-   於 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
-   於 System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
-   於 System.IO.File.InternalReadAllText(String path, Encoding encoding, Boolean checkHost)
-   於 System.IO.File.ReadAllText(String path, Encoding encoding)
-   於 robotTest.FileHandle.ConfigReader`1.ReadFile(String FilePath) 於 C:\Users\ethan_huang\source\repos\robotTest\robotTest\FileHandle\ConfigReader.cs: 行 22
-2018-03-13 14:06:49,241 [1] INFO  robotTest.Form1 - initial complete.
-2018-03-13 14:13:40,397 [1] INFO  robotTest.Form1 - initial complete.
-2018-03-13 14:14:27,094 [1] INFO  robotTest.Form1 - initial complete.
-2018-03-13 14:15:44,499 [1] INFO  robotTest.Form1 - initial complete.
-2018-03-13 14:27:11,461 [1] INFO  robotTest.Form1 - initial complete.
-2018-03-13 14:29:06,796 [1] INFO  robotTest.Form1 - initial complete.
-2018-03-13 14:29:12,055 [3] INFO  robotTest.SocketClient - Connected! 127.0.0.1:23
-2018-03-13 14:29:13,160 [4] ERROR robotTest.SocketClient - (ConnectServer Robot_Read_001 127.0.0.1:8900)無法連線，因為目標電腦拒絕連線。 127.0.0.1:8900
-   於 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
-   於 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
-   於 robotTest.SocketClient.ConnectServer() 於 C:\Users\ethan_huang\source\repos\robotTest\robotTest\Communication\SocketClient.cs: 行 53
-2018-03-13 14:29:44,690 [1] INFO  robotTest.SocketClient - [Snd-->]$1CMD:HOME_(To Robot_Cmd_001 127.0.0.1:23)
-2018-03-13 14:29:54,703 [7] ERROR robotTest.Command - Time out! Send to:127.0.0.1:23 Command:robotTest.Command
-2018-03-13 14:30:04,704 [7] ERROR robotTest.Command - Time out! Send to:127.0.0.1:23 Command:robotTest.Command
-2018-03-13 14:30:14,710 [7] ERROR robotTest.Command - Time out! Send to:127.0.0.1:23 Command:robotTest.Command
-2018-03-13 14:30:24,727 [7] ERROR robotTest.Command - Time out! Send to:127.0.0.1:23 Command:robotTest.Command
-2018-03-13 14:30:34,741 [7] ERROR robotTest.Command - Time out! Send to:127.0.0.1:23 Command:robotTest.Command
-2018-03-13 14:30:44,755 [7] ERROR robotTest.Command - Time out! Send to:127.0.0.1:23 Command:robotTest.Command
-2018-03-13 14:30:54,759 [7] ERROR robotTest.Command - Time out! Send to:127.0.0.1:23 Command:robotTest.Command
-2018-03-13 14:31:36,531 [1] INFO  robotTest.Form1 - initial complete.
-2018-03-13 14:32:25,727 [1] ERROR robotTest.Command - SendCommand:並未將物件參考設定為物件的執行個體。
-   於 robotTest.RobotController.robotTest.Controller.IController.SendCommand(Command command) 於 C:\Users\ethan_huang\source\repos\robotTest\robotTest\Controller\RobotController.cs: 行 101
-2018-03-13 14:32:28,348 [3] INFO  robotTest.SocketClient - Connected! 127.0.0.1:23
-2018-03-13 14:32:29,390 [4] ERROR robotTest.SocketClient - (ConnectServer Robot_Read_001 127.0.0.1:8900)無法連線，因為目標電腦拒絕連線。 127.0.0.1:8900
-   於 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
-   於 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
-   於 robotTest.SocketClient.ConnectServer() 於 C:\Users\ethan_huang\source\repos\robotTest\robotTest\Communication\SocketClient.cs: 行 53
-2018-03-13 14:32:30,766 [1] INFO  robotTest.SocketClient - [Snd-->]$1CMD:GET__(To Robot_Cmd_001 127.0.0.1:23)
-2018-03-13 14:32:30,782 [5] INFO  robotTest.SocketClient - [Rev<--]$1ACK:GET__
-(From Robot_Cmd_001 127.0.0.1:23)
-2018-03-13 14:32:30,782 [5] INFO  robotTest.SocketClient - [Rev<--]$1FIN:GET__:00000000
-(From Robot_Cmd_001 127.0.0.1:23)
-2018-03-13 14:33:48,438 [1] INFO  robotTest.Form1 - initial complete.
-2018-03-13 14:33:52,616 [3] INFO  robotTest.SocketClient - Connected! 127.0.0.1:23
-2018-03-13 14:33:53,691 [4] ERROR robotTest.SocketClient - (ConnectServer Robot_Read_001 127.0.0.1:8900)無法連線，因為目標電腦拒絕連線。 127.0.0.1:8900
-   於 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
-   於 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
-   於 robotTest.SocketClient.ConnectServer() 於 C:\Users\ethan_huang\source\repos\robotTest\robotTest\Communication\SocketClient.cs: 行 53
-2018-03-13 14:34:09,748 [1] INFO  robotTest.SocketClient - [Snd-->]$1CMD:GET__(To Robot_Cmd_001 127.0.0.1:23)
-2018-03-13 14:34:19,756 [7] ERROR robotTest.Command - Time out! Send to:127.0.0.1:23 Command:robotTest.Command
-2018-03-13 14:34:51,004 [1] INFO  robotTest.Form1 - initial complete.
-2018-03-13 14:34:54,586 [3] INFO  robotTest.SocketClient - Connected! 127.0.0.1:23
-2018-03-13 14:34:55,629 [4] ERROR robotTest.SocketClient - (ConnectServer Robot_Read_001 127.0.0.1:8900)無法連線，因為目標電腦拒絕連線。 127.0.0.1:8900
-   於 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
-   於 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
-   於 robotTest.SocketClient.ConnectServer() 於 C:\Users\ethan_huang\source\repos\robotTest\robotTest\Communication\SocketClient.cs: 行 53
-2018-03-13 14:35:06,644 [5] ERROR robotTest.SocketClient - (From Robot_Cmd_001 127.0.0.1:23)遠端主機已強制關閉一個現存的連線。
-   於 System.Net.Sockets.Socket.Receive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
-   於 System.Net.Sockets.Socket.Receive(Byte[] buffer)
-   於 robotTest.SocketClient.SckSReceiveProc() 於 C:\Users\ethan_huang\source\repos\robotTest\robotTest\Communication\SocketClient.cs: 行 103
-2018-03-13 14:35:13,530 [6] INFO  robotTest.SocketClient - Connected! 127.0.0.1:23
-2018-03-13 14:35:14,566 [7] ERROR robotTest.SocketClient - (ConnectServer Robot_Read_001 127.0.0.1:8900)無法連線，因為目標電腦拒絕連線。 127.0.0.1:8900
-   於 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
-   於 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
-   於 robotTest.SocketClient.ConnectServer() 於 C:\Users\ethan_huang\source\repos\robotTest\robotTest\Communication\SocketClient.cs: 行 53
-2018-03-13 14:35:23,631 [1] INFO  robotTest.SocketClient - [Snd-->]$1CMD:GET__(To Robot_Cmd_001 127.0.0.1:23)
-2018-03-13 14:35:33,650 [9] ERROR robotTest.Command - Time out! Send to:127.0.0.1:23 Command:robotTest.Command
-2018-03-13 14:37:50,039 [1] INFO  robotTest.Form1 - initial complete.
-2018-03-13 14:37:57,163 [3] INFO  robotTest.SocketClient - Connected! 127.0.0.1:23
-2018-03-13 14:37:58,227 [4] ERROR robotTest.SocketClient - (ConnectServer Robot_Read_001 127.0.0.1:8900)無法連線，因為目標電腦拒絕連線。 127.0.0.1:8900
-   於 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
-   於 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
-   於 robotTest.SocketClient.ConnectServer() 於 C:\Users\ethan_huang\source\repos\robotTest\robotTest\Communication\SocketClient.cs: 行 53
-2018-03-13 14:38:09,409 [1] INFO  robotTest.SocketClient - [Snd-->]$1CMD:GET__(To Robot_Cmd_001 127.0.0.1:23)
-2018-03-13 14:38:14,819 [5] ERROR robotTest.SocketClient - (From Robot_Cmd_001 127.0.0.1:23)遠端主機已強制關閉一個現存的連線。
-   於 System.Net.Sockets.Socket.Receive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
-   於 System.Net.Sockets.Socket.Receive(Byte[] buffer)
-   於 robotTest.SocketClient.SckSReceiveProc() 於 C:\Users\ethan_huang\source\repos\robotTest\robotTest\Communication\SocketClient.cs: 行 103
-2018-03-13 14:38:19,439 [7] ERROR robotTest.Command - Time out! Send to:127.0.0.1:23 Command:robotTest.Command
-2018-03-13 14:38:38,629 [9] INFO  robotTest.SocketClient - Connected! 127.0.0.1:23
-2018-03-13 14:38:39,648 [10] ERROR robotTest.SocketClient - (ConnectServer Robot_Read_001 127.0.0.1:8900)無法連線，因為目標電腦拒絕連線。 127.0.0.1:8900
-   於 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
-   於 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
-   於 robotTest.SocketClient.ConnectServer() 於 C:\Users\ethan_huang\source\repos\robotTest\robotTest\Communication\SocketClient.cs: 行 53
-2018-03-13 14:38:43,065 [1] INFO  robotTest.SocketClient - [Snd-->]$1CMD:GET__(To Robot_Cmd_001 127.0.0.1:23)
-2018-03-13 14:38:43,065 [5] INFO  robotTest.SocketClient - [Rev<--]$1ACK:GET__(From Robot_Cmd_001 127.0.0.1:23)
-2018-03-13 14:38:49,766 [1] INFO  robotTest.SocketClient - [Snd-->]$1CMD:GET__(To Robot_Cmd_001 127.0.0.1:23)
-2018-03-13 14:38:49,766 [5] INFO  robotTest.SocketClient - [Rev<--]$1ACK:GET__(From Robot_Cmd_001 127.0.0.1:23)
-2018-03-13 14:38:52,161 [1] INFO  robotTest.SocketClient - [Snd-->]$1CMD:GET__(To Robot_Cmd_001 127.0.0.1:23)
-2018-03-13 14:38:52,177 [5] INFO  robotTest.SocketClient - [Rev<--]$1ACK:GET__(From Robot_Cmd_001 127.0.0.1:23)
-2018-03-13 14:39:13,845 [1] INFO  robotTest.SocketClient - [Snd-->]$1CMD:GET__(To Robot_Cmd_001 127.0.0.1:23)
-2018-03-13 14:39:13,845 [5] INFO  robotTest.SocketClient - [Rev<--]$1ACK:GET__(From Robot_Cmd_001 127.0.0.1:23)
-2018-03-13 14:39:49,390 [1] INFO  robotTest.Form1 - initial complete.
-2018-03-13 14:39:51,662 [3] INFO  robotTest.SocketClient - Connected! 127.0.0.1:23
-2018-03-13 14:39:52,720 [4] ERROR robotTest.SocketClient - (ConnectServer Robot_Read_001 127.0.0.1:8900)無法連線，因為目標電腦拒絕連線。 127.0.0.1:8900
-   於 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
-   於 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
-   於 robotTest.SocketClient.ConnectServer() 於 C:\Users\ethan_huang\source\repos\robotTest\robotTest\Communication\SocketClient.cs: 行 53
-2018-03-13 14:40:02,549 [1] INFO  robotTest.SocketClient - [Snd-->]$1CMD:GET__(To Robot_Cmd_001 127.0.0.1:23)
-2018-03-13 14:40:02,549 [5] INFO  robotTest.SocketClient - [Rev<--]$1ACK:GET__(From Robot_Cmd_001 127.0.0.1:23)
-2018-03-13 14:40:11,525 [5] ERROR robotTest.SocketClient - (From Robot_Cmd_001 127.0.0.1:23)連線已被您主機上的軟體中止。
-   於 System.Net.Sockets.Socket.Receive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
-   於 System.Net.Sockets.Socket.Receive(Byte[] buffer)
-   於 robotTest.SocketClient.SckSReceiveProc() 於 C:\Users\ethan_huang\source\repos\robotTest\robotTest\Communication\SocketClient.cs: 行 103
-2018-03-13 14:40:30,344 [1] INFO  robotTest.Form1 - initial complete.
-2018-03-13 14:40:34,335 [3] INFO  robotTest.SocketClient - Connected! 127.0.0.1:23
-2018-03-13 14:40:35,394 [4] ERROR robotTest.SocketClient - (ConnectServer Robot_Read_001 127.0.0.1:8900)無法連線，因為目標電腦拒絕連線。 127.0.0.1:8900
-   於 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
-   於 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
-   於 robotTest.SocketClient.ConnectServer() 於 C:\Users\ethan_huang\source\repos\robotTest\robotTest\Communication\SocketClient.cs: 行 53
-2018-03-13 14:40:41,830 [1] INFO  robotTest.SocketClient - [Snd-->]$1CMD:GET__(To Robot_Cmd_001 127.0.0.1:23)
-2018-03-13 14:40:41,830 [5] INFO  robotTest.SocketClient - [Rev<--]$1ACK:GET__(From Robot_Cmd_001 127.0.0.1:23)
-2018-03-13 14:40:51,881 [7] ERROR robotTest.Command - Action time out! Send to:127.0.0.1:23 Command:robotTest.Command
-2018-03-13 14:41:01,097 [5] ERROR robotTest.SocketClient - (From Robot_Cmd_001 127.0.0.1:23)連線已被您主機上的軟體中止。
-   於 System.Net.Sockets.Socket.Receive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
-   於 System.Net.Sockets.Socket.Receive(Byte[] buffer)
-   於 robotTest.SocketClient.SckSReceiveProc() 於 C:\Users\ethan_huang\source\repos\robotTest\robotTest\Communication\SocketClient.cs: 行 103
-2018-03-13 14:43:29,213 [1] INFO  robotTest.Form1 - initial complete.
-2018-03-13 14:43:42,232 [3] INFO  robotTest.SocketClient - Connected! 127.0.0.1:23
-2018-03-13 14:43:43,293 [4] ERROR robotTest.SocketClient - (ConnectServer Robot_Read_001 127.0.0.1:8900)無法連線，因為目標電腦拒絕連線。 127.0.0.1:8900
-   於 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
-   於 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
-   於 robotTest.SocketClient.ConnectServer() 於 C:\Users\ethan_huang\source\repos\robotTest\robotTest\Communication\SocketClient.cs: 行 53
-2018-03-13 14:43:44,693 [1] INFO  robotTest.SocketClient - [Snd-->]$1CMD:GET__(To Robot_Cmd_001 127.0.0.1:23)
-2018-03-13 14:43:44,708 [5] INFO  robotTest.SocketClient - [Rev<--]$1ACK:GET__(From Robot_Cmd_001 127.0.0.1:23)
-2018-03-13 14:43:54,756 [7] ERROR robotTest.Command - Action time out! Send to:127.0.0.1:23 Command:robotTest.Command
-2018-03-13 14:44:00,107 [1] INFO  robotTest.SocketClient - [Snd-->]$1CMD:GET__(To Robot_Cmd_001 127.0.0.1:23)
-2018-03-13 14:44:00,107 [5] INFO  robotTest.SocketClient - [Rev<--]$1ACK:GET__(From Robot_Cmd_001 127.0.0.1:23)
-2018-03-13 14:44:01,824 [5] ERROR robotTest.SocketClient - (From Robot_Cmd_001 127.0.0.1:23)遠端主機已強制關閉一個現存的連線。
-   於 System.Net.Sockets.Socket.Receive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
-   於 System.Net.Sockets.Socket.Receive(Byte[] buffer)
-   於 robotTest.SocketClient.SckSReceiveProc() 於 C:\Users\ethan_huang\source\repos\robotTest\robotTest\Communication\SocketClient.cs: 行 103
-2018-03-13 14:44:10,152 [7] ERROR robotTest.Command - Action time out! Send to:127.0.0.1:23 Command:robotTest.Command
-2018-03-13 14:55:44,966 [1] INFO  robotTest.Form1 - initial complete.
-2018-03-13 14:57:52,856 [1] INFO  robotTest.Form1 - initial complete.
-2018-03-13 14:58:35,993 [1] INFO  robotTest.Form1 - initial complete.
-2018-03-13 15:20:59,763 [1] INFO  robotTest.Form1 - initial complete.
-2018-03-13 15:28:44,829 [1] INFO  robotTest.Form1 - initial complete.
-2018-03-13 15:30:06,597 [1] INFO  robotTest.Form1 - initial complete.
-2018-03-13 15:35:07,246 [1] INFO  robotTest.Form1 - initial complete.
-2018-03-13 15:36:29,372 [1] INFO  robotTest.Form1 - initial complete.
-2018-03-13 15:37:14,289 [1] INFO  robotTest.Form1 - initial complete.
-2018-03-13 16:01:11,673 [1] INFO  robotTest.Form1 - initial complete.
-2018-03-13 16:07:29,524 [1] INFO  robotTest.Form1 - initial complete.
-2018-03-13 16:07:45,374 [1] INFO  robotTest.Form1 - initial complete.
-2018-03-13 16:10:28,577 [1] INFO  robotTest.Form1 - initial complete.
-2018-03-13 16:12:02,096 [1] INFO  robotTest.Form1 - initial complete.
-2018-03-13 16:13:06,033 [1] ERROR robotTest.FileHandle.ConfigReader`1[[robotTest.Command, robotTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] - WriteFile:拒絕存取路徑 'C:\Users\ethan_huang\source\repos\robotTest\robotTest\bin\Debug\config\Script'。
-   於 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
-   於 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
-   於 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
-   於 System.IO.StreamWriter.CreateFile(String path, Boolean append, Boolean checkHost)
-   於 System.IO.StreamWriter..ctor(String path, Boolean append, Encoding encoding, Int32 bufferSize, Boolean checkHost)
-   於 System.IO.File.InternalWriteAllText(String path, String contents, Encoding encoding, Boolean checkHost)
-   於 System.IO.File.WriteAllText(String path, String contents)
-   於 robotTest.FileHandle.ConfigReader`1.WriteFile(String FilePath, List`1 Obj) 於 C:\Users\ethan_huang\source\repos\robotTest\robotTest\FileHandle\ConfigReader.cs: 行 37
-2018-03-13 16:20:33,118 [1] INFO  robotTest.Form1 - initial complete.
-2018-03-13 16:42:27,044 [1] INFO  robotTest.Form1 - initial complete.
-2018-03-13 16:50:23,817 [1] INFO  robotTest.Form1 - initial complete.
-2018-03-13 16:51:49,623 [1] INFO  robotTest.Form1 - initial complete.
-2018-03-13 17:00:58,875 [1] INFO  robotTest.Form1 - initial complete.
-2018-03-13 17:01:47,849 [1] INFO  robotTest.Form1 - initial complete.
-2018-03-13 17:02:43,695 [1] INFO  robotTest.Form1 - initial complete.
-2018-03-13 17:03:34,730 [1] INFO  robotTest.Form1 - initial complete.
-2018-03-13 17:07:52,270 [1] INFO  robotTest.Form1 - initial complete.
-2018-03-13 17:08:03,774 [1] INFO  robotTest.Form1 - initial complete.
-2018-03-13 17:08:21,174 [1] ERROR robotTest.Form1 - Up_bt_Click:索引必須在清單的界限之內。
-參數名稱: index
-   於 System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
-   於 System.Collections.Generic.List`1.Insert(Int32 index, T item)
-   於 robotTest.Form1.Up_bt_Click(Object sender, EventArgs e) 於 C:\Users\ethan_huang\source\repos\robotTest\robotTest\Form1.cs: 行 390
-2018-03-13 17:11:00,658 [1] INFO  robotTest.Form1 - initial complete.
-2018-03-13 17:12:45,305 [1] INFO  robotTest.Form1 - initial complete.
-2018-03-13 17:13:03,036 [1] ERROR robotTest.Form1 - Up_bt_Click:索引超出範圍。必須為非負數且小於集合的大小。
-參數名稱: index
-   於 System.Collections.ArrayList.get_Item(Int32 index)
-   於 System.Windows.Forms.DataGridViewSelectedCellCollection.get_Item(Int32 index)
-   於 robotTest.Form1.Up_bt_Click(Object sender, EventArgs e) 於 C:\Users\ethan_huang\source\repos\robotTest\robotTest\Form1.cs: 行 387
-2018-03-13 17:13:03,442 [1] ERROR robotTest.Form1 - Down_bt_Click:索引超出範圍。必須為非負數且小於集合的大小。
-參數名稱: index
-   於 System.Collections.ArrayList.get_Item(Int32 index)
-   於 System.Windows.Forms.DataGridViewSelectedCellCollection.get_Item(Int32 index)
-   於 robotTest.Form1.Down_bt_Click(Object sender, EventArgs e) 於 C:\Users\ethan_huang\source\repos\robotTest\robotTest\Form1.cs: 行 414
-2018-03-13 17:21:27,601 [1] INFO  robotTest.Form1 - initial complete.
-2018-03-13 17:21:40,584 [1] ERROR robotTest.FileHandle.ConfigReader`1[[robotTest.Base.Common, robotTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] - ReadFile:找不到檔案 'C:\Users\ethan_huang\source\repos\robotTest\robotTest\bin\Debug\config\Command\DELAY.json'。
-   於 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
-   於 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
-   於 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
-   於 System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
-   於 System.IO.File.InternalReadAllText(String path, Encoding encoding, Boolean checkHost)
-   於 System.IO.File.ReadAllText(String path, Encoding encoding)
-   於 robotTest.FileHandle.ConfigReader`1.ReadFile(String FilePath) 於 C:\Users\ethan_huang\source\repos\robotTest\robotTest\FileHandle\ConfigReader.cs: 行 23
-2018-03-13 17:23:39,110 [1] INFO  robotTest.Form1 - initial complete.
-2018-03-13 17:23:48,600 [3] INFO  robotTest.SocketClient - Connected! 127.0.0.1:23
-2018-03-13 17:23:49,700 [4] ERROR robotTest.SocketClient - (ConnectServer Robot_Read_001 127.0.0.1:8900)無法連線，因為目標電腦拒絕連線。 127.0.0.1:8900
-   於 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
-   於 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
-   於 robotTest.SocketClient.ConnectServer() 於 C:\Users\ethan_huang\source\repos\robotTest\robotTest\Communication\SocketClient.cs: 行 53
-2018-03-13 17:23:57,230 [6] INFO  robotTest.Form1 - Script Finished!
-2018-03-13 17:24:56,436 [1] INFO  robotTest.Form1 - initial complete.
-2018-03-13 17:25:37,448 [1] INFO  robotTest.Form1 - initial complete.
-2018-03-13 17:25:57,350 [1] ERROR robotTest.Command - SendCommand:並未將物件參考設定為物件的執行個體。
-   於 robotTest.RobotController.robotTest.Controller.IController.SendCommand(Command command) 於 C:\Users\ethan_huang\source\repos\robotTest\robotTest\Controller\RobotController.cs: 行 108
-2018-03-13 17:26:02,180 [4] INFO  robotTest.SocketClient - Connected! 127.0.0.1:23
-2018-03-13 17:26:03,235 [5] ERROR robotTest.SocketClient - (ConnectServer Robot_Read_001 127.0.0.1:8900)無法連線，因為目標電腦拒絕連線。 127.0.0.1:8900
-   於 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
-   於 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
-   於 robotTest.SocketClient.ConnectServer() 於 C:\Users\ethan_huang\source\repos\robotTest\robotTest\Communication\SocketClient.cs: 行 53
-2018-03-13 17:26:06,306 [1] INFO  robotTest.SocketClient - [Snd-->]$1SET:SP___:10(To Robot_Cmd_001 127.0.0.1:23)
-2018-03-13 17:26:06,306 [6] INFO  robotTest.SocketClient - [Rev<--]$1ACK:GET__(From Robot_Cmd_001 127.0.0.1:23)
-2018-03-13 17:26:06,345 [6] INFO  robotTest.Form1 - Script Finished!
-2018-03-13 17:26:06,394 [6] INFO  robotTest.SocketClient - [Rev<--]$1FIN:GET__:00000000(From Robot_Cmd_001 127.0.0.1:23)
-2018-03-13 17:26:06,394 [6] INFO  robotTest.Form1 - Script Finished!
-2018-03-13 17:26:39,377 [1] INFO  robotTest.SocketClient - [Snd-->]$1SET:SP___:10(To Robot_Cmd_001 127.0.0.1:23)
-2018-03-13 17:26:39,393 [6] INFO  robotTest.SocketClient - [Rev<--]$1ACK:GET__(From Robot_Cmd_001 127.0.0.1:23)
-2018-03-13 17:27:05,247 [1] INFO  robotTest.Form1 - initial complete.
-2018-03-13 17:27:09,307 [3] INFO  robotTest.SocketClient - Connected! 127.0.0.1:23
-2018-03-13 17:27:10,384 [4] ERROR robotTest.SocketClient - (ConnectServer Robot_Read_001 127.0.0.1:8900)無法連線，因為目標電腦拒絕連線。 127.0.0.1:8900
-   於 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
-   於 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
-   於 robotTest.SocketClient.ConnectServer() 於 C:\Users\ethan_huang\source\repos\robotTest\robotTest\Communication\SocketClient.cs: 行 53
-2018-03-13 17:27:13,723 [1] INFO  robotTest.SocketClient - [Snd-->]$1SET:SP___:10(To Robot_Cmd_001 127.0.0.1:23)
-2018-03-13 17:27:13,723 [5] INFO  robotTest.SocketClient - [Rev<--]$1ACK:GET__(From Robot_Cmd_001 127.0.0.1:23)
-2018-03-13 17:27:13,879 [5] INFO  robotTest.SocketClient - [Snd-->]$1SET:MODE_:1(To Robot_Cmd_001 127.0.0.1:23)
-2018-03-13 17:27:13,926 [5] ERROR robotTest.SocketClient - (From Robot_Cmd_001 127.0.0.1:23)參數數目不符。
-   於 System.Windows.Forms.Control.MarshaledInvoke(Control caller, Delegate method, Object[] args, Boolean synchronous)
-   於 System.Windows.Forms.Control.Invoke(Delegate method, Object[] args)
-   於 robotTest.Form1.UpdateScriptProgress(Int32 Idx) 於 C:\Users\ethan_huang\source\repos\robotTest\robotTest\Form1.cs: 行 200
-   於 robotTest.Form1.robotTest.Controller.ICommandReport.On_Command_Finished(String Device_ID, ReturnMsg Msg, Command Cmd) 於 C:\Users\ethan_huang\source\repos\robotTest\robotTest\Form1.cs: 行 155
-   於 robotTest.RobotController.robotTest.ISocketMessage.OnSocketMessage(String Msg) 於 C:\Users\ethan_huang\source\repos\robotTest\robotTest\Controller\RobotController.cs: 行 171
-   於 robotTest.SocketClient.SckSReceiveProc() 於 C:\Users\ethan_huang\source\repos\robotTest\robotTest\Communication\SocketClient.cs: 行 110
-2018-03-13 17:27:23,915 [7] ERROR robotTest.Command - Time out! Send to:127.0.0.1:23 Command:robotTest.Command
-2018-03-13 17:28:44,624 [1] INFO  robotTest.Form1 - initial complete.
-2018-03-13 17:28:54,038 [3] INFO  robotTest.SocketClient - Connected! 127.0.0.1:23
-2018-03-13 17:28:55,069 [4] ERROR robotTest.SocketClient - (ConnectServer Robot_Read_001 127.0.0.1:8900)無法連線，因為目標電腦拒絕連線。 127.0.0.1:8900
-   於 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
-   於 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
-   於 robotTest.SocketClient.ConnectServer() 於 C:\Users\ethan_huang\source\repos\robotTest\robotTest\Communication\SocketClient.cs: 行 53
-2018-03-13 17:28:56,831 [1] INFO  robotTest.SocketClient - [Snd-->]$1SET:SP___:10(To Robot_Cmd_001 127.0.0.1:23)
-2018-03-13 17:28:56,831 [5] INFO  robotTest.SocketClient - [Rev<--]$1ACK:GET__(From Robot_Cmd_001 127.0.0.1:23)
-2018-03-13 17:28:56,986 [5] INFO  robotTest.SocketClient - [Snd-->]$1SET:MODE_:1(To Robot_Cmd_001 127.0.0.1:23)
-2018-03-13 17:28:56,986 [5] INFO  robotTest.SocketClient - [Rev<--]$1FIN:GET__:00000000(From Robot_Cmd_001 127.0.0.1:23)
-2018-03-13 17:28:57,115 [5] INFO  robotTest.SocketClient - [Snd-->]$1GET:SP__(To Robot_Read_001 127.0.0.1:8900)
-2018-03-13 17:28:57,153 [5] INFO  robotTest.SocketClient - [Rev<--]$1ACK:GET__$1FIN:GET__:00000000(From Robot_Cmd_001 127.0.0.1:23)
-2018-03-13 17:28:57,258 [5] INFO  robotTest.SocketClient - [Snd-->]$1CMD:HOME_(To Robot_Cmd_001 127.0.0.1:23)
-2018-03-13 17:28:57,352 [5] INFO  robotTest.SocketClient - [Snd-->]$1CMD:GET__:0023,1,1,0,0(To Robot_Cmd_001 127.0.0.1:23)
-2018-03-13 17:28:57,394 [5] INFO  robotTest.SocketClient - [Rev<--]$1ACK:GET__$1FIN:GET__:00000000(From Robot_Cmd_001 127.0.0.1:23)
-2018-03-13 17:28:57,485 [5] INFO  robotTest.SocketClient - [Snd-->]$1CMD:HOME_(To Robot_Cmd_001 127.0.0.1:23)
-2018-03-13 17:28:57,524 [5] INFO  robotTest.SocketClient - [Rev<--]$1ACK:GET__$1FIN:GET__:00000000(From Robot_Cmd_001 127.0.0.1:23)
-2018-03-13 17:28:57,626 [5] INFO  robotTest.SocketClient - [Snd-->]$1CMD:GET__:0024,2,3,0,1(To Robot_Cmd_001 127.0.0.1:23)
-2018-03-13 17:28:57,653 [5] INFO  robotTest.SocketClient - [Rev<--]$1ACK:GET__$1FIN:GET__:00000000(From Robot_Cmd_001 127.0.0.1:23)
-2018-03-13 17:28:57,805 [5] INFO  robotTest.SocketClient - [Rev<--]$1ACK:GET__$1FIN:GET__:00000000(From Robot_Cmd_001 127.0.0.1:23)
-2018-03-13 17:28:57,872 [5] INFO  robotTest.SocketClient - [Snd-->]$1CMD:GET__:0024,2,3,0,3(To Robot_Cmd_001 127.0.0.1:23)
-2018-03-13 17:28:58,018 [5] INFO  robotTest.SocketClient - [Snd-->]$1CMD:HOME_(To Robot_Cmd_001 127.0.0.1:23)
-2018-03-13 17:28:58,034 [5] INFO  robotTest.SocketClient - [Rev<--]$1ACK:GET__$1FIN:GET__:00000000(From Robot_Cmd_001 127.0.0.1:23)
-2018-03-13 17:28:58,157 [5] INFO  robotTest.Form1 - Script Finished!
-2018-03-13 17:28:58,202 [5] INFO  robotTest.SocketClient - [Rev<--]$1ACK:GET__$1FIN:GET__:00000000(From Robot_Cmd_001 127.0.0.1:23)
-2018-03-13 17:28:58,238 [5] INFO  robotTest.Form1 - Script Finished!
-2018-03-13 17:29:00,781 [4] INFO  robotTest.Form1 - Script Finished!
-2018-03-13 17:29:07,168 [8] ERROR robotTest.Command - Time out! Send to:127.0.0.1:8900 Command:robotTest.Command
-2018-03-13 17:29:24,425 [5] ERROR robotTest.SocketClient - (From Robot_Cmd_001 127.0.0.1:23)連線已被您主機上的軟體中止。
-   於 System.Net.Sockets.Socket.Receive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
-   於 System.Net.Sockets.Socket.Receive(Byte[] buffer)
-   於 robotTest.SocketClient.SckSReceiveProc() 於 C:\Users\ethan_huang\source\repos\robotTest\robotTest\Communication\SocketClient.cs: 行 103
-2018-03-13 17:30:29,659 [1] INFO  robotTest.Form1 - initial complete.
-2018-03-13 17:30:33,599 [3] INFO  robotTest.SocketClient - Connected! 127.0.0.1:23
-2018-03-13 17:30:34,660 [4] ERROR robotTest.SocketClient - (ConnectServer Robot_Read_001 127.0.0.1:8900)無法連線，因為目標電腦拒絕連線。 127.0.0.1:8900
-   於 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
-   於 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
-   於 robotTest.SocketClient.ConnectServer() 於 C:\Users\ethan_huang\source\repos\robotTest\robotTest\Communication\SocketClient.cs: 行 53
-2018-03-13 17:30:38,027 [1] INFO  robotTest.SocketClient - [Snd-->]$1SET:SP___:10(To Robot_Cmd_001 127.0.0.1:23)
-2018-03-13 17:30:38,027 [5] INFO  robotTest.SocketClient - [Rev<--]$1ACK:GET__(From Robot_Cmd_001 127.0.0.1:23)
-2018-03-13 17:30:38,169 [5] INFO  robotTest.SocketClient - [Snd-->]$1SET:MODE_:1(To Robot_Cmd_001 127.0.0.1:23)
-2018-03-13 17:30:38,199 [5] INFO  robotTest.SocketClient - [Rev<--]$1FIN:GET__:00000000(From Robot_Cmd_001 127.0.0.1:23)
-2018-03-13 17:30:38,298 [5] INFO  robotTest.SocketClient - [Snd-->]$1GET:SP__(To Robot_Read_001 127.0.0.1:8900)
-2018-03-13 17:30:38,340 [5] INFO  robotTest.SocketClient - [Rev<--]$1ACK:GET__$1FIN:GET__:00000000(From Robot_Cmd_001 127.0.0.1:23)
-2018-03-13 17:30:38,453 [5] INFO  robotTest.SocketClient - [Snd-->]$1CMD:HOME_(To Robot_Cmd_001 127.0.0.1:23)
-2018-03-13 17:30:38,603 [5] INFO  robotTest.SocketClient - [Snd-->]$1CMD:GET__:0023,1,1,0,0(To Robot_Cmd_001 127.0.0.1:23)
-2018-03-13 17:30:38,634 [5] INFO  robotTest.SocketClient - [Rev<--]$1ACK:GET__$1FIN:GET__:00000000(From Robot_Cmd_001 127.0.0.1:23)
-2018-03-13 17:30:38,757 [5] INFO  robotTest.SocketClient - [Snd-->]$1CMD:HOME_(To Robot_Cmd_001 127.0.0.1:23)
-2018-03-13 17:30:38,788 [5] INFO  robotTest.SocketClient - [Rev<--]$1ACK:GET__$1FIN:GET__:00000000(From Robot_Cmd_001 127.0.0.1:23)
-2018-03-13 17:30:38,903 [5] INFO  robotTest.SocketClient - [Snd-->]$1CMD:GET__:0024,2,3,0,1(To Robot_Cmd_001 127.0.0.1:23)
-2018-03-13 17:30:38,934 [5] INFO  robotTest.SocketClient - [Rev<--]$1ACK:GET__$1FIN:GET__:00000000(From Robot_Cmd_001 127.0.0.1:23)
-2018-03-13 17:30:39,085 [5] INFO  robotTest.SocketClient - [Rev<--]$1ACK:GET__$1FIN:GET__:00000000(From Robot_Cmd_001 127.0.0.1:23)
-2018-03-13 17:30:39,199 [5] INFO  robotTest.SocketClient - [Snd-->]$1CMD:GET__:0024,2,3,0,3(To Robot_Cmd_001 127.0.0.1:23)
-2018-03-13 17:30:39,301 [5] INFO  robotTest.SocketClient - [Snd-->]$1CMD:HOME_(To Robot_Cmd_001 127.0.0.1:23)
-2018-03-13 17:30:39,336 [5] INFO  robotTest.SocketClient - [Rev<--]$1ACK:GET__$1FIN:GET__:00000000(From Robot_Cmd_001 127.0.0.1:23)
-2018-03-13 17:30:39,463 [5] INFO  robotTest.Form1 - Script Finished!
-2018-03-13 17:30:39,489 [5] INFO  robotTest.SocketClient - [Rev<--]$1ACK:GET__$1FIN:GET__:00000000(From Robot_Cmd_001 127.0.0.1:23)
-2018-03-13 17:30:39,535 [5] INFO  robotTest.Form1 - Script Finished!
-2018-03-13 17:30:42,085 [4] INFO  robotTest.Form1 - Script Finished!
-2018-03-13 17:30:48,342 [8] ERROR robotTest.Command - Time out! Send to:127.0.0.1:8900 Command:robotTest.Command
-2018-03-13 17:31:16,956 [1] INFO  robotTest.SocketClient - [Snd-->]$1SET:SP___:10(To Robot_Cmd_001 127.0.0.1:23)
-2018-03-13 17:31:16,956 [5] INFO  robotTest.SocketClient - [Rev<--]$1ACK:GET__(From Robot_Cmd_001 127.0.0.1:23)
-2018-03-13 17:31:17,063 [5] INFO  robotTest.SocketClient - [Snd-->]$1SET:MODE_:1(To Robot_Cmd_001 127.0.0.1:23)
-2018-03-13 17:31:17,078 [5] INFO  robotTest.SocketClient - [Rev<--]$1FIN:GET__:00000000(From Robot_Cmd_001 127.0.0.1:23)
-2018-03-13 17:31:17,233 [5] INFO  robotTest.SocketClient - [Snd-->]$1GET:SP__(To Robot_Read_001 127.0.0.1:8900)
-2018-03-13 17:31:17,264 [5] INFO  robotTest.SocketClient - [Rev<--]$1ACK:GET__$1FIN:GET__:00000000(From Robot_Cmd_001 127.0.0.1:23)
-2018-03-13 17:31:17,395 [5] INFO  robotTest.SocketClient - [Snd-->]$1CMD:HOME_(To Robot_Cmd_001 127.0.0.1:23)
-2018-03-13 17:31:17,532 [5] INFO  robotTest.SocketClient - [Snd-->]$1CMD:GET__:0023,1,1,0,0(To Robot_Cmd_001 127.0.0.1:23)
-2018-03-13 17:31:17,582 [5] INFO  robotTest.SocketClient - [Rev<--]$1ACK:GET__$1FIN:GET__:00000000(From Robot_Cmd_001 127.0.0.1:23)
-2018-03-13 17:31:17,695 [5] INFO  robotTest.SocketClient - [Snd-->]$1CMD:HOME_(To Robot_Cmd_001 127.0.0.1:23)
-2018-03-13 17:31:17,747 [5] INFO  robotTest.SocketClient - [Rev<--]$1ACK:GET__$1FIN:GET__:00000000(From Robot_Cmd_001 127.0.0.1:23)
-2018-03-13 17:31:17,873 [5] INFO  robotTest.SocketClient - [Snd-->]$1CMD:GET__:0024,2,3,0,1(To Robot_Cmd_001 127.0.0.1:23)
-2018-03-13 17:31:17,897 [5] INFO  robotTest.SocketClient - [Rev<--]$1ACK:GET__$1FIN:GET__:00000000(From Robot_Cmd_001 127.0.0.1:23)
-2018-03-13 17:31:18,049 [5] INFO  robotTest.SocketClient - [Rev<--]$1ACK:GET__$1FIN:GET__:00000000(From Robot_Cmd_001 127.0.0.1:23)
-2018-03-13 17:31:18,168 [5] INFO  robotTest.SocketClient - [Snd-->]$1CMD:GET__:0024,2,3,0,3(To Robot_Cmd_001 127.0.0.1:23)
-2018-03-13 17:31:18,312 [5] INFO  robotTest.SocketClient - [Snd-->]$1CMD:HOME_(To Robot_Cmd_001 127.0.0.1:23)
-2018-03-13 17:31:18,347 [5] INFO  robotTest.SocketClient - [Rev<--]$1ACK:GET__$1FIN:GET__:00000000(From Robot_Cmd_001 127.0.0.1:23)
-2018-03-13 17:31:18,471 [5] INFO  robotTest.Form1 - Script Finished!
-2018-03-13 17:31:18,501 [5] INFO  robotTest.SocketClient - [Rev<--]$1ACK:GET__$1FIN:GET__:00000000(From Robot_Cmd_001 127.0.0.1:23)
-2018-03-13 17:31:18,551 [5] INFO  robotTest.Form1 - Script Finished!
-2018-03-13 17:31:21,037 [3] INFO  robotTest.Form1 - Script Finished!
-2018-03-13 17:31:27,273 [7] ERROR robotTest.Command - Time out! Send to:127.0.0.1:8900 Command:robotTest.Command
-2018-03-13 17:31:31,585 [5] ERROR robotTest.SocketClient - (From Robot_Cmd_001 127.0.0.1:23)遠端主機已強制關閉一個現存的連線。
-   於 System.Net.Sockets.Socket.Receive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
-   於 System.Net.Sockets.Socket.Receive(Byte[] buffer)
-   於 robotTest.SocketClient.SckSReceiveProc() 於 C:\Users\ethan_huang\source\repos\robotTest\robotTest\Communication\SocketClient.cs: 行 103
-2018-03-13 17:31:41,634 [3] INFO  robotTest.SocketClient - Connected! 127.0.0.1:23
-2018-03-13 17:31:42,662 [9] ERROR robotTest.SocketClient - (ConnectServer Robot_Read_001 127.0.0.1:8900)無法連線，因為目標電腦拒絕連線。 127.0.0.1:8900
-   於 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
-   於 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
-   於 robotTest.SocketClient.ConnectServer() 於 C:\Users\ethan_huang\source\repos\robotTest\robotTest\Communication\SocketClient.cs: 行 53
-2018-03-13 17:32:32,425 [1] INFO  robotTest.SocketClient - [Snd-->]$1SET:SP___:10(To Robot_Cmd_001 127.0.0.1:23)
-2018-03-13 17:32:32,425 [10] INFO  robotTest.SocketClient - [Rev<--]$1ACK:GET__(From Robot_Cmd_001 127.0.0.1:23)
-2018-03-13 17:32:32,550 [10] INFO  robotTest.SocketClient - [Snd-->]$1SET:MODE_:1(To Robot_Cmd_001 127.0.0.1:23)
-2018-03-13 17:32:32,577 [10] INFO  robotTest.SocketClient - [Rev<--]$1FIN:GET__:00000000(From Robot_Cmd_001 127.0.0.1:23)
-2018-03-13 17:32:32,669 [10] INFO  robotTest.SocketClient - [Snd-->]$1GET:SP__(To Robot_Read_001 127.0.0.1:8900)
-2018-03-13 17:32:32,713 [10] INFO  robotTest.SocketClient - [Rev<--]$1ACK:GET__$1FIN:GET__:00000000(From Robot_Cmd_001 127.0.0.1:23)
-2018-03-13 17:32:32,833 [10] INFO  robotTest.SocketClient - [Snd-->]$1CMD:HOME_(To Robot_Cmd_001 127.0.0.1:23)
-2018-03-13 17:32:32,960 [10] INFO  robotTest.SocketClient - [Snd-->]$1CMD:GET__:0023,1,1,0,0(To Robot_Cmd_001 127.0.0.1:23)
-2018-03-13 17:32:32,996 [10] INFO  robotTest.SocketClient - [Rev<--]$1ACK:GET__$1FIN:GET__:00000000(From Robot_Cmd_001 127.0.0.1:23)
-2018-03-13 17:32:33,134 [10] INFO  robotTest.SocketClient - [Snd-->]$1CMD:HOME_(To Robot_Cmd_001 127.0.0.1:23)
-2018-03-13 17:32:33,164 [10] INFO  robotTest.SocketClient - [Rev<--]$1ACK:GET__$1FIN:GET__:00000000(From Robot_Cmd_001 127.0.0.1:23)
-2018-03-13 17:32:33,265 [10] INFO  robotTest.SocketClient - [Snd-->]$1CMD:GET__:0024,2,3,0,1(To Robot_Cmd_001 127.0.0.1:23)
-2018-03-13 17:32:33,299 [10] INFO  robotTest.SocketClient - [Rev<--]$1ACK:GET__$1FIN:GET__:00000000(From Robot_Cmd_001 127.0.0.1:23)
-2018-03-13 17:32:42,344 [10] INFO  robotTest.SocketClient - [Rev<--]$1ACK:GET__$1FIN:GET__:00000000(From Robot_Cmd_001 127.0.0.1:23)
-2018-03-13 17:32:42,516 [10] INFO  robotTest.SocketClient - [Snd-->]$1CMD:GET__:0024,2,3,0,3(To Robot_Cmd_001 127.0.0.1:23)
-2018-03-13 17:32:42,691 [10] INFO  robotTest.SocketClient - [Snd-->]$1CMD:HOME_(To Robot_Cmd_001 127.0.0.1:23)
-2018-03-13 17:32:42,753 [8] ERROR robotTest.Command - Time out! Send to:127.0.0.1:8900 Command:robotTest.Command
-2018-03-13 17:32:42,753 [10] INFO  robotTest.SocketClient - [Rev<--]$1ACK:GET__$1FIN:GET__:00000000$1ACK:GET__$1FIN:GET__:00000000(From Robot_Cmd_001 127.0.0.1:23)
-2018-03-13 17:32:42,909 [10] INFO  robotTest.Form1 - Script Finished!
-2018-03-13 17:32:42,994 [10] INFO  robotTest.Form1 - Script Finished!
-2018-03-13 17:32:49,123 [9] INFO  robotTest.Form1 - Script Finished!
-2018-03-13 17:33:01,870 [10] ERROR robotTest.SocketClient - (From Robot_Cmd_001 127.0.0.1:23)連線已被您主機上的軟體中止。
-   於 System.Net.Sockets.Socket.Receive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
-   於 System.Net.Sockets.Socket.Receive(Byte[] buffer)
-   於 robotTest.SocketClient.SckSReceiveProc() 於 C:\Users\ethan_huang\source\repos\robotTest\robotTest\Communication\SocketClient.cs: 行 103
-2018-03-13 17:35:18,838 [1] INFO  robotTest.Form1 - initial complete.
-2018-03-13 17:35:26,679 [3] INFO  robotTest.SocketClient - Connected! 127.0.0.1:23
-2018-03-13 17:35:27,726 [4] ERROR robotTest.SocketClient - (ConnectServer Robot_Read_001 127.0.0.1:8900)無法連線，因為目標電腦拒絕連線。 127.0.0.1:8900
-   於 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
-   於 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
-   於 robotTest.SocketClient.ConnectServer() 於 C:\Users\ethan_huang\source\repos\robotTest\robotTest\Communication\SocketClient.cs: 行 53
-2018-03-13 17:35:29,924 [1] INFO  robotTest.SocketClient - [Snd-->]$1SET:SP___:10(To Robot_Cmd_001 127.0.0.1:23)
-2018-03-13 17:35:29,924 [5] INFO  robotTest.SocketClient - [Rev<--]$1ACK:GET__(From Robot_Cmd_001 127.0.0.1:23)
-2018-03-13 17:35:30,085 [5] INFO  robotTest.SocketClient - [Snd-->]$1SET:MODE_:1(To Robot_Cmd_001 127.0.0.1:23)
-2018-03-13 17:35:30,120 [5] INFO  robotTest.SocketClient - [Rev<--]$1FIN:GET__:00000000(From Robot_Cmd_001 127.0.0.1:23)
-2018-03-13 17:35:30,239 [5] INFO  robotTest.SocketClient - [Snd-->]$1GET:SP__(To Robot_Read_001 127.0.0.1:8900)
-2018-03-13 17:35:30,269 [5] INFO  robotTest.SocketClient - [Rev<--]$1ACK:GET__$1FIN:GET__:00000000(From Robot_Cmd_001 127.0.0.1:23)
-2018-03-13 17:35:30,368 [5] INFO  robotTest.SocketClient - [Snd-->]$1CMD:HOME_(To Robot_Cmd_001 127.0.0.1:23)
-2018-03-13 17:35:30,506 [5] INFO  robotTest.SocketClient - [Snd-->]$1CMD:GET__:0023,1,1,0,0(To Robot_Cmd_001 127.0.0.1:23)
-2018-03-13 17:35:30,553 [5] INFO  robotTest.SocketClient - [Rev<--]$1ACK:GET__$1FIN:GET__:00000000(From Robot_Cmd_001 127.0.0.1:23)
-2018-03-13 17:35:30,660 [5] INFO  robotTest.SocketClient - [Snd-->]$1CMD:HOME_(To Robot_Cmd_001 127.0.0.1:23)
-2018-03-13 17:35:30,691 [5] INFO  robotTest.SocketClient - [Rev<--]$1ACK:GET__$1FIN:GET__:00000000(From Robot_Cmd_001 127.0.0.1:23)
-2018-03-13 17:35:30,826 [5] INFO  robotTest.SocketClient - [Snd-->]$1CMD:GET__:0024,2,3,0,1(To Robot_Cmd_001 127.0.0.1:23)
-2018-03-13 17:35:30,858 [5] INFO  robotTest.SocketClient - [Rev<--]$1ACK:GET__$1FIN:GET__:00000000(From Robot_Cmd_001 127.0.0.1:23)
-2018-03-13 17:35:33,411 [5] INFO  robotTest.SocketClient - [Rev<--]$1ACK:GET__$1FIN:GET__:00000000(From Robot_Cmd_001 127.0.0.1:23)
-2018-03-13 17:35:33,421 [5] INFO  robotTest.SocketClient - [Snd-->]$1CMD:GET__:0024,2,3,0,3(To Robot_Cmd_001 127.0.0.1:23)
-2018-03-13 17:35:33,703 [5] INFO  robotTest.SocketClient - [Snd-->]$1CMD:HOME_(To Robot_Cmd_001 127.0.0.1:23)
-2018-03-13 17:35:33,740 [5] INFO  robotTest.SocketClient - [Rev<--]$1ACK:GET__$1FIN:GET__:00000000(From Robot_Cmd_001 127.0.0.1:23)
-2018-03-13 17:35:33,898 [5] INFO  robotTest.Form1 - Script Finished!
-2018-03-13 17:35:33,925 [5] INFO  robotTest.SocketClient - [Rev<--]$1ACK:GET__$1FIN:GET__:00000000(From Robot_Cmd_001 127.0.0.1:23)
-2018-03-13 17:35:33,972 [5] INFO  robotTest.Form1 - Script Finished!
-2018-03-13 17:35:36,364 [4] INFO  robotTest.Form1 - Script Finished!
-2018-03-13 17:35:39,163 [1] INFO  robotTest.SocketClient - [Snd-->]$1SET:SP___:10(To Robot_Cmd_001 127.0.0.1:23)
-2018-03-13 17:35:39,163 [5] INFO  robotTest.SocketClient - [Rev<--]$1ACK:GET__(From Robot_Cmd_001 127.0.0.1:23)
-2018-03-13 17:35:39,251 [5] INFO  robotTest.SocketClient - [Snd-->]$1SET:MODE_:1(To Robot_Cmd_001 127.0.0.1:23)
-2018-03-13 17:35:39,289 [5] INFO  robotTest.SocketClient - [Rev<--]$1FIN:GET__:00000000(From Robot_Cmd_001 127.0.0.1:23)
-2018-03-13 17:35:39,371 [5] INFO  robotTest.SocketClient - [Snd-->]$1GET:SP__(To Robot_Read_001 127.0.0.1:8900)
-2018-03-13 17:35:39,407 [5] INFO  robotTest.SocketClient - [Rev<--]$1ACK:GET__$1FIN:GET__:00000000(From Robot_Cmd_001 127.0.0.1:23)
-2018-03-13 17:35:39,524 [5] INFO  robotTest.SocketClient - [Snd-->]$1CMD:HOME_(To Robot_Cmd_001 127.0.0.1:23)
-2018-03-13 17:35:39,673 [5] INFO  robotTest.SocketClient - [Snd-->]$1CMD:GET__:0023,1,1,0,0(To Robot_Cmd_001 127.0.0.1:23)
-2018-03-13 17:35:39,706 [5] INFO  robotTest.SocketClient - [Rev<--]$1ACK:GET__$1FIN:GET__:00000000(From Robot_Cmd_001 127.0.0.1:23)
-2018-03-13 17:35:39,823 [5] INFO  robotTest.SocketClient - [Snd-->]$1CMD:HOME_(To Robot_Cmd_001 127.0.0.1:23)
-2018-03-13 17:35:39,870 [5] INFO  robotTest.SocketClient - [Rev<--]$1ACK:GET__$1FIN:GET__:00000000(From Robot_Cmd_001 127.0.0.1:23)
-2018-03-13 17:35:40,029 [5] INFO  robotTest.SocketClient - [Snd-->]$1CMD:GET__:0024,2,3,0,1(To Robot_Cmd_001 127.0.0.1:23)
-2018-03-13 17:35:40,052 [5] INFO  robotTest.SocketClient - [Rev<--]$1ACK:GET__$1FIN:GET__:00000000(From Robot_Cmd_001 127.0.0.1:23)
-2018-03-13 17:35:40,220 [5] INFO  robotTest.SocketClient - [Rev<--]$1ACK:GET__$1FIN:GET__:00000000(From Robot_Cmd_001 127.0.0.1:23)
-2018-03-13 17:35:40,317 [7] ERROR robotTest.Command - Time out! Send to:127.0.0.1:8900 Command:robotTest.Command
-2018-03-13 17:35:40,332 [5] INFO  robotTest.SocketClient - [Snd-->]$1CMD:GET__:0024,2,3,0,3(To Robot_Cmd_001 127.0.0.1:23)
-2018-03-13 17:35:40,487 [5] INFO  robotTest.SocketClient - [Snd-->]$1CMD:HOME_(To Robot_Cmd_001 127.0.0.1:23)
-2018-03-13 17:35:40,519 [5] INFO  robotTest.SocketClient - [Rev<--]$1ACK:GET__$1FIN:GET__:00000000(From Robot_Cmd_001 127.0.0.1:23)
-2018-03-13 17:35:40,635 [5] INFO  robotTest.Form1 - Script Finished!
-2018-03-13 17:35:40,669 [5] INFO  robotTest.SocketClient - [Rev<--]$1ACK:GET__$1FIN:GET__:00000000(From Robot_Cmd_001 127.0.0.1:23)
-2018-03-13 17:35:40,705 [5] INFO  robotTest.Form1 - Script Finished!
-2018-03-13 17:35:43,193 [8] INFO  robotTest.Form1 - Script Finished!
-2018-03-13 17:35:43,209 [5] ERROR robotTest.SocketClient - (From Robot_Cmd_001 127.0.0.1:23)連線已被您主機上的軟體中止。
-   於 System.Net.Sockets.Socket.Receive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
-   於 System.Net.Sockets.Socket.Receive(Byte[] buffer)
-   於 robotTest.SocketClient.SckSReceiveProc() 於 C:\Users\ethan_huang\source\repos\robotTest\robotTest\Communication\SocketClient.cs: 行 103
-2018-03-13 17:37:15,025 [1] INFO  robotTest.Form1 - initial complete.
-2018-03-13 17:37:20,578 [4] INFO  robotTest.SocketClient - Connected! 192.168.0.127:8900
-2018-03-13 17:37:23,581 [3] INFO  robotTest.SocketClient - Connected! 192.168.0.127:23
-2018-03-13 17:37:32,052 [1] INFO  robotTest.SocketClient - [Snd-->]$1SET:SP___:10(To Robot_Cmd_001 192.168.0.127:23)
-2018-03-13 17:37:32,083 [6] INFO  robotTest.SocketClient - [Rev<--]$1ACK:SP___(From Robot_Cmd_001 192.168.0.127:23)
-2018-03-13 17:37:32,349 [6] INFO  robotTest.SocketClient - [Snd-->]$1SET:MODE_:1(To Robot_Cmd_001 192.168.0.127:23)
-2018-03-13 17:37:32,427 [6] INFO  robotTest.SocketClient - [Rev<--]$1ACK:MODE_(From Robot_Cmd_001 192.168.0.127:23)
-2018-03-13 17:37:32,596 [6] INFO  robotTest.SocketClient - [Snd-->]$1GET:SP__(To Robot_Read_001 192.168.0.127:8900)
-2018-03-13 17:37:32,659 [5] INFO  robotTest.SocketClient - [Rev<--]$1NAK:SP__(From Robot_Read_001 192.168.0.127:8900)
-2018-03-13 17:37:32,815 [5] ERROR robotTest.Command - Error happen:error code=
-2018-03-13 17:38:09,099 [1] INFO  robotTest.SocketClient - [Snd-->]$1SET:SP___:10(To Robot_Cmd_001 192.168.0.127:23)
-2018-03-13 17:38:09,115 [6] INFO  robotTest.SocketClient - [Rev<--]$1ACK:SP___(From Robot_Cmd_001 192.168.0.127:23)
-2018-03-13 17:38:09,271 [6] INFO  robotTest.SocketClient - [Snd-->]$1SET:MODE_:1(To Robot_Cmd_001 192.168.0.127:23)
-2018-03-13 17:38:09,349 [6] INFO  robotTest.SocketClient - [Rev<--]$1ACK:MODE_(From Robot_Cmd_001 192.168.0.127:23)
-2018-03-13 17:38:09,562 [6] INFO  robotTest.SocketClient - [Snd-->]$1GET:SP__(To Robot_Cmd_001 192.168.0.127:23)
-2018-03-13 17:38:09,640 [6] INFO  robotTest.SocketClient - [Rev<--]$1NAK:SP__(From Robot_Cmd_001 192.168.0.127:23)
-2018-03-13 17:38:09,781 [6] ERROR robotTest.Command - Error happen:error code=
-2018-03-13 17:38:23,501 [1] INFO  robotTest.SocketClient - [Snd-->]$1SET:SP___:10(To Robot_Cmd_001 192.168.0.127:23)
-2018-03-13 17:38:23,537 [6] INFO  robotTest.SocketClient - [Rev<--]$1ACK:SP___(From Robot_Cmd_001 192.168.0.127:23)
-2018-03-13 17:38:23,678 [6] INFO  robotTest.SocketClient - [Snd-->]$1SET:MODE_:1(To Robot_Cmd_001 192.168.0.127:23)
-2018-03-13 17:38:23,771 [6] INFO  robotTest.SocketClient - [Rev<--]$1ACK:MODE_(From Robot_Cmd_001 192.168.0.127:23)
-2018-03-13 17:38:23,959 [6] INFO  robotTest.SocketClient - [Snd-->]$1CMD:HOME_(To Robot_Cmd_001 192.168.0.127:23)
-2018-03-13 17:38:24,037 [6] INFO  robotTest.SocketClient - [Rev<--]$1ACK:HOME_(From Robot_Cmd_001 192.168.0.127:23)
-2018-03-13 17:38:25,834 [6] INFO  robotTest.SocketClient - [Rev<--]$1FIN:HOME_:00000000(From Robot_Cmd_001 192.168.0.127:23)
-2018-03-13 17:38:25,943 [6] INFO  robotTest.SocketClient - [Snd-->]$1CMD:GET__:0023,1,1,0,0(To Robot_Cmd_001 192.168.0.127:23)
-2018-03-13 17:38:26,037 [6] INFO  robotTest.SocketClient - [Rev<--]$1ACK:GET__(From Robot_Cmd_001 192.168.0.127:23)
-2018-03-13 17:38:29,729 [6] INFO  robotTest.SocketClient - [Rev<--]$1FIN:GET__:00000000(From Robot_Cmd_001 192.168.0.127:23)
-2018-03-13 17:38:29,807 [6] INFO  robotTest.SocketClient - [Snd-->]$1CMD:HOME_(To Robot_Cmd_001 192.168.0.127:23)
-2018-03-13 17:38:29,901 [6] INFO  robotTest.SocketClient - [Rev<--]$1ACK:HOME_(From Robot_Cmd_001 192.168.0.127:23)
-2018-03-13 17:38:30,895 [6] INFO  robotTest.SocketClient - [Rev<--]$1FIN:HOME_:00000000(From Robot_Cmd_001 192.168.0.127:23)
-2018-03-13 17:38:30,910 [6] INFO  robotTest.SocketClient - [Snd-->]$1CMD:GET__:0024,2,3,0,1(To Robot_Cmd_001 192.168.0.127:23)
-2018-03-13 17:38:31,004 [6] INFO  robotTest.SocketClient - [Rev<--]$1ACK:GET__(From Robot_Cmd_001 192.168.0.127:23)
-2018-03-13 17:38:33,406 [6] INFO  robotTest.SocketClient - [Rev<--]$1FIN:GET__:00000000(From Robot_Cmd_001 192.168.0.127:23)
-2018-03-13 17:40:28,923 [1] INFO  robotTest.Form1 - initial complete.
-2018-03-13 17:40:32,566 [3] INFO  robotTest.SocketClient - Connected! 192.168.0.127:23
-2018-03-13 17:40:32,567 [4] INFO  robotTest.SocketClient - Connected! 192.168.0.127:8900
-2018-03-13 17:40:41,365 [1] INFO  robotTest.SocketClient - [Snd-->]$1SET:SP___:10(To Robot_Cmd_001 192.168.0.127:23)
-2018-03-13 17:40:41,386 [5] INFO  robotTest.SocketClient - [Rev<--]$1ACK:SP___(From Robot_Cmd_001 192.168.0.127:23)
-2018-03-13 17:40:41,697 [5] INFO  robotTest.SocketClient - [Snd-->]$1SET:MODE_:1(To Robot_Cmd_001 192.168.0.127:23)
-2018-03-13 17:40:41,776 [5] INFO  robotTest.SocketClient - [Rev<--]$1ACK:MODE_(From Robot_Cmd_001 192.168.0.127:23)
-2018-03-13 17:40:42,018 [5] INFO  robotTest.SocketClient - [Snd-->]$1GET:SP__(To Robot_Cmd_001 192.168.0.127:23)
-2018-03-13 17:40:42,107 [5] INFO  robotTest.SocketClient - [Rev<--]$1NAK:SP__(From Robot_Cmd_001 192.168.0.127:23)
-2018-03-13 17:40:42,278 [5] ERROR robotTest.Command - Error happen:error code=
-2018-03-13 17:45:42,953 [1] INFO  robotTest.Form1 - initial complete.
-2018-03-13 17:45:45,515 [4] INFO  robotTest.SocketClient - Connected! 192.168.0.127:8900
-2018-03-13 17:45:45,515 [3] INFO  robotTest.SocketClient - Connected! 192.168.0.127:23
-2018-03-13 17:46:06,358 [1] INFO  robotTest.SocketClient - [Snd-->]$1SET:SP___:10(To Robot_Cmd_001 192.168.0.127:23)
-2018-03-13 17:46:06,381 [6] INFO  robotTest.SocketClient - [Rev<--]$1ACK:SP___(From Robot_Cmd_001 192.168.0.127:23)
-2018-03-13 17:46:06,718 [6] INFO  robotTest.SocketClient - [Snd-->]$1SET:MODE_:1(To Robot_Cmd_001 192.168.0.127:23)
-2018-03-13 17:46:06,799 [6] INFO  robotTest.SocketClient - [Rev<--]$1ACK:MODE_(From Robot_Cmd_001 192.168.0.127:23)
-2018-03-13 17:46:06,976 [6] INFO  robotTest.SocketClient - [Snd-->]$1GET:SP___(To Robot_Cmd_001 192.168.0.127:23)
-2018-03-13 17:46:07,066 [6] INFO  robotTest.SocketClient - [Rev<--]$1ACK:SP___:10(From Robot_Cmd_001 192.168.0.127:23)
-2018-03-13 17:46:07,246 [6] INFO  robotTest.SocketClient - [Snd-->]$1CMD:HOME_(To Robot_Cmd_001 192.168.0.127:23)
-2018-03-13 17:46:07,341 [6] INFO  robotTest.SocketClient - [Rev<--]$1ACK:HOME_(From Robot_Cmd_001 192.168.0.127:23)
-2018-03-13 17:46:09,231 [6] INFO  robotTest.SocketClient - [Rev<--]$1FIN:HOME_:00000000(From Robot_Cmd_001 192.168.0.127:23)
-2018-03-13 17:46:09,347 [6] INFO  robotTest.SocketClient - [Snd-->]$1CMD:GET__:0023,1,1,0,0(To Robot_Cmd_001 192.168.0.127:23)
-2018-03-13 17:46:09,449 [6] INFO  robotTest.SocketClient - [Rev<--]$1ACK:GET__(From Robot_Cmd_001 192.168.0.127:23)
-2018-03-13 17:46:13,139 [6] INFO  robotTest.SocketClient - [Rev<--]$1FIN:GET__:00000000(From Robot_Cmd_001 192.168.0.127:23)
-2018-03-13 17:46:13,179 [6] INFO  robotTest.SocketClient - [Snd-->]$1CMD:HOME_(To Robot_Cmd_001 192.168.0.127:23)
-2018-03-13 17:46:13,277 [6] INFO  robotTest.SocketClient - [Rev<--]$1ACK:HOME_(From Robot_Cmd_001 192.168.0.127:23)
-2018-03-13 17:46:14,264 [6] INFO  robotTest.SocketClient - [Rev<--]$1FIN:HOME_:00000000(From Robot_Cmd_001 192.168.0.127:23)
-2018-03-13 17:46:14,307 [6] INFO  robotTest.SocketClient - [Snd-->]$1CMD:GET__:0024,2,3,0,1(To Robot_Cmd_001 192.168.0.127:23)
-2018-03-13 17:46:14,411 [6] INFO  robotTest.SocketClient - [Rev<--]$1ACK:GET__(From Robot_Cmd_001 192.168.0.127:23)
-2018-03-13 17:46:16,798 [6] INFO  robotTest.SocketClient - [Rev<--]$1FIN:GET__:00000000(From Robot_Cmd_001 192.168.0.127:23)
-2018-03-13 17:47:42,700 [6] ERROR robotTest.SocketClient - (From Robot_Cmd_001 192.168.0.127:23)連線已被您主機上的軟體中止。
-   於 System.Net.Sockets.Socket.Receive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
-   於 System.Net.Sockets.Socket.Receive(Byte[] buffer)
-   於 robotTest.SocketClient.SckSReceiveProc() 於 C:\Users\ethan_huang\source\repos\robotTest\robotTest\Communication\SocketClient.cs: 行 103
-2018-03-13 17:47:42,700 [5] ERROR robotTest.SocketClient - (From Robot_Read_001 192.168.0.127:8900)連線已被您主機上的軟體中止。
-   於 System.Net.Sockets.Socket.Receive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
-   於 System.Net.Sockets.Socket.Receive(Byte[] buffer)
-   於 robotTest.SocketClient.SckSReceiveProc() 於 C:\Users\ethan_huang\source\repos\robotTest\robotTest\Communication\SocketClient.cs: 行 103
-2018-03-13 17:47:46,430 [1] INFO  robotTest.Form1 - initial complete.
-2018-03-13 17:47:54,458 [4] INFO  robotTest.SocketClient - Connected! 192.168.0.127:8900
-2018-03-13 17:47:54,459 [3] INFO  robotTest.SocketClient - Connected! 192.168.0.127:23
-2018-03-13 17:47:57,882 [1] INFO  robotTest.SocketClient - [Snd-->]$1SET:SP___:10(To Robot_Cmd_001 192.168.0.127:23)
-2018-03-13 17:47:57,902 [6] INFO  robotTest.SocketClient - [Rev<--]$1ACK:SP___(From Robot_Cmd_001 192.168.0.127:23)
-2018-03-13 17:48:00,175 [6] INFO  robotTest.SocketClient - [Snd-->]$1SET:MODE_:1(To Robot_Cmd_001 192.168.0.127:23)
-2018-03-13 17:48:00,193 [6] INFO  robotTest.SocketClient - [Rev<--]$1ACK:MODE_(From Robot_Cmd_001 192.168.0.127:23)
-2018-03-13 17:48:01,335 [6] INFO  robotTest.SocketClient - [Snd-->]$1GET:SP___(To Robot_Cmd_001 192.168.0.127:23)
-2018-03-13 17:48:01,430 [6] INFO  robotTest.SocketClient - [Rev<--]$1ACK:SP___:10(From Robot_Cmd_001 192.168.0.127:23)
-2018-03-13 17:48:02,942 [6] INFO  robotTest.SocketClient - [Snd-->]$1CMD:HOME_(To Robot_Cmd_001 192.168.0.127:23)
-2018-03-13 17:48:03,030 [6] INFO  robotTest.SocketClient - [Rev<--]$1ACK:HOME_(From Robot_Cmd_001 192.168.0.127:23)
-2018-03-13 17:48:04,924 [6] INFO  robotTest.SocketClient - [Rev<--]$1FIN:HOME_:00000000(From Robot_Cmd_001 192.168.0.127:23)
-2018-03-13 17:48:05,534 [6] INFO  robotTest.SocketClient - [Snd-->]$1CMD:GET__:0023,1,1,0,0(To Robot_Cmd_001 192.168.0.127:23)
-2018-03-13 17:48:05,560 [6] INFO  robotTest.SocketClient - [Rev<--]$1ACK:GET__(From Robot_Cmd_001 192.168.0.127:23)
-2018-03-13 17:48:09,242 [6] INFO  robotTest.SocketClient - [Rev<--]$1FIN:GET__:00000000(From Robot_Cmd_001 192.168.0.127:23)
-2018-03-13 17:48:10,133 [6] INFO  robotTest.SocketClient - [Snd-->]$1CMD:HOME_(To Robot_Cmd_001 192.168.0.127:23)
-2018-03-13 17:48:10,154 [6] INFO  robotTest.SocketClient - [Rev<--]$1ACK:HOME_(From Robot_Cmd_001 192.168.0.127:23)
-2018-03-13 17:48:11,157 [6] INFO  robotTest.SocketClient - [Rev<--]$1FIN:HOME_:00000000(From Robot_Cmd_001 192.168.0.127:23)
-2018-03-13 17:48:12,563 [6] INFO  robotTest.SocketClient - [Snd-->]$1CMD:GET__:0024,2,3,0,1(To Robot_Cmd_001 192.168.0.127:23)
-2018-03-13 17:48:12,595 [6] INFO  robotTest.SocketClient - [Rev<--]$1ACK:GET__(From Robot_Cmd_001 192.168.0.127:23)
-2018-03-13 17:48:14,987 [6] INFO  robotTest.SocketClient - [Rev<--]$1FIN:GET__:00000000(From Robot_Cmd_001 192.168.0.127:23)
-2018-03-13 17:49:32,004 [1] INFO  robotTest.Form1 - initial complete.
-2018-03-13 17:49:34,452 [3] INFO  robotTest.SocketClient - Connected! 192.168.0.127:23
-2018-03-13 17:49:34,452 [4] INFO  robotTest.SocketClient - Connected! 192.168.0.127:8900
-2018-03-13 17:49:40,373 [1] INFO  robotTest.SocketClient - [Snd-->]$1SET:SP___:10(To Robot_Cmd_001 192.168.0.127:23)
-2018-03-13 17:49:40,394 [5] INFO  robotTest.SocketClient - [Rev<--]$1ACK:SP___(From Robot_Cmd_001 192.168.0.127:23)
-2018-03-13 17:49:44,002 [5] INFO  robotTest.SocketClient - [Snd-->]$1SET:MODE_:1(To Robot_Cmd_001 192.168.0.127:23)
-2018-03-13 17:49:44,022 [5] INFO  robotTest.SocketClient - [Rev<--]$1ACK:MODE_(From Robot_Cmd_001 192.168.0.127:23)
-2018-03-13 17:49:44,276 [5] INFO  robotTest.SocketClient - [Snd-->]$1GET:SP___(To Robot_Cmd_001 192.168.0.127:23)
-2018-03-13 17:49:44,363 [5] INFO  robotTest.SocketClient - [Rev<--]$1ACK:SP___:10(From Robot_Cmd_001 192.168.0.127:23)
-2018-03-13 17:49:44,599 [5] INFO  robotTest.SocketClient - [Snd-->]$1CMD:HOME_(To Robot_Cmd_001 192.168.0.127:23)
-2018-03-13 17:49:44,683 [5] INFO  robotTest.SocketClient - [Rev<--]$1ACK:HOME_(From Robot_Cmd_001 192.168.0.127:23)
-2018-03-13 17:49:46,569 [5] INFO  robotTest.SocketClient - [Rev<--]$1FIN:HOME_:00000000(From Robot_Cmd_001 192.168.0.127:23)
-2018-03-13 17:49:46,668 [5] INFO  robotTest.SocketClient - [Snd-->]$1CMD:GET__:0023,1,1,0,0(To Robot_Cmd_001 192.168.0.127:23)
-2018-03-13 17:49:46,773 [5] INFO  robotTest.SocketClient - [Rev<--]$1ACK:GET__(From Robot_Cmd_001 192.168.0.127:23)
-2018-03-13 17:49:50,468 [5] INFO  robotTest.SocketClient - [Rev<--]$1FIN:GET__:00000000(From Robot_Cmd_001 192.168.0.127:23)
-2018-03-13 17:49:50,499 [5] INFO  robotTest.SocketClient - [Snd-->]$1CMD:HOME_(To Robot_Cmd_001 192.168.0.127:23)
-2018-03-13 17:49:50,601 [5] INFO  robotTest.SocketClient - [Rev<--]$1ACK:HOME_(From Robot_Cmd_001 192.168.0.127:23)
-2018-03-13 17:49:51,592 [5] INFO  robotTest.SocketClient - [Rev<--]$1FIN:HOME_:00000000(From Robot_Cmd_001 192.168.0.127:23)
-2018-03-13 17:49:51,636 [5] INFO  robotTest.SocketClient - [Snd-->]$1CMD:GET__:0024,2,3,0,1(To Robot_Cmd_001 192.168.0.127:23)
-2018-03-13 17:49:51,745 [5] INFO  robotTest.SocketClient - [Rev<--]$1ACK:GET__(From Robot_Cmd_001 192.168.0.127:23)
-2018-03-13 17:49:54,130 [5] INFO  robotTest.SocketClient - [Rev<--]$1FIN:GET__:00000000(From Robot_Cmd_001 192.168.0.127:23)
-2018-03-13 17:49:57,306 [4] INFO  robotTest.SocketClient - [Snd-->]$1CMD:GET__:0024,2,3,0,3(To Robot_Cmd_001 192.168.0.127:23)
-2018-03-13 17:49:57,419 [5] INFO  robotTest.SocketClient - [Rev<--]$1ACK:GET__(From Robot_Cmd_001 192.168.0.127:23)
-2018-03-13 17:49:59,416 [5] INFO  robotTest.SocketClient - [Rev<--]$1FIN:GET__:00000000(From Robot_Cmd_001 192.168.0.127:23)
-2018-03-13 17:49:59,461 [5] INFO  robotTest.SocketClient - [Snd-->]$1CMD:HOME_(To Robot_Cmd_001 192.168.0.127:23)
-2018-03-13 17:49:59,562 [5] INFO  robotTest.SocketClient - [Rev<--]$1ACK:HOME_(From Robot_Cmd_001 192.168.0.127:23)
-2018-03-13 17:50:00,555 [5] INFO  robotTest.SocketClient - [Rev<--]$1FIN:HOME_:00000000(From Robot_Cmd_001 192.168.0.127:23)
-2018-03-13 17:50:00,582 [5] INFO  robotTest.Form1 - Script Finished!
-2018-03-13 17:50:03,870 [1] INFO  robotTest.SocketClient - [Snd-->]$1SET:SP___:10(To Robot_Cmd_001 192.168.0.127:23)
-2018-03-13 17:50:03,892 [5] INFO  robotTest.SocketClient - [Rev<--]$1ACK:SP___(From Robot_Cmd_001 192.168.0.127:23)
-2018-03-13 17:50:04,197 [5] INFO  robotTest.SocketClient - [Snd-->]$1SET:MODE_:1(To Robot_Cmd_001 192.168.0.127:23)
-2018-03-13 17:50:04,282 [5] INFO  robotTest.SocketClient - [Rev<--]$1ACK:MODE_(From Robot_Cmd_001 192.168.0.127:23)
-2018-03-13 17:50:04,524 [5] INFO  robotTest.SocketClient - [Snd-->]$1GET:SP___(To Robot_Cmd_001 192.168.0.127:23)
-2018-03-13 17:50:04,604 [5] INFO  robotTest.SocketClient - [Rev<--]$1ACK:SP___:10(From Robot_Cmd_001 192.168.0.127:23)
-2018-03-13 17:50:04,855 [5] INFO  robotTest.SocketClient - [Snd-->]$1CMD:HOME_(To Robot_Cmd_001 192.168.0.127:23)
-2018-03-13 17:50:04,944 [5] INFO  robotTest.SocketClient - [Rev<--]$1ACK:HOME_(From Robot_Cmd_001 192.168.0.127:23)
-2018-03-13 17:50:05,141 [5] INFO  robotTest.SocketClient - [Rev<--]$1FIN:HOME_:00000000(From Robot_Cmd_001 192.168.0.127:23)
-2018-03-13 17:50:05,210 [5] INFO  robotTest.SocketClient - [Snd-->]$1CMD:GET__:0023,1,1,0,0(To Robot_Cmd_001 192.168.0.127:23)
-2018-03-13 17:50:05,305 [5] INFO  robotTest.SocketClient - [Rev<--]$1ACK:GET__(From Robot_Cmd_001 192.168.0.127:23)
-2018-03-13 17:50:08,991 [5] INFO  robotTest.SocketClient - [Rev<--]$1FIN:GET__:00000000(From Robot_Cmd_001 192.168.0.127:23)
-2018-03-13 17:50:09,042 [5] INFO  robotTest.SocketClient - [Snd-->]$1CMD:HOME_(To Robot_Cmd_001 192.168.0.127:23)
-2018-03-13 17:50:09,145 [5] INFO  robotTest.SocketClient - [Rev<--]$1ACK:HOME_(From Robot_Cmd_001 192.168.0.127:23)
-2018-03-13 17:50:10,128 [5] INFO  robotTest.SocketClient - [Rev<--]$1FIN:HOME_:00000000(From Robot_Cmd_001 192.168.0.127:23)
-2018-03-13 17:50:10,255 [5] INFO  robotTest.SocketClient - [Snd-->]$1CMD:GET__:0024,2,3,0,1(To Robot_Cmd_001 192.168.0.127:23)
-2018-03-13 17:50:10,368 [5] INFO  robotTest.SocketClient - [Rev<--]$1ACK:GET__(From Robot_Cmd_001 192.168.0.127:23)
-2018-03-13 17:50:12,757 [5] INFO  robotTest.SocketClient - [Rev<--]$1FIN:GET__:00000000(From Robot_Cmd_001 192.168.0.127:23)
-2018-03-13 17:50:15,831 [4] INFO  robotTest.SocketClient - [Snd-->]$1CMD:GET__:0024,2,3,0,3(To Robot_Cmd_001 192.168.0.127:23)
-2018-03-13 17:50:15,944 [5] INFO  robotTest.SocketClient - [Rev<--]$1ACK:GET__(From Robot_Cmd_001 192.168.0.127:23)
-2018-03-13 17:50:17,933 [5] INFO  robotTest.SocketClient - [Rev<--]$1FIN:GET__:00000000(From Robot_Cmd_001 192.168.0.127:23)
-2018-03-13 17:50:17,969 [5] INFO  robotTest.SocketClient - [Snd-->]$1CMD:HOME_(To Robot_Cmd_001 192.168.0.127:23)
-2018-03-13 17:50:18,065 [5] INFO  robotTest.SocketClient - [Rev<--]$1ACK:HOME_(From Robot_Cmd_001 192.168.0.127:23)
-2018-03-13 17:50:19,057 [5] INFO  robotTest.SocketClient - [Rev<--]$1FIN:HOME_:00000000(From Robot_Cmd_001 192.168.0.127:23)
-2018-03-13 17:50:19,080 [5] INFO  robotTest.Form1 - Script Finished!
-2018-03-13 17:50:49,603 [6] ERROR robotTest.SocketClient - (From Robot_Read_001 192.168.0.127:8900)連線已被您主機上的軟體中止。
-   於 System.Net.Sockets.Socket.Receive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
-   於 System.Net.Sockets.Socket.Receive(Byte[] buffer)
-   於 robotTest.SocketClient.SckSReceiveProc() 於 C:\Users\ethan_huang\source\repos\robotTest\robotTest\Communication\SocketClient.cs: 行 103
-2018-03-13 17:50:49,611 [5] ERROR robotTest.SocketClient - (From Robot_Cmd_001 192.168.0.127:23)連線已被您主機上的軟體中止。
-   於 System.Net.Sockets.Socket.Receive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
-   於 System.Net.Sockets.Socket.Receive(Byte[] buffer)
-   於 robotTest.SocketClient.SckSReceiveProc() 於 C:\Users\ethan_huang\source\repos\robotTest\robotTest\Communication\SocketClient.cs: 行 103
-2018-03-13 17:50:56,415 [4] ERROR robotTest.SocketClient - (ConnectServer Robot_Cmd_001 192.168.0.127:23)無法連線，因為目標電腦拒絕連線。 192.168.0.127:23
-   於 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
-   於 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
-   於 robotTest.SocketClient.ConnectServer() 於 C:\Users\ethan_huang\source\repos\robotTest\robotTest\Communication\SocketClient.cs: 行 53
-2018-03-13 17:50:56,421 [9] ERROR robotTest.SocketClient - (ConnectServer Robot_Read_001 192.168.0.127:8900)無法連線，因為目標電腦拒絕連線。 192.168.0.127:8900
-   於 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
-   於 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
-   於 robotTest.SocketClient.ConnectServer() 於 C:\Users\ethan_huang\source\repos\robotTest\robotTest\Communication\SocketClient.cs: 行 53
-2018-03-13 17:51:01,598 [11] ERROR robotTest.SocketClient - (ConnectServer Robot_Read_001 192.168.0.127:8900)無法連線，因為目標電腦拒絕連線。 192.168.0.127:8900
-   於 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
-   於 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
-   於 robotTest.SocketClient.ConnectServer() 於 C:\Users\ethan_huang\source\repos\robotTest\robotTest\Communication\SocketClient.cs: 行 53
-2018-03-13 17:51:01,622 [10] ERROR robotTest.SocketClient - (ConnectServer Robot_Cmd_001 192.168.0.127:23)無法連線，因為目標電腦拒絕連線。 192.168.0.127:23
-   於 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
-   於 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
-   於 robotTest.SocketClient.ConnectServer() 於 C:\Users\ethan_huang\source\repos\robotTest\robotTest\Communication\SocketClient.cs: 行 53
-2018-03-13 17:51:42,791 [8] INFO  robotTest.SocketClient - Connected! 192.168.0.127:23
-2018-03-13 17:51:42,793 [3] INFO  robotTest.SocketClient - Connected! 192.168.0.127:8900
-2018-03-13 17:51:45,569 [1] INFO  robotTest.SocketClient - [Snd-->]$1SET:SP___:10(To Robot_Cmd_001 192.168.0.127:23)
-2018-03-13 17:51:45,592 [12] INFO  robotTest.SocketClient - [Rev<--]$1ACK:SP___(From Robot_Cmd_001 192.168.0.127:23)
-2018-03-13 17:51:45,801 [12] INFO  robotTest.SocketClient - [Snd-->]$1SET:MODE_:1(To Robot_Cmd_001 192.168.0.127:23)
-2018-03-13 17:51:45,898 [12] INFO  robotTest.SocketClient - [Rev<--]$1ACK:MODE_(From Robot_Cmd_001 192.168.0.127:23)
-2018-03-13 17:51:46,126 [12] INFO  robotTest.SocketClient - [Snd-->]$1GET:SP___(To Robot_Cmd_001 192.168.0.127:23)
-2018-03-13 17:51:46,206 [12] INFO  robotTest.SocketClient - [Rev<--]$1ACK:SP___:10(From Robot_Cmd_001 192.168.0.127:23)
-2018-03-13 17:51:46,421 [12] INFO  robotTest.SocketClient - [Snd-->]$1CMD:HOME_(To Robot_Cmd_001 192.168.0.127:23)
-2018-03-13 17:51:46,521 [12] INFO  robotTest.SocketClient - [Rev<--]$1ACK:HOME_(From Robot_Cmd_001 192.168.0.127:23)
-2018-03-13 17:51:46,723 [12] INFO  robotTest.SocketClient - [Rev<--]$1FIN:HOME_:00000000(From Robot_Cmd_001 192.168.0.127:23)
-2018-03-13 17:51:46,828 [12] INFO  robotTest.SocketClient - [Snd-->]$1CMD:GET__:0023,1,1,0,0(To Robot_Cmd_001 192.168.0.127:23)
-2018-03-13 17:51:46,932 [12] INFO  robotTest.SocketClient - [Rev<--]$1ACK:GET__(From Robot_Cmd_001 192.168.0.127:23)
-2018-03-13 17:51:50,631 [12] INFO  robotTest.SocketClient - [Rev<--]$1FIN:GET__:00000000(From Robot_Cmd_001 192.168.0.127:23)
-2018-03-13 17:51:50,743 [12] INFO  robotTest.SocketClient - [Snd-->]$1CMD:HOME_(To Robot_Cmd_001 192.168.0.127:23)
-2018-03-13 17:51:50,842 [12] INFO  robotTest.SocketClient - [Rev<--]$1ACK:HOME_(From Robot_Cmd_001 192.168.0.127:23)
-2018-03-13 17:51:51,836 [12] INFO  robotTest.SocketClient - [Rev<--]$1FIN:HOME_:00000000(From Robot_Cmd_001 192.168.0.127:23)
-2018-03-13 17:51:51,934 [12] INFO  robotTest.SocketClient - [Snd-->]$1CMD:GET__:0024,2,3,0,1(To Robot_Cmd_001 192.168.0.127:23)
-2018-03-13 17:51:52,045 [12] INFO  robotTest.SocketClient - [Rev<--]$1ACK:GET__(From Robot_Cmd_001 192.168.0.127:23)
-2018-03-13 17:51:54,437 [12] INFO  robotTest.SocketClient - [Rev<--]$1FIN:GET__:00000000(From Robot_Cmd_001 192.168.0.127:23)
-2018-03-13 17:51:57,592 [3] INFO  robotTest.SocketClient - [Snd-->]$1CMD:GET__:0024,2,3,0,3(To Robot_Cmd_001 192.168.0.127:23)
-2018-03-13 17:51:57,701 [12] INFO  robotTest.SocketClient - [Rev<--]$1ACK:GET__(From Robot_Cmd_001 192.168.0.127:23)
-2018-03-13 17:51:59,703 [12] INFO  robotTest.SocketClient - [Rev<--]$1FIN:GET__:00000000(From Robot_Cmd_001 192.168.0.127:23)
-2018-03-13 17:51:59,726 [12] INFO  robotTest.SocketClient - [Snd-->]$1CMD:HOME_(To Robot_Cmd_001 192.168.0.127:23)
-2018-03-13 17:51:59,818 [12] INFO  robotTest.SocketClient - [Rev<--]$1ACK:HOME_(From Robot_Cmd_001 192.168.0.127:23)
-2018-03-13 17:52:00,814 [12] INFO  robotTest.SocketClient - [Rev<--]$1FIN:HOME_:00000000(From Robot_Cmd_001 192.168.0.127:23)
-2018-03-13 17:52:00,825 [12] INFO  robotTest.Form1 - Script Finished!
-2018-03-13 17:52:05,660 [12] ERROR robotTest.SocketClient - (From Robot_Cmd_001 192.168.0.127:23)連線已被您主機上的軟體中止。
-   於 System.Net.Sockets.Socket.Receive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
-   於 System.Net.Sockets.Socket.Receive(Byte[] buffer)
-   於 robotTest.SocketClient.SckSReceiveProc() 於 C:\Users\ethan_huang\source\repos\robotTest\robotTest\Communication\SocketClient.cs: 行 103
-2018-03-13 17:52:05,682 [13] ERROR robotTest.SocketClient - (From Robot_Read_001 192.168.0.127:8900)連線已被您主機上的軟體中止。
-   於 System.Net.Sockets.Socket.Receive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
-   於 System.Net.Sockets.Socket.Receive(Byte[] buffer)
-   於 robotTest.SocketClient.SckSReceiveProc() 於 C:\Users\ethan_huang\source\repos\robotTest\robotTest\Communication\SocketClient.cs: 行 103
-2018-03-13 18:16:08,815 [1] INFO  robotTest.Form1 - initial complete.

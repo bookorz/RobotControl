@@ -1,4 +1,5 @@
-﻿using System;
+﻿using robotTest.Base;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,5 +13,12 @@ namespace robotTest.Controller
         bool SendCommand(Command command);
         void Connect();
         void Close();
+        string GetStatus();
+        void SetStatus(string _Status);
+
+        void Map(string Position);
+        void GetMap();        
+        void DoWork(string Type, Job Job);
+
     }
 }

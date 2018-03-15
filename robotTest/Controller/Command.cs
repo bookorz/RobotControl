@@ -1,9 +1,12 @@
 ﻿using log4net;
+using robotTest.Base;
+using robotTest.Controller;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+
 
 namespace robotTest
 {
@@ -11,55 +14,58 @@ namespace robotTest
     {
         ILog logger = LogManager.GetLogger(typeof(Command));
 
-        public string Controller { get; set; }
+
         public string ADR { get; set; }
-       // public string SEQ { get; set; }
+        // public string SEQ { get; set; }
         public string FLG { get; set; }
         public string CMD { get; set; }
-        public string DAT { get; set; }       
-        
+        public string DAT { get; set; }
+        public string Controller { get; set; }
+        public string Desc { get; set; }
+         
+        public string GetController()
+        {
+            return this.Controller;
+        }
 
-        //public string GetADR()
-        //{
-        //    return this.ADR;
-        //}
+        public void SetController(string _Controller)
+        {
+            this.Controller = _Controller;
+        }
+        public string GetADR()
+        {
+            return this.ADR;
+        }
+        public string GetFLG()
+        {
+            return this.FLG;
+        }
+        public string GetCMD()
+        {
+            return this.CMD;
+        }
+        public string GetDAT()
+        {
+            return this.DAT;
+        }
 
-        //public string GetSEQ()
-        //{
-        //    return this.SEQ;
-        //}
-        //public string GetFLG()
-        //{
-        //    return this.FLG;
-        //}
-        //public string GetCMD()
-        //{
-        //    return this.CMD;
-        //}
-        //public string GetDAT()
-        //{
-        //    return this.DAT;
-        //}
-        //public string GetScriptNo()
-        //{
-        //    return this.ScriptNo;
-        //}
-        //public int GetScriptIdx()
-        //{
-        //    return this.ScriptIdx;
-        //}
-
-        //public Command SetParam(string _ScriptNo, int _ScriptIdx,string _ADR, string _SEQ, string _FLG, string _CMD, string _DAT)
-        //{
-        //    ScriptNo = _ScriptNo;
-        //    ScriptIdx = _ScriptIdx;
-        //    ADR = _ADR;
-        //    SEQ = _SEQ;
-        //    FLG = _FLG;
-        //    CMD = _CMD;
-        //    DAT = _DAT;
-        //    return this;
-        //}
+        public void SetADR(string _ADR)
+        {
+             this.ADR=_ADR;
+        }
+        public void SetFLG(string _FLG)
+        {
+            this.FLG = _FLG;
+        }
+        public void SetCMD(string _CMD)
+        {
+            this.CMD = _CMD;
+        }
+        public void SetDAT(string _DAT)
+        {
+            this.DAT = _DAT;
+        }
+       
 
         private string GetCheckSum(string input)
         {

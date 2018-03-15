@@ -21,15 +21,21 @@ namespace robotTest
         ILog logger = LogManager.GetLogger(typeof(Form1));
         delegate void UpdateController(string Device_ID, string Detail);
         delegate void UpdateScriptController(int Idx);
-        delegate void UpdateMapResultDG();
+        delegate void UpdateMapResultDG(DataGridView TarDG, List<Slot> Port);
+        delegate void UpdateAlignerDG(DataGridView TarDG, List<string> Aligner);
         Dictionary<string, IController> ControllerList = new Dictionary<string, IController>();
         Dictionary<string, ControllerInfo> ControllerStatus = new Dictionary<string, ControllerInfo>();
         List<Command> cmdList = new List<Command>();
-        List<Job> cassette1 = new List<Job>();
-
+        Dictionary<string, Job> JobList = new Dictionary<string, Job>();
+        List<Slot> Port1 = new List<Slot>();
+        List<Slot> Port2 = new List<Slot>();
+        List<Slot> Aligner = new List<Slot>();
         int RunIdx = 0;
         string ScriptPath = "";
         bool running = false;
+        const string Port_1 = "1201";
+        const string Port_2 = "1204";
+        const string Aligner_1 = "101";
 
         public Form1()
         {
@@ -99,8 +105,8 @@ namespace robotTest
         private void Form1_Load(object sender, EventArgs e)
         {
             LoadConnCfg();
-
-
+            
+           
         }
 
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
@@ -111,19 +117,37 @@ namespace robotTest
             }
         }
 
-        private void UpdateMapResult()
+        private void UpdateMapResult(DataGridView TarDG, List<Slot> Port)
         {
-            if (Port1_gv.InvokeRequired)
+            if (TarDG.InvokeRequired)
             {
                 //當InvokeRequired為true時，表示在不同的執行緒上，所以進行委派的動作!!
                 UpdateMapResultDG ph = new UpdateMapResultDG(UpdateMapResult);
-                Port1_gv.Invoke(ph);
+                TarDG.Invoke(ph, TarDG, Port);
             }
             else
             {
-                Port1_gv.DataSource = cassette1;
-                Conn_gv.Refresh();
-                Conn_gv.ClearSelection();
+                TarDG.DataSource = null;
+                
+                TarDG.DataSource = Port;
+                TarDG.Refresh();
+
+            }
+        }
+
+        private void UpdateAligner(DataGridView TarDG, List<string> Aligner)
+        {
+            if (TarDG.InvokeRequired)
+            {
+                //當InvokeRequired為true時，表示在不同的執行緒上，所以進行委派的動作!!
+                UpdateAlignerDG ph = new UpdateAlignerDG(UpdateAligner);
+                TarDG.Invoke(ph, TarDG, Aligner);
+            }
+            else
+            {
+                TarDG.DataSource = null;
+                TarDG.DataSource = Aligner;
+                TarDG.Refresh();
 
             }
         }
@@ -240,10 +264,10 @@ namespace robotTest
             if (ControllerList.TryGetValue(Controller_cb.Text, out TargetController))
             {
                 Command Cmd = new Command();
-                Cmd.ADR = DeviceNo_cb.Text;
-                Cmd.FLG = CmdType_cb.Text;
-                Cmd.CMD = Instruc_cb.Text;
-                Cmd.DAT = param_tb.Text;
+                Cmd.SetADR(DeviceNo_cb.Text);
+                Cmd.SetFLG(CmdType_cb.Text);
+                Cmd.SetCMD(Instruc_cb.Text);
+                Cmd.SetDAT(param_tb.Text);
                 TargetController.SetReportTarget(this);
                 TargetController.SendCommand(Cmd);
             }
@@ -256,7 +280,7 @@ namespace robotTest
         private void Run(Command Cmd)
         {
             IController TargetController;
-            if (ControllerList.TryGetValue(Cmd.Controller, out TargetController))
+            if (ControllerList.TryGetValue(Cmd.GetController(), out TargetController))
             {
 
                 TargetController.SendCommand(Cmd);
@@ -275,11 +299,11 @@ namespace robotTest
         private void AddToScript_bt_Click(object sender, EventArgs e)
         {
             Command Cmd = new Command();
-            Cmd.Controller = Controller_cb.Text;
-            Cmd.ADR = DeviceNo_cb.Text;
-            Cmd.FLG = CmdType_cb.Text;
-            Cmd.CMD = Instruc_cb.Text;
-            Cmd.DAT = param_tb.Text;
+            Cmd.SetController(Controller_cb.Text);
+            Cmd.SetADR(DeviceNo_cb.Text);
+            Cmd.SetFLG(CmdType_cb.Text);
+            Cmd.SetCMD(Instruc_cb.Text);
+            Cmd.SetDAT(param_tb.Text);
             cmdList.Add(Cmd);
             Script_gv.DataSource = null;
             Script_gv.DataSource = cmdList;
@@ -407,30 +431,24 @@ namespace robotTest
                 logger.Error("Down_bt_Click:" + ex.Message + "\n" + ex.StackTrace);
             }
         }
-        void ICommandReport.On_Command_Excuted(string Device_ID, ReturnMsg Msg, Command Cmd)
+        void ICommandReport.On_Command_Excuted(string Device_ID, ReturnMsg Msg, Command Cmd, Job Job)
         {
-
-        }
-
-        void ICommandReport.On_Command_Error(string Device_ID, ReturnMsg Msg, Command Cmd)
-        {
-            MessageBox.Show(Device_ID + "錯誤發生，錯誤碼:" + Msg.GetDAT());
-        }
-
-        void ICommandReport.On_Command_Finished(string Device_ID, ReturnMsg Msg, Command Cmd)
-        {
-            if (!Cmd.FLG.Equals("DELAY"))
+            if (!running)
             {
-                if (Msg.GetFLG().Equals("ACK"))
+                IController robot1;
+                if (Cmd.GetFLG().Equals("GET"))
                 {
                     switch (Msg.GetCMD())
                     {
                         case "MAP__":
-                            string[] mapResult = Msg.GetDAT().Split(',');
+
+                            #region MAP回傳結果
+                            //string[] mapResult = Msg.GetDAT().Split(',');
+                            string[] mapResult = "1,1,1,1".Split(',');//模擬slot 1~4 有片
                             for (int i = 1; i < mapResult.Count(); i++)
                             {
                                 string status = mapResult[i];
-                                Job eachJob = new Job();
+
                                 switch (status)
                                 {
                                     case "0":
@@ -446,16 +464,49 @@ namespace robotTest
                                         status = "傾斜異常";
                                         break;
                                 }
-                                eachJob.JobID = "Panel-" + i.ToString();
-                                eachJob.status = status;
-                                cassette1.Add(eachJob);
+                                Slot eachSlot = new Slot();
+                                eachSlot.JobID = "";
+                                eachSlot.SlotNo = i.ToString(); ;
+                                eachSlot.Status = status;
+                                Port1.Add(eachSlot);
+
                             }
-                            UpdateMapResult();
+                            UpdateMapResult(Port1_gv, Port1);
+                            #endregion
+                            break;
+
+                    }
+                }
+                else if (Cmd.GetFLG().Equals("CMD"))
+                {
+                    switch (Msg.GetCMD())
+                    {
+                        case "GET__"://Panel 在手臂上
+                            if (Job.Position.Equals(Aligner))
+                            {
+                                Aligner.Clear(); ;
+                                UpdateMapResult(Aligner_gv, Aligner);
+                            }
+                            Job.Position = Device_ID;
+                            
+                           
+                            break;
+                        case "PUT__":
+                        case "GETW_":
+
                             break;
                     }
                 }
             }
+        }
 
+        void ICommandReport.On_Command_Error(string Device_ID, ReturnMsg Msg, Command Cmd, Job Job)
+        {
+            MessageBox.Show(Device_ID + "錯誤發生，錯誤碼:" + Msg.GetDAT());
+        }
+
+        public void On_Command_Finished(string Device_ID, ReturnMsg Msg, Command Cmd, Job Job)
+        {
             if (running)
             {
                 RunIdx++;
@@ -472,9 +523,111 @@ namespace robotTest
 
                 }
             }
+            else
+            {
+                IController robot1;
+                if (Device_ID.Equals("Aligner"))
+                {
+                    foreach(Job eachJob in JobList.Values)
+                    {
+                        if (eachJob.Position.Equals(Aligner_1))
+                        {
+                            if (ControllerList.TryGetValue(eachJob.Deliver, out robot1))
+                            {
+                                
+
+                                robot1.DoWork("GetAfterWait", eachJob);
+                            }
+                        }
+                    }
+                    
+                    
+
+                }
+                else
+                {
+
+
+                    switch (Msg.GetCMD())
+                    {
+                        case "MAP__":
+                            #region MAP動作完成
+
+                            if (ControllerList.TryGetValue(Device_ID, out robot1))
+                            {
+                                robot1.GetMap();
+                            }
+                            #endregion
+                            break;
+                        case "GET__":
+                            if (Job.From.Equals(Port_1))
+                            {
+                                for(int i = 0; i < Port1.Count; i++)
+                                {
+                                    if (Port1[i].JobID.Equals(Job.JobID))
+                                    {
+                                        Port1.Remove(Port1[i]);
+                                    }
+                                }
+                                
+                                UpdateMapResult(Port1_gv, Port1);
+                            }
+                            if ((Job.From.Equals(Aligner_1)))
+                            {
+                                Aligner.Clear();
+                                UpdateMapResult(Aligner_gv,Aligner);
+                            }
+                            if (ControllerList.TryGetValue(Device_ID, out robot1))
+                            {
+                                if (Job.ToWay.Equals(Port_2))
+                                {
+                                    Job.ToSlot = Port2.Count.ToString("000");
+                                }
+                                robot1.DoWork(Job.ToWay, Job);
+                            }
+
+                            break;
+                        case "PUT__":
+                            Job.Position = Job.To;
+                            //Job取得下一站目的地
+                            Job.GetNext();
+                            if (Job.Position.Equals(Aligner_1))
+                            {
+                                Slot inPanel = new Slot();
+                                inPanel.JobID = Job.JobID;
+                                Aligner.Add(inPanel);
+                                UpdateMapResult(Aligner_gv, Aligner);
+                                break;
+                            }
+                            if (Job.Position.Equals(Port_2))
+                            {
+                                Slot inPanel = new Slot();
+                                inPanel.JobID = Job.JobID;
+                                inPanel.SlotNo = (Port2.Count+1).ToString();
+                                Port2.Add(inPanel);
+                                UpdateMapResult(Port2_gv,Port2);
+                               
+                            }
+
+                            //該Robot命令完成,尋找需要搬運的Panel
+                            foreach (Job eachJob in JobList.Values)
+                            {
+                                if (eachJob.Deliver.Equals(Device_ID) && eachJob.Position.Equals(eachJob.From))
+                                {
+                                    if (ControllerList.TryGetValue(Device_ID, out robot1))
+                                    {
+                                        robot1.DoWork(eachJob.FromWay, eachJob);
+                                    }
+                                }
+                            }
+
+                            break;
+                    }
+                }
+            }
         }
 
-        void ICommandReport.On_Command_TimeOut(string Device_ID, Command Cmd)
+        void ICommandReport.On_Command_TimeOut(string Device_ID, Command Cmd, Job Job)
         {
 
         }
@@ -504,5 +657,89 @@ namespace robotTest
         {
             running = false;
         }
+
+        private void LDCM_bt_Click(object sender, EventArgs e)
+        {
+            JobList.Clear();
+            Port1.Clear();
+            Port2.Clear();
+            //IController robot1;
+            //if (ControllerList.TryGetValue("Robot_Cmd_001", out robot1))
+            //{
+            //    robot1.Map(Port_1);
+            //}
+            string[] mapResult = "1,1,1,1,1,1,1,1,1,1,1,1".Split(',');//模擬slot 1~4 有片
+            for (int i = 1; i < mapResult.Count(); i++)
+            {
+                string status = mapResult[i];
+
+                switch (status)
+                {
+                    case "0":
+                        status = "無";
+                        break;
+                    case "1":
+                        status = "有";
+                        break;
+                    case "W":
+                        status = "厚度異常";
+                        break;
+                    case "E":
+                        status = "傾斜異常";
+                        break;
+                }
+                Slot eachSlot = new Slot();
+                eachSlot.JobID = "";
+                eachSlot.SlotNo = i.ToString(); ;
+                eachSlot.Status = status;
+                Port1.Add(eachSlot);
+
+            }
+            UpdateMapResult(Port1_gv, Port1);
+        }
+
+        private void DataReq_bt_Click(object sender, EventArgs e)
+        {
+            int i = 1;
+            foreach (Slot eachSlot in Port1)
+            {
+                eachSlot.JobID = "Panel" + i.ToString("000");
+                i++;
+                Job eachJob = new Job();
+                eachJob.JobID = eachSlot.JobID;
+                eachJob.Position = Port_1;
+                eachJob.Slot = eachSlot.SlotNo;
+                eachJob.From = Port_1;
+                eachJob.To = Aligner_1;
+                eachJob.ToSlot = "1";
+                eachJob.FromWay = "Get";
+                eachJob.ToWay = "PutAndWait";
+                eachJob.Deliver = "Robot_Cmd_001";
+                JobList.Add(eachJob.JobID, eachJob);
+            }
+            UpdateMapResult(Port1_gv, Port1);
+        }
+
+
+
+        private void ProcessStart_bt_Click(object sender, EventArgs e)
+        {
+            IController robot1;
+            Job first = JobList.Values.ToList()[0];
+            if (ControllerList.TryGetValue(first.Deliver, out robot1))
+            {
+                robot1.DoWork(first.FromWay, first);
+            }
+        }
+
+        private void ALComplete_bt_Click(object sender, EventArgs e)
+        {
+            On_Command_Finished("Aligner", null, null, null);
+        }
+
+        
+       
+
+        
     }
 }

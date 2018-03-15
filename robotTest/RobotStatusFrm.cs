@@ -39,17 +39,17 @@ namespace robotTest
            
         }
 
-        void ICommandReport.On_Command_Error(string Device_ID, ReturnMsg Msg, Command Cmd)
+        void ICommandReport.On_Command_Error(string Device_ID, ReturnMsg Msg, Command Cmd, Job Job)
         {
            
         }
 
-        void ICommandReport.On_Command_Excuted(string Device_ID, ReturnMsg Msg, Command Cmd)
+        void ICommandReport.On_Command_Excuted(string Device_ID, ReturnMsg Msg, Command Cmd, Job Job)
         {
             
         }
 
-        void ICommandReport.On_Command_Finished(string Device_ID, ReturnMsg Msg, Command Cmd)
+        void ICommandReport.On_Command_Finished(string Device_ID, ReturnMsg Msg, Command Cmd, Job Job)
         {
             string[] reply;
             switch (Msg.GetCMD())
@@ -139,7 +139,7 @@ namespace robotTest
             }
         }
 
-        void ICommandReport.On_Command_TimeOut(string Device_ID, Command Cmd)
+        void ICommandReport.On_Command_TimeOut(string Device_ID, Command Cmd, Job Job)
         {
           
         }

@@ -1,4 +1,5 @@
 ﻿using log4net;
+using robotTest.Base;
 using robotTest.Controller;
 using System;
 using System.Collections.Generic;
@@ -12,11 +13,12 @@ namespace robotTest
     class RobotController : ISocketMessage, IController
     {
         SocketClient cmdSck;
-        ILog logger = LogManager.GetLogger(typeof(Command));
+        ILog logger = LogManager.GetLogger(typeof(RobotController));
         string IP = "";
         int Port = 0;
         string ControllerName = "";
         Command LastSendCommand;
+        Job LastJob;
         int Timeout = 0;
 
         ICommandReport tObj;
@@ -81,7 +83,7 @@ namespace robotTest
         {
             timeOutTimer.Enabled = false; SetStatus(Idle);
             logger.Error("Time out! Send to:" + IP + ":" + Port + " Command:" + LastSendCommand);
-            tObj.On_Command_TimeOut(ControllerName, LastSendCommand);
+            tObj.On_Command_TimeOut(ControllerName, LastSendCommand,LastJob);
 
         }
 
@@ -89,12 +91,12 @@ namespace robotTest
         {
             actionTimeOutTimer.Enabled = false; SetStatus(Idle);
             logger.Error("Action time out! Send to:" + IP + ":" + Port + " Command:" + LastSendCommand);
-            tObj.On_Command_TimeOut(ControllerName, LastSendCommand);
+            tObj.On_Command_TimeOut(ControllerName, LastSendCommand, LastJob);
 
         }
 
 
-        bool IController.SendCommand(Command command)
+        public bool SendCommand(Command command)
         {
             bool result = false;
             try
@@ -103,7 +105,8 @@ namespace robotTest
                 {
                     SetStatus(Waiting);
                     LastSendCommand = command;
-                    if (!command.FLG.Equals("DELAY"))
+                    
+                    if (!command.GetFLG().Equals("DELAY"))
                     {
                         cmdSck.SckSSend(command.GetCommandStr());
                         timeOutTimer.Enabled = true;
@@ -127,7 +130,119 @@ namespace robotTest
         {
             Thread.Sleep(3000);
             SetStatus(Idle);
-            tObj.On_Command_Finished(ControllerName, null, LastSendCommand);
+            tObj.On_Command_Finished(ControllerName, null, LastSendCommand, LastJob);
+        }
+
+        //public void Carry(string Get_Position,string Put_Position,Job Get_Job, Job Put_Job)
+        //{
+
+        //}
+
+        public void DoWork(string Type,Job Job)
+        {
+            switch (Type)
+            {
+                
+                case "Get":
+                    Get(Job);
+                    break;
+                case "Put":
+                    Put(Job);
+                    break;
+                case "GetAndWait":
+                    GetAndWait(Job);
+                    break;
+                case "GetAfterWait":
+                    GetAfterWait(Job);
+                    break;
+                case "PutAndWait":
+                    PutAndWait(Job);
+                    break;
+            }
+        }
+
+        public void Map(string Position)
+        {
+            LastJob = null;
+            Command Cmd = new Command();
+            Cmd.SetADR("1");
+            Cmd.SetFLG("CMD");
+            Cmd.SetCMD("MAP__");
+            Cmd.SetDAT(Position + ",1,0");
+            Cmd.Desc = "Map";
+            SendCommand(Cmd);
+        }
+
+        public void GetMap()
+        {
+            LastJob = null;
+            Command Cmd = new Command();
+            Cmd.SetADR("1");
+            Cmd.SetFLG("GET");
+            Cmd.SetCMD("MAP__");
+            Cmd.SetDAT("1");
+            Cmd.Desc = "GetMap";
+            SendCommand(Cmd);
+        }
+
+        public void Get(Job Job)
+        {
+            LastJob = Job;
+            Command Cmd = new Command();
+            Cmd.SetADR("1");
+            Cmd.SetFLG("CMD");
+            Cmd.SetCMD("GET__");
+            Cmd.SetDAT(Job.From + "," + Job.Slot + ",1,0,0");
+            Cmd.Desc="Get";
+            SendCommand(Cmd);
+        }
+
+        public void GetAndWait(Job Job)
+        {
+            LastJob = Job;
+            Command Cmd = new Command();
+            Cmd.SetADR("1");
+            Cmd.SetFLG("CMD");
+            Cmd.SetCMD("GET__");
+            Cmd.SetDAT(Job.From + ",0,1,0,1");
+            Cmd.Desc = "GetAndWait";
+            SendCommand(Cmd);
+        }
+
+        public void GetAfterWait(Job Job)
+        {
+            LastJob = Job;
+            Command Cmd = new Command();
+            Cmd.SetADR("1");
+            Cmd.SetFLG("CMD");
+            Cmd.SetCMD("GET__");
+            Cmd.SetDAT(Job.From + ","+Job.Slot+",1,0,3");
+            Cmd.Desc = "GetAfterWait";
+            SendCommand(Cmd);
+        }
+
+        public void Put(Job Job)
+        {
+            LastJob = Job;
+            Command Cmd = new Command();
+            Cmd.SetADR("1");
+            Cmd.SetFLG("CMD");
+            Cmd.SetCMD("PUT__");
+            Cmd.SetDAT(Job.To + "," + Job.ToSlot + ",1,0");
+            Cmd.Desc = "Put";
+            SendCommand(Cmd);
+        }
+
+        public void PutAndWait(Job Job)
+        {
+            LastJob = Job;
+            Command Cmd = new Command();
+            Cmd.SetADR("1");
+            Cmd.SetFLG("CMD");
+            Cmd.SetCMD("PUT__");
+            Cmd.SetDAT(Job.To + "," + Job.ToSlot + ",1,2");
+            Cmd.Desc = "Put";
+            SendCommand(Cmd);
         }
 
         void IController.Connect()
@@ -162,22 +277,22 @@ namespace robotTest
                     {
                         case "ACK":
 
-                            if (LastSendCommand.FLG.Equals("CMD"))//如果送出的指令不是CMD，就做下一步，否則必須等待FIN才能繼續
+                            if (LastSendCommand.GetFLG().Equals("CMD"))//如果送出的指令不是CMD，就做下一步，否則必須等待FIN才能繼續
                             {
                                 SetStatus(Runing);
                                 actionTimeOutTimer.Enabled = true;
-                                tObj.On_Command_Excuted(ControllerName, eachMsg, LastSendCommand);
+                                tObj.On_Command_Excuted(ControllerName, eachMsg, LastSendCommand, LastJob);
                             }
                             else
                             {
                                 SetStatus(Idle);
-                                tObj.On_Command_Finished(ControllerName, eachMsg, LastSendCommand);
+                                tObj.On_Command_Excuted(ControllerName, eachMsg, LastSendCommand, LastJob);
                             }
 
                             break;
                         case "NAK":
                             SetStatus(Idle);
-                            tObj.On_Command_Error(ControllerName, eachMsg, LastSendCommand);
+                            tObj.On_Command_Error(ControllerName, eachMsg, LastSendCommand, LastJob);
                             //錯誤發生
                             logger.Error("Error happen:error code=" + eachMsg.GetDAT());
                             break;
@@ -187,12 +302,12 @@ namespace robotTest
                             //下一步
                             if (eachMsg.GetDAT().Equals("00000000"))
                             {
-                                tObj.On_Command_Finished(ControllerName, eachMsg, LastSendCommand);
+                                tObj.On_Command_Finished(ControllerName, eachMsg, LastSendCommand, LastJob);
                             }
                             else
                             {
                                 //錯誤發生
-                                tObj.On_Command_Error(ControllerName, eachMsg, LastSendCommand);
+                                tObj.On_Command_Error(ControllerName, eachMsg, LastSendCommand, LastJob);
                                 logger.Error("Error happen:error code=" + eachMsg.GetDAT());
                             }
 

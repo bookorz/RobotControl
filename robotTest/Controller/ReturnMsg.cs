@@ -1,4 +1,6 @@
 ﻿using log4net;
+using robotTest.Base;
+using robotTest.Controller;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,10 +12,11 @@ namespace robotTest
     public class ReturnMsg
     {
         ILog logger = LogManager.GetLogger(typeof(ReturnMsg));
-        private string ADR { get; set; }
-        private string FLG { get; set; }
-        private string CMD { get; set; }
-        private string DAT { get; set; }
+         string ADR { get; set; }
+         string FLG { get; set; }
+         string CMD { get; set; }
+         string DAT { get; set; }
+        
         public string GetADR()
         {
             return this.ADR;

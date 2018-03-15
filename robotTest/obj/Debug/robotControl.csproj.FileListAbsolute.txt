@@ -13,5 +13,5 @@ C:\Users\ethan_huang\source\repos\robotTest\robotTest\obj\Debug\robotTest.exe
 C:\Users\ethan_huang\source\repos\robotTest\robotTest\obj\Debug\robotTest.pdb
 C:\Users\ethan_huang\source\repos\robotTest\robotTest\bin\Debug\Newtonsoft.Json.dll
 C:\Users\ethan_huang\source\repos\robotTest\robotTest\bin\Debug\Newtonsoft.Json.xml
-C:\Users\ethan_huang\source\repos\robotTest\robotTest\obj\Debug\robotControl.csprojResolveAssemblyReference.cache
 C:\Users\ethan_huang\source\repos\robotTest\robotTest\obj\Debug\robotTest.RobotStatusFrm.resources
+C:\Users\ethan_huang\source\repos\robotTest\robotTest\obj\Debug\robotControl.csprojResolveAssemblyReference.cache
