@@ -1,4 +1,5 @@
 ﻿using log4net;
+using robotTest.Communication;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace robotTest
 {
-    class SocketClient
+    class SocketClient: IConnection
     {
         ILog logger = LogManager.GetLogger(typeof(SocketClient));
         Socket SckSPort; // 先行宣告Socket
@@ -24,21 +25,26 @@ namespace robotTest
 
         string Desc = "";
 
-        ISocketMessage tObj;
+        IConnectionReport tObj;
 
-        public SocketClient(string IP, int Port,string Decription, ISocketMessage _tObj)
+        public SocketClient(string IP, int Port,string Decription, IConnectionReport _tObj)
         {
             RmIp = IP;
             SPort = Port;
             tObj = _tObj;
-            Thread SckTd = new Thread(ConnectServer);
-            SckTd.IsBackground = true;
-            SckTd.Start();
+           
            
             Desc = Decription;
         }
 
         // 連線
+
+        public void Connect()
+        {
+            Thread SckTd = new Thread(ConnectServer);
+            SckTd.IsBackground = true;
+            SckTd.Start();
+        }
 
         private void ConnectServer()
 
@@ -154,7 +160,10 @@ namespace robotTest
         {
             if (SckSPort != null)
             {
+                
                 SckSPort.Close();
+
+
             }
         }
     }

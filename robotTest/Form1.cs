@@ -25,6 +25,7 @@ namespace robotTest
         delegate void UpdateAlignerDG(DataGridView TarDG, List<string> Aligner);
         Dictionary<string, IController> ControllerList = new Dictionary<string, IController>();
         Dictionary<string, ControllerInfo> ControllerStatus = new Dictionary<string, ControllerInfo>();
+        Dictionary<string, Alarm> AlarmList = new Dictionary<string, Alarm>();
         List<Command> cmdList = new List<Command>();
         Dictionary<string, Job> JobList = new Dictionary<string, Job>();
         List<Slot> Port1 = new List<Slot>();
@@ -33,9 +34,9 @@ namespace robotTest
         int RunIdx = 0;
         string ScriptPath = "";
         bool running = false;
-        const string Port_1 = "1201";
-        const string Port_2 = "1204";
-        const string Aligner_1 = "101";
+        public const string Port_1 = "1201";
+        public const string Port_2 = "1204";
+        public const string Aligner_1 = "101";
 
         public Form1()
         {
@@ -66,22 +67,41 @@ namespace robotTest
                 {
                     switch (each.ControllerType)
                     {
-                        case "Robot":
+                        case "SanwaAligner":
+                            ControllerList.Add(each.ControllerName, new AlignerController(each.IPAdress, each.Port, each.CommandTimeout, each.ControllerName, this));
+                            break;
+                        case "SanwaRobot":
                             ControllerList.Add(each.ControllerName, new RobotController(each.IPAdress, each.Port, each.CommandTimeout, each.ControllerName, this));
                             break;
+
+                        case "KawasakiRobot":
+
+                            break;
+
                     }
 
                 }
+
             }
 
             Conn_gv.AutoGenerateColumns = true;
             Conn_gv.DataSource = ControllerStatus.Values.ToList();
             Conn_gv.ClearSelection();
-            ConfigReader<Common> CommandTypeCfg = new ConfigReader<Common>();
-            foreach (Common each in CommandTypeCfg.ReadFile("config/Command/CommandType.json"))
-            //foreach (Common each in CommandTypeCfg.ReadFile("config/controllers.json"))
+            
+
+            ConfigReader<Alarm> AlarmCfg = new ConfigReader<Alarm>();
+            foreach (Alarm each in AlarmCfg.ReadFile("config/Alarm/RobotErrorCode.json"))
             {
-                CmdType_cb.Items.Add(each.Name);
+                if (!AlarmList.ContainsKey(each.Error_Code))
+                { 
+                    AlarmList.Add(each.Error_Code, each);
+                }
+            }
+
+            foreach (string each in Directory.GetDirectories("config/Command/"))
+            {
+             
+                ControllerType_cb.Items.Add(each.Substring(each.LastIndexOf("/")+1));
             }
         }
 
@@ -250,7 +270,7 @@ namespace robotTest
                 //}
                 Instruc_cb.DisplayMember = "Name";
                 Instruc_cb.ValueMember = "Option";
-                Instruc_cb.DataSource = InstructionCfg.ReadFile("config/Command/" + CmdType_cb.Text + ".json");
+                Instruc_cb.DataSource = InstructionCfg.ReadFile("config/Command/" + ControllerType_cb.Text+ "/"+ CmdType_cb.Text + ".json");
             }
             catch (Exception ex)
             {
@@ -498,11 +518,42 @@ namespace robotTest
                     }
                 }
             }
+            else
+            {
+                if (!Cmd.GetFLG().Equals("CMD"))
+                {
+                    RunIdx++;
+                    if (RunIdx < cmdList.Count)
+                    {
+                        Run(cmdList[RunIdx]);
+                        UpdateScriptProgress(RunIdx);
+                    }
+                    else
+                    {
+                        RunIdx = 0;
+                        Run(cmdList[RunIdx]);
+                        UpdateScriptProgress(RunIdx);
+
+                    }
+                }
+
+            }
         }
 
         void ICommandReport.On_Command_Error(string Device_ID, ReturnMsg Msg, Command Cmd, Job Job)
         {
-            MessageBox.Show(Device_ID + "錯誤發生，錯誤碼:" + Msg.GetDAT());
+            if (AlarmList.ContainsKey(Msg.GetDAT()))
+            {
+                Alarm alm;
+                if (AlarmList.TryGetValue(Msg.GetDAT(), out alm))
+                {
+                    MessageBox.Show(Device_ID + "錯誤發生\n錯誤類型:" + alm.Error_Type+"\n錯誤名稱:"+alm.Error_Name + "\n錯誤描述:"+alm.Error_Cause , "錯誤碼:" + alm.Error_Code);
+                }
+            }
+            else
+            {
+                MessageBox.Show(Device_ID + "錯誤發生，錯誤碼:" + Msg.GetDAT());
+            }
         }
 
         public void On_Command_Finished(string Device_ID, ReturnMsg Msg, Command Cmd, Job Job)
@@ -536,7 +587,7 @@ namespace robotTest
                             {
                                 
 
-                                robot1.DoWork("GetAfterWait", eachJob);
+                                robot1.DoWork(RobotCommand.GetAfterWait, eachJob);
                             }
                         }
                     }
@@ -553,10 +604,7 @@ namespace robotTest
                         case "MAP__":
                             #region MAP動作完成
 
-                            if (ControllerList.TryGetValue(Device_ID, out robot1))
-                            {
-                                robot1.GetMap();
-                            }
+                           
                             #endregion
                             break;
                         case "GET__":
@@ -587,6 +635,20 @@ namespace robotTest
                             }
 
                             break;
+                        case "ALIGN":
+                            foreach (Job eachJob in JobList.Values)
+                            {
+                                if (eachJob.Position.Equals(Aligner_1))
+                                {
+                                    if (ControllerList.TryGetValue(eachJob.Deliver, out robot1))
+                                    {
+
+
+                                        robot1.DoWork(eachJob.FromWay, eachJob);
+                                    }
+                                }
+                            }
+                            break;
                         case "PUT__":
                             Job.Position = Job.To;
                             //Job取得下一站目的地
@@ -597,6 +659,12 @@ namespace robotTest
                                 inPanel.JobID = Job.JobID;
                                 Aligner.Add(inPanel);
                                 UpdateMapResult(Aligner_gv, Aligner);
+                                
+                                if (ControllerList.TryGetValue(Job.Producer, out robot1))
+                                {
+                                    robot1.DoWork(RobotCommand.ALIGN, Job);
+                                }
+                                
                                 break;
                             }
                             if (Job.Position.Equals(Port_2))
@@ -668,7 +736,7 @@ namespace robotTest
             //{
             //    robot1.Map(Port_1);
             //}
-            string[] mapResult = "1,1,1,1,1,1,1,1,1,1,1,1".Split(',');//模擬slot 1~4 有片
+            string[] mapResult = "1,1,1,1,1,1,1,1,1,1,1,1".Split(',');//模擬slot 
             for (int i = 1; i < mapResult.Count(); i++)
             {
                 string status = mapResult[i];
@@ -712,9 +780,11 @@ namespace robotTest
                 eachJob.From = Port_1;
                 eachJob.To = Aligner_1;
                 eachJob.ToSlot = "1";
-                eachJob.FromWay = "Get";
-                eachJob.ToWay = "PutAndWait";
+                eachJob.NotchDegree = "30000";
+                eachJob.FromWay = RobotCommand.Get;
+                eachJob.ToWay = RobotCommand.PutAndWait;
                 eachJob.Deliver = "Robot_Cmd_001";
+               
                 JobList.Add(eachJob.JobID, eachJob);
             }
             UpdateMapResult(Port1_gv, Port1);
@@ -737,9 +807,15 @@ namespace robotTest
             On_Command_Finished("Aligner", null, null, null);
         }
 
-        
-       
-
-        
+        private void ControllerType_cb_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            CmdType_cb.Items.Clear();
+            ConfigReader<Common> CommandTypeCfg = new ConfigReader<Common>();
+            foreach (Common each in CommandTypeCfg.ReadFile("config/Command/" + ControllerType_cb.Text + "/CommandType.json"))
+            //foreach (Common each in CommandTypeCfg.ReadFile("config/controllers.json"))
+            {
+                CmdType_cb.Items.Add(each.Name);
+            }
+        }
     }
 }

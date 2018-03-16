@@ -19,8 +19,8 @@ namespace robotTest.FileHandle
             List<T> result = null;
             try
             {
-                //string t = File.ReadAllText(FilePath,Encoding.Default);
-                result = JsonConvert.DeserializeObject<List<T>>(File.ReadAllText(FilePath,Encoding.Default));
+                string t = File.ReadAllText(FilePath,Encoding.UTF8);
+                result = JsonConvert.DeserializeObject<List<T>>(File.ReadAllText(FilePath,Encoding.UTF8));
             }
             catch (Exception ex)
             {

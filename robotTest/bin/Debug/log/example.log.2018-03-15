@@ -1,0 +1,13 @@
+2018-03-15 18:05:53,639 [6] INFO  robotTest.SocketClient - [Snd-->]$1CMD:PUT__:1204,1,1,0(To Robot_Cmd_001 192.168.0.127:23)
+2018-03-15 18:05:53,743 [6] INFO  robotTest.SocketClient - [Rev<--]$1ACK:PUT__(From Robot_Cmd_001 192.168.0.127:23)
+2018-03-15 18:06:02,941 [6] INFO  robotTest.SocketClient - [Rev<--]$1FIN:PUT__:00000000(From Robot_Cmd_001 192.168.0.127:23)
+2018-03-15 18:06:03,081 [6] INFO  robotTest.SocketClient - [Snd-->]$1CMD:GET__:1201,2,1,0,0(To Robot_Cmd_001 192.168.0.127:23)
+2018-03-15 18:06:03,176 [6] INFO  robotTest.SocketClient - [Rev<--]$1ACK:GET__(From Robot_Cmd_001 192.168.0.127:23)
+2018-03-15 18:06:07,087 [6] ERROR robotTest.SocketClient - (From Robot_Cmd_001 192.168.0.127:23)連線已被您主機上的軟體中止。
+   於 System.Net.Sockets.Socket.Receive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
+   於 System.Net.Sockets.Socket.Receive(Byte[] buffer)
+   於 robotTest.SocketClient.SckSReceiveProc() 於 C:\Users\ethan_huang\source\repos\robotTest\robotTest\Communication\SocketClient.cs: 行 103
+2018-03-15 18:06:07,087 [5] ERROR robotTest.SocketClient - (From Robot_Read_001 192.168.0.127:8900)連線已被您主機上的軟體中止。
+   於 System.Net.Sockets.Socket.Receive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
+   於 System.Net.Sockets.Socket.Receive(Byte[] buffer)
+   於 robotTest.SocketClient.SckSReceiveProc() 於 C:\Users\ethan_huang\source\repos\robotTest\robotTest\Communication\SocketClient.cs: 行 103

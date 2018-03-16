@@ -1,0 +1,905 @@
+[
+  {
+    "Error_Type": "GeneralAlarm",
+    "Error_Code": "80800000",
+    "Error_Name": "ECD_GNR_NORMAL_STOP",
+    "Error_Cause_English": "NormalStop(StopButtonLocked)",
+    "Error_Cause": "停止按鈕被觸發"
+  },
+  {
+    "Error_Type": "GeneralAlarm",
+    "Error_Code": "80801000",
+    "Error_Name": "ECD_GNR_FILE_FAIL",
+    "Error_Cause_English": "FileRead/WriteFail",
+    "Error_Cause": "讀取或寫入記憶卡失敗"
+  },
+  {
+    "Error_Type": "GeneralAlarm",
+    "Error_Code": "80802000",
+    "Error_Name": "ECD_GNR_BUG_TIMER",
+    "Error_Cause_English": "MemoryProcessFail",
+    "Error_Cause": "記憶體處理錯誤"
+  },
+  {
+    "Error_Type": "GeneralAlarm",
+    "Error_Code": "80803000",
+    "Error_Name": "ECD_GNR_INTERNAL_FAIL",
+    "Error_Cause_English": "InternalFail",
+    "Error_Cause": "內部錯誤(一般是因為控制器硬體異常)"
+  },
+  {
+    "Error_Type": "GeneralAlarm",
+    "Error_Code": "80804000",
+    "Error_Name": "ECD_GNR_DIO_FAIL",
+    "Error_Cause_English": "DIOFail",
+    "Error_Cause": "DIO錯誤(控制器異常)"
+  },
+  {
+    "Error_Type": "MotionAlarm",
+    "Error_Code": "91800000",
+    "Error_Name": "ECD_MTN_POSITION_OD",
+    "Error_Cause_English": "OverDeviation(Static)",
+    "Error_Cause": "脫調(由控制器端引發)"
+  },
+  {
+    "Error_Type": "MotionAlarm",
+    "Error_Code": "91801000",
+    "Error_Name": "ECD_MTN_SOFT_LIMIT_P",
+    "Error_Cause_English": "SoftLimit+",
+    "Error_Cause": "位置超出軟體正極限"
+  },
+  {
+    "Error_Type": "MotionAlarm",
+    "Error_Code": "91802000",
+    "Error_Name": "ECD_MTN_SOFT_LIMIT_M",
+    "Error_Cause_English": "SoftLimit-",
+    "Error_Cause": "位置超出軟體負極限"
+  },
+  {
+    "Error_Type": "MotionAlarm",
+    "Error_Code": "91803000",
+    "Error_Name": "ECD_MTN_HARD_LIMIT_P",
+    "Error_Cause_English": "HardLimit+",
+    "Error_Cause": "位置超出硬體正極限"
+  },
+  {
+    "Error_Type": "MotionAlarm",
+    "Error_Code": "91804000",
+    "Error_Name": "ECD_MTN_HARD_LIMIT_M",
+    "Error_Cause_English": "HardLimit-",
+    "Error_Cause": "位置超出硬體負極限"
+  },
+  {
+    "Error_Type": "MotionAlarm",
+    "Error_Code": "81805000",
+    "Error_Name": "ECD_MTN_SERVO_NOT_READY",
+    "Error_Cause_English": "ServonotReady",
+    "Error_Cause": "馬達驅動器異常"
+  },
+  {
+    "Error_Type": "MotionAlarm",
+    "Error_Code": "91806000",
+    "Error_Name": "ECD_MTN_ORG_DISABLED",
+    "Error_Cause_English": "ORGSearchDisabled",
+    "Error_Cause": "原點復歸在參數中被關閉"
+  },
+  {
+    "Error_Type": "MotionAlarm",
+    "Error_Code": "91807000",
+    "Error_Name": "ECD_MTN_ARM_EXTEND",
+    "Error_Cause_English": "ArmExtend(RetractFirst)",
+    "Error_Cause": "手臂伸出未退回，無法進行其他動作。"
+  },
+  {
+    "Error_Type": "MotionAlarm",
+    "Error_Code": "91808000",
+    "Error_Name": "ECD_MTN_FINISH_TMO",
+    "Error_Cause_English": "WaitFinishTimeout",
+    "Error_Cause": "等待移動結束超時"
+  },
+  {
+    "Error_Type": "MotionAlarm",
+    "Error_Code": "91809000",
+    "Error_Name": "ECD_MTN_FOLLOWING_OD",
+    "Error_Cause_English": "OverDeviation(Dynamic)",
+    "Error_Cause": "動態脫調(由控制器端引發)"
+  },
+  {
+    "Error_Type": "MotionAlarm",
+    "Error_Code": "81810000",
+    "Error_Name": "ECD_MTN_MAP_FAIL",
+    "Error_Cause_English": "MappingFail",
+    "Error_Cause": "Mapping失敗"
+  },
+  {
+    "Error_Type": "MotionAlarm",
+    "Error_Code": "81811000",
+    "Error_Name": "ECD_MTN_MAP_INTERFERE",
+    "Error_Cause_English": "MappingInterfere",
+    "Error_Cause": "Mapping干涉"
+  },
+  {
+    "Error_Type": "MotionAlarm",
+    "Error_Code": "81812000",
+    "Error_Name": "ECD_MTN_MOVE_ORG_FAIL",
+    "Error_Cause_English": "ORGSearchFail",
+    "Error_Cause": "原點復歸失敗"
+  },
+  {
+    "Error_Type": "MotionAlarm",
+    "Error_Code": "81813000",
+    "Error_Name": "ECD_MTN_REQUIRE_ORG",
+    "Error_Cause_English": "RequireORGSearch",
+    "Error_Cause": "需要先執行原點復歸"
+  },
+  {
+    "Error_Type": "MotionAlarm",
+    "Error_Code": "81814000",
+    "Error_Name": "ECD_MTN_SERVO_OFF",
+    "Error_Cause_English": "ServoOff(NeedServoOn)",
+    "Error_Cause": "在ServoOff時執行Motion命令"
+  },
+  {
+    "Error_Type": "MotionAlarm",
+    "Error_Code": "81815000",
+    "Error_Name": "ECD_MTN_ROBOT_IN_ALARM",
+    "Error_Cause_English": "RobotinAlarm(ResetFirst)",
+    "Error_Cause": "目前有錯誤發生,請先排除錯誤。"
+  },
+  {
+    "Error_Type": "MotionAlarm",
+    "Error_Code": "81816000",
+    "Error_Name": "ECD_MTN_ROBOT_PAUSED",
+    "Error_Cause_English": "RobotPaused",
+    "Error_Cause": "Robot目前在暫停狀態，無法動作。"
+  },
+  {
+    "Error_Type": "MotionAlarm",
+    "Error_Code": "81817000",
+    "Error_Name": "ECD_MTN_SHOME_FAIL",
+    "Error_Cause_English": "SHOMECommandFail",
+    "Error_Cause": "SHOME命令失敗"
+  },
+  {
+    "Error_Type": "MotionAlarm",
+    "Error_Code": "91818000",
+    "Error_Name": "ECD_MTN_SHOME_OVER_LIMIT",
+    "Error_Cause_English": "SHOMEPositionOverSafetyLimitSHOME",
+    "Error_Cause": "命令失敗，位置處於不安全範圍。"
+  },
+  {
+    "Error_Type": "forAlignmentError",
+    "Error_Code": "81820000",
+    "Error_Name": "ECD_MTN_ALIGN_OVER_LIMIT_R",
+    "Error_Cause_English": "AlignOverLimitR",
+    "Error_Cause": "Alignment:Arm軸的補正設定值過大"
+  },
+  {
+    "Error_Type": "forAlignmentError",
+    "Error_Code": "81821000",
+    "Error_Name": "ECD_MTN_ALIGN_PARAMETER1",
+    "Error_Cause_English": "AlignParameter1",
+    "Error_Cause": "Alignment:設定值1異常"
+  },
+  {
+    "Error_Type": "forAlignmentError",
+    "Error_Code": "81822000",
+    "Error_Name": "ECD_MTN_ALIGN_PARAMETER2",
+    "Error_Cause_English": "AlignParameter2",
+    "Error_Cause": "Alignment:設定值2異常"
+  },
+  {
+    "Error_Type": "forAlignmentError",
+    "Error_Code": "81823000",
+    "Error_Name": "ECD_MTN_ALIGN_NO_SENSING_R",
+    "Error_Cause_English": "AlignNoSensingR",
+    "Error_Cause": "Alignment:R側無Sensor檢出"
+  },
+  {
+    "Error_Type": "forAlignmentError",
+    "Error_Code": "81824000",
+    "Error_Name": "ECD_MTN_ALIGN_NO_SENSING_L",
+    "Error_Cause_English": "AlignNoSensingL",
+    "Error_Cause": "Alignment:L側無Sensor檢出"
+  },
+  {
+    "Error_Type": "forAlignmentError",
+    "Error_Code": "81825000",
+    "Error_Name": "ECD_MTN_ALIGN_OVER_SENSING",
+    "Error_Cause_English": "AlignOverSensing",
+    "Error_Cause": "Alignment:SensorON/OFF次數過多"
+  },
+  {
+    "Error_Type": "forAlignmentError",
+    "Error_Code": "81826000",
+    "Error_Name": "ECD_MTN_ALIGN_OVER_DELTA",
+    "Error_Cause_English": "AlignOverLimitDelta",
+    "Error_Cause": "Alignment:補正角度過大"
+  },
+  {
+    "Error_Type": "forAlignmentError",
+    "Error_Code": "81827000",
+    "Error_Name": "ECD_MTN_ALIGN_OVER_LIMIT_X",
+    "Error_Cause_English": "AlignOverLimitX",
+    "Error_Cause": "Alignment:X軸補正過大"
+  },
+  {
+    "Error_Type": "forEdgeDetectError",
+    "Error_Code": "81830000",
+    "Error_Name": "ECD_MTN_EDGE_UNKNOWN",
+    "Error_Cause_English": "EdgeUnknown",
+    "Error_Cause": "端面檢知異常失敗"
+  },
+  {
+    "Error_Type": "forEdgeDetectError",
+    "Error_Code": "81831000",
+    "Error_Name": "ECD_MTN_EDGE_PARAMETER",
+    "Error_Cause_English": "EdgeParameter",
+    "Error_Cause": "端面檢知參數錯誤"
+  },
+  {
+    "Error_Type": "forEdgeDetectError",
+    "Error_Code": "81832000",
+    "Error_Name": "ECD_MTN_EDGE_OVER_SENSING",
+    "Error_Cause_English": "EdgeOverSensing",
+    "Error_Cause": "端面檢知SensorON/OFF次數過多"
+  },
+  {
+    "Error_Type": "forEdgeDetectError",
+    "Error_Code": "81833000",
+    "Error_Name": "ECD_MTN_EDGE_NO_SENSING",
+    "Error_Cause_English": "EdgeNoSensing",
+    "Error_Cause": "端面檢知無Sensor檢出"
+  },
+  {
+    "Error_Type": "forEdgeDetectError",
+    "Error_Code": "81834000",
+    "Error_Name": "ECD_MTN_EDGE_SENSERROR",
+    "Error_Cause_English": "EdgeSenseError",
+    "Error_Cause": "端面檢知偵測錯誤"
+  },
+  {
+    "Error_Type": "forEdgeDetectError",
+    "Error_Code": "81835000",
+    "Error_Name": "ECD_MTN_EDGE_OVER_LIMIT",
+    "Error_Cause_English": "EdgeOverLimit",
+    "Error_Cause": "端面檢知超出範圍"
+  },
+  {
+    "Error_Type": "forForkError",
+    "Error_Code": "91840000",
+    "Error_Name": "ECD_MTN_FORK_POSITION",
+    "Error_Cause_English": "ForkPositionFail",
+    "Error_Cause": "Fork位置錯誤"
+  },
+  {
+    "Error_Type": "forForkError",
+    "Error_Code": "91841000",
+    "Error_Name": "ECD_MTN_FORK_OVER_CURRENT",
+    "Error_Cause_English": "ForkOverCurrent",
+    "Error_Cause": "Fork馬達過電流(Fork開闔並使用馬達)"
+  },
+  {
+    "Error_Type": "forForkError",
+    "Error_Code": "91842000",
+    "Error_Name": "ECD_MTN_FORK_OC_PEAK",
+    "Error_Cause_English": "ForkOverCurrent(Peak)",
+    "Error_Cause": "Fork馬達過電流(峰值)"
+  },
+  {
+    "Error_Type": "forForkError",
+    "Error_Code": "91843000",
+    "Error_Name": "ECD_MTN_FORK_ENCODER_LOST",
+    "Error_Cause_English": "ForkEncoderLost",
+    "Error_Cause": "ForkEncoder異常"
+  },
+  {
+    "Error_Type": "forForkError",
+    "Error_Code": "81844000",
+    "Error_Name": "ECD_MTN_FORK_PARAM_ERROR",
+    "Error_Cause_English": "ForkControlParameterError",
+    "Error_Cause": "Fork開闔參數設定錯誤"
+  },
+  {
+    "Error_Type": "forMotionController",
+    "Error_Code": "91850000",
+    "Error_Name": "ECD_MTN_EMERGENCY_STOP",
+    "Error_Cause_English": "EmergencyStop",
+    "Error_Cause": "緊急停止"
+  },
+  {
+    "Error_Type": "forMotionController",
+    "Error_Code": "91851000",
+    "Error_Name": "ECD_MTN_COUNT_OVERFLOW",
+    "Error_Cause_English": "PulseCounterOverflow",
+    "Error_Cause": "脈波計數器溢位"
+  },
+  {
+    "Error_Type": "forMotionController",
+    "Error_Code": "91852000",
+    "Error_Name": "ECD_MTN_ENCODER_ERROR",
+    "Error_Cause_English": "EncoderPulseError",
+    "Error_Cause": "編碼器脈波輸入異常"
+  },
+  {
+    "Error_Type": "forMulti-JointSimulation",
+    "Error_Code": "91860000",
+    "Error_Name": "ECD_MTN_MJS_FAIL",
+    "Error_Cause_English": "Multi-JointSimulationFail",
+    "Error_Cause": "擬似多軸錯誤"
+  },
+  {
+    "Error_Type": "forMulti-JointSimulation",
+    "Error_Code": "81861000",
+    "Error_Name": "ECD_MTN_MJS_ARM_INTERFERE",
+    "Error_Cause_English": "MJSArmInterfere",
+    "Error_Cause": "擬似多軸Arm動作干涉"
+  },
+  {
+    "Error_Type": "forMulti-JointSimulation",
+    "Error_Code": "81862000",
+    "Error_Name": "ECD_MTN_MJS_HARDWARE_ERROR",
+    "Error_Cause_English": "MJSHardwareError",
+    "Error_Cause": "硬體不支援擬似多軸功能"
+  },
+  {
+    "Error_Type": "forMulti-JointSimulation",
+    "Error_Code": "81863000",
+    "Error_Name": "ECD_MTN_MJS_OVER_ARM_LENGTHMJSOverLink-ArmLength",
+    "Error_Cause_English": "超出",
+    "Error_Cause": "Link-Arm的最大到達範圍"
+  },
+  {
+    "Error_Type": "MotorDriverAlarm",
+    "Error_Code": "92800000",
+    "Error_Name": "ECD_DRV_UNKNOWN_FAIL",
+    "Error_Cause_English": "SI-DriverUnknownFail",
+    "Error_Cause": "馬達驅動器異常"
+  },
+  {
+    "Error_Type": "MotorDriverAlarm",
+    "Error_Code": "92801000",
+    "Error_Name": "ECD_DRV_INITIAL_FAIL",
+    "Error_Cause_English": "SI-DriverInitialFail",
+    "Error_Cause": "馬達驅動器初始化失敗"
+  },
+  {
+    "Error_Type": "MotorDriverAlarm",
+    "Error_Code": "92802000",
+    "Error_Name": "ECD_DRV_ALARM",
+    "Error_Cause_English": "SI-DriverAlarm",
+    "Error_Cause": "馬達驅動器異常"
+  },
+  {
+    "Error_Type": "MotorDriverAlarm",
+    "Error_Code": "92803000",
+    "Error_Name": "ECD_DRV_TEMPERATURE",
+    "Error_Cause_English": "SI-DriverOverTemperature",
+    "Error_Cause": "馬達驅動器溫度異常"
+  },
+  {
+    "Error_Type": "MotorDriverAlarm",
+    "Error_Code": "92804000",
+    "Error_Name": "ECD_DRV_OVER_CURRENT",
+    "Error_Cause_English": "SI-DriverOverCurrent",
+    "Error_Cause": "馬達驅動器過電流"
+  },
+  {
+    "Error_Type": "MotorDriverAlarm",
+    "Error_Code": "92805000",
+    "Error_Name": "ECD_DRV_POSITION_OD",
+    "Error_Cause_English": "SI-DriverOverDeviation(Static)",
+    "Error_Cause": "馬達驅動器靜態脫調"
+  },
+  {
+    "Error_Type": "MotorDriverAlarm",
+    "Error_Code": "92806000",
+    "Error_Name": "ECD_DRV_FOLLOWING_OD",
+    "Error_Cause_English": "SI-DriverOverDeviation(Dynamic)",
+    "Error_Cause": "馬達驅動器動態脫調"
+  },
+  {
+    "Error_Type": "MotorDriverAlarm",
+    "Error_Code": "92807000",
+    "Error_Name": "ECD_DRV_OVER_SPEED",
+    "Error_Cause_English": "SI-DriverOverSpeed",
+    "Error_Cause": "馬達驅動器速度異常"
+  },
+  {
+    "Error_Type": "MotorDriverAlarm",
+    "Error_Code": "92808000",
+    "Error_Name": "ECD_DRV_LOW_VOLTAGE",
+    "Error_Cause_English": "SI-DriverLowVoltage",
+    "Error_Cause": "馬達驅動器電壓異常"
+  },
+  {
+    "Error_Type": "MotorDriverAlarm",
+    "Error_Code": "92809000",
+    "Error_Name": "ECD_DRV_ORG_CMD_FAIL",
+    "Error_Cause_English": "SI-DriverORGSearchFail",
+    "Error_Cause": "馬達驅動器ORGSearch失敗"
+  },
+  {
+    "Error_Type": "MotorDriverAlarm",
+    "Error_Code": "9280A000",
+    "Error_Name": "ECD_DRV_PULSE_GEN",
+    "Error_Cause_English": "SI-DriverPulseGeneratorFail",
+    "Error_Cause": "馬達驅動器脈波產生異常"
+  },
+  {
+    "Error_Type": "MotorDriverAlarm",
+    "Error_Code": "9280B000",
+    "Error_Name": "ECD_DRV_V_MOTOR_LOW",
+    "Error_Cause_English": "SI-DriverLowMotorVoltage",
+    "Error_Cause": "馬達驅動器馬達電壓異常"
+  },
+  {
+    "Error_Type": "DriverError",
+    "Error_Code": "92810000",
+    "Error_Name": "ECD_DRV_POWER_ON",
+    "Error_Cause_English": "SI-DriverPowerOnFail",
+    "Error_Cause": "馬達驅動器電源異常"
+  },
+  {
+    "Error_Type": "DriverError",
+    "Error_Code": "92811000",
+    "Error_Name": "ECD_DRV_SERVO_ON",
+    "Error_Cause_English": "SI-DriverServoOnFail",
+    "Error_Cause": "馬達驅動器無法ServoOn"
+  },
+  {
+    "Error_Type": "DriverError",
+    "Error_Code": "92812000",
+    "Error_Name": "ECD_DRV_RESET_ALARM",
+    "Error_Cause_English": "SI-DriverResetAlarmFail",
+    "Error_Cause": "馬達驅動器清除警報失敗"
+  },
+  {
+    "Error_Type": "DriverError",
+    "Error_Code": "92813000",
+    "Error_Name": "ECD_DRV_COMMUNICATION",
+    "Error_Cause_English": "SI-DriverCommunicationFail",
+    "Error_Cause": "無法與馬達驅動器通訊"
+  },
+  {
+    "Error_Type": "DriverError",
+    "Error_Code": "92814000",
+    "Error_Name": "ECD_DRV_ENCODER_UNSTABLE",
+    "Error_Cause_English": "ABSEncoderUnstable",
+    "Error_Cause": "ABSEncoder異常"
+  },
+  {
+    "Error_Type": "DriverError",
+    "Error_Code": "92815000",
+    "Error_Name": "ECD_DRV_ENCODER_FAIL",
+    "Error_Cause_English": "ABSEncoderReadFail",
+    "Error_Cause": "ABSEncoder讀取失敗"
+  },
+  {
+    "Error_Type": "DriverError",
+    "Error_Code": "92816000",
+    "Error_Name": "ECD_DRV_Z_PAHSE_ERR",
+    "Error_Cause_English": "ABSEncoderZ-PhaseError",
+    "Error_Cause": "ABSEncoderZ-Phase錯誤"
+  },
+  {
+    "Error_Type": "DriverError",
+    "Error_Code": "92817000",
+    "Error_Name": "ECD_DRV_MOTOR_IN_MOVING",
+    "Error_Cause_English": "MotorinMoving",
+    "Error_Cause": "馬達還未停止就進行下一個命令"
+  },
+  {
+    "Error_Type": "DriverError",
+    "Error_Code": "92818000",
+    "Error_Name": "ECD_DRV_MOTOR_MODEL_ERROR",
+    "Error_Cause_English": "MotorModelError",
+    "Error_Cause": "馬達序號不匹配"
+  },
+  {
+    "Error_Type": "forExt-IOBoardError",
+    "Error_Code": "92820000",
+    "Error_Name": "ECD_EXT_IO_INIT_FAIL",
+    "Error_Cause_English": "Ext-IOInitialFailIO",
+    "Error_Cause": "擴展板初始化失敗"
+  },
+  {
+    "Error_Type": "SensorAlarm",
+    "Error_Code": "83800000",
+    "Error_Name": "ECD_SSR_TIMEOUT",
+    "Error_Cause_English": "SensorTimeout",
+    "Error_Cause": "等待感測器超時"
+  },
+  {
+    "Error_Type": "SensorAlarm",
+    "Error_Code": "83801000",
+    "Error_Name": "ECD_SSR_REQ_ENTER_TMO",
+    "Error_Cause_English": "PCLREQ_ENTERTimeout",
+    "Error_Cause": "PCLREQ_ENTER訊號沒回應"
+  },
+  {
+    "Error_Type": "SensorAlarm",
+    "Error_Code": "83802000",
+    "Error_Name": "ECD_SSR_REQ_ENTER_ON",
+    "Error_Cause_English": "PCLREQ_ENTER'ON'Fail",
+    "Error_Cause": "PCLREQ_ENTER訊號ON異常"
+  },
+  {
+    "Error_Type": "SensorAlarm",
+    "Error_Code": "93803000",
+    "Error_Name": "ECD_SSR_PRESENT_ON",
+    "Error_Cause_English": "PresentSensor'ON'Fail",
+    "Error_Cause": "在席感測器訊號ON異常"
+  },
+  {
+    "Error_Type": "SensorAlarm",
+    "Error_Code": "93804000",
+    "Error_Name": "ECD_SSR_PRESENT_OFF",
+    "Error_Cause_English": "PresentSensor'OFF'Fail",
+    "Error_Cause": "在席感測器訊號OFF異常"
+  },
+  {
+    "Error_Type": "SensorAlarm",
+    "Error_Code": "83805000",
+    "Error_Name": "ECD_SSR_CONTROLLER_FAN",
+    "Error_Cause_English": "ControllerFanFail",
+    "Error_Cause": "控制器風扇異常"
+  },
+  {
+    "Error_Type": "SensorAlarm",
+    "Error_Code": "83806000",
+    "Error_Name": "ECD_SSR_ROBOT_FAN1",
+    "Error_Cause_English": "RobotFan1Fail",
+    "Error_Cause": "Robot風扇1異常"
+  },
+  {
+    "Error_Type": "SensorAlarm",
+    "Error_Code": "83807000",
+    "Error_Name": "ECD_SSR_ROBOT_FAN2",
+    "Error_Cause_English": "RobotFan2Fail",
+    "Error_Cause": "Robot風扇2異常"
+  },
+  {
+    "Error_Type": "SensorAlarm",
+    "Error_Code": "83808000",
+    "Error_Name": "ECD_SSR_ROBOT_FAN3",
+    "Error_Cause_English": "RobotFan3Fail",
+    "Error_Cause": "Robot風扇3異常"
+  },
+  {
+    "Error_Type": "SensorAlarm",
+    "Error_Code": "93809000",
+    "Error_Name": "ECD_SSR_ORG",
+    "Error_Cause_English": "ORGSensor'ON'Fail",
+    "Error_Cause": "原點感測器訊號ON異常"
+  },
+  {
+    "Error_Type": "SensorAlarm",
+    "Error_Code": "9380A000",
+    "Error_Name": "ECD_SSR_WAFER_HOLD_TMO",
+    "Error_Cause_English": "WaferHoldTimeout",
+    "Error_Cause": "晶圓保持(吸附)失敗(有Timeout參數)"
+  },
+  {
+    "Error_Type": "SensorAlarm",
+    "Error_Code": "9380B000",
+    "Error_Name": "ECD_SSR_WAFER_RELEASE_TMO",
+    "Error_Cause_English": "WaferReleaseTimeout",
+    "Error_Cause": "晶圓釋放失敗(有Timeout參數)"
+  },
+  {
+    "Error_Type": "SensorAlarm",
+    "Error_Code": "9380C000",
+    "Error_Name": "ECD_SSR_WAFER_HOLD_FAIL",
+    "Error_Cause_English": "WaferHoldFail",
+    "Error_Cause": "晶圓保持(吸附)失敗(直接判斷無Timeout)"
+  },
+  {
+    "Error_Type": "SensorAlarm",
+    "Error_Code": "9380D000",
+    "Error_Name": "ECD_SSR_WAFER_RELEASE_FAIL",
+    "Error_Cause_English": "WaferReleaseFail",
+    "Error_Cause": "晶圓釋放失敗(直接判斷無Timeout)"
+  },
+  {
+    "Error_Type": "SensorAlarm",
+    "Error_Code": "9380F000",
+    "Error_Name": "ECD_SSR_WAFER_SENSOR",
+    "Error_Cause_English": "WaferSensorFail",
+    "Error_Cause": "晶圓感測器訊號異常"
+  },
+  {
+    "Error_Type": "SensorAlarm",
+    "Error_Code": "83810000",
+    "Error_Name": "ECD_SSR_PRESSURE",
+    "Error_Cause_English": "AbnormalPressure",
+    "Error_Cause": "壓力異常"
+  },
+  {
+    "Error_Type": "SensorAlarm",
+    "Error_Code": "83820000",
+    "Error_Name": "ECD_SSR_CRASH",
+    "Error_Cause_English": "Crash(DetectedShockSensor)",
+    "Error_Cause": "撞機(震動感知器觸發)"
+  },
+  {
+    "Error_Type": "SensorAlarm",
+    "Error_Code": "83830000",
+    "Error_Name": "ECD_SSR_BELT_BREAK",
+    "Error_Cause_English": "BeltBreak",
+    "Error_Cause": "皮帶斷裂"
+  },
+  {
+    "Error_Type": "HostCommandAlarm",
+    "Error_Code": "84800000",
+    "Error_Name": "ECD_CMD_UNLNOWN_CMD",
+    "Error_Cause_English": "UnknownCommand",
+    "Error_Cause": "未知的命令"
+  },
+  {
+    "Error_Type": "HostCommandAlarm",
+    "Error_Code": "84801000",
+    "Error_Name": "ECD_CMD_IN_EXECUTE",
+    "Error_Cause_English": "CommandExecuting",
+    "Error_Cause": "上一個命令還在執行中"
+  },
+  {
+    "Error_Type": "HostCommandAlarm",
+    "Error_Code": "84802000",
+    "Error_Name": "ECD_CMD_ACK_TMO",
+    "Error_Cause_English": "CommandInternalAckTimeout",
+    "Error_Cause": "控制器異常"
+  },
+  {
+    "Error_Type": "HostCommandAlarm",
+    "Error_Code": "84803000",
+    "Error_Name": "ECD_CMD_EXECUTE_TIMEOUT",
+    "Error_Cause_English": "CommandExecuteTimeout",
+    "Error_Cause": "命令未在時間內完成"
+  },
+  {
+    "Error_Type": "HostCommandAlarm",
+    "Error_Code": "84804000",
+    "Error_Name": "ECD_CMD_EXECUTE_FAIL",
+    "Error_Cause_English": "CommandExecuteFail",
+    "Error_Cause": "命令執行失敗"
+  },
+  {
+    "Error_Type": "HostCommandAlarm",
+    "Error_Code": "84805000",
+    "Error_Name": "ECD_CMD_ABORT",
+    "Error_Cause_English": "CommandAbort",
+    "Error_Cause": "命令中斷"
+  },
+  {
+    "Error_Type": "HostCommandAlarm",
+    "Error_Code": "84806000",
+    "Error_Name": "ECD_CMD_IN_MANUAL_MODE",
+    "Error_Cause_English": "RobotinManualMode",
+    "Error_Cause": "Robot目前切換到手動模式"
+  },
+  {
+    "Error_Type": "HostCommandAlarm",
+    "Error_Code": "84807000",
+    "Error_Name": "ECD_CMD_PARAMETER",
+    "Error_Cause_English": "CommandParameterOverRange",
+    "Error_Cause": "命令所帶的參數超過容許範圍"
+  },
+  {
+    "Error_Type": "HostCommandAlarm",
+    "Error_Code": "84808000",
+    "Error_Name": "ECD_CMD_CONTINUE_FAIL",
+    "Error_Cause_English": "CommandContinueFail(ErrorOccurred)",
+    "Error_Cause": "命令暫停後無法繼續(有錯誤發生)"
+  },
+  {
+    "Error_Type": "HostCommandAlarm",
+    "Error_Code": "84809000",
+    "Error_Name": "ECD_CMD_RESET_IN_ROBOT_RUN",
+    "Error_Cause_English": "ResetAlarmFail(CommandExecuting)",
+    "Error_Cause": "命令還未結束無法執行Reset動作"
+  },
+  {
+    "Error_Type": "HostCommandAlarm",
+    "Error_Code": "8480A000",
+    "Error_Name": "ECD_CMD_UNLNOWN_FLAG",
+    "Error_Cause_English": "CommandFlagUnknown",
+    "Error_Cause": "未知的命令類型"
+  },
+  {
+    "Error_Type": "HostCommandAlarm",
+    "Error_Code": "8480B000",
+    "Error_Name": "ECD_CMD_FORMAT_ERROR",
+    "Error_Cause_English": "CommandFormatError",
+    "Error_Cause": "命令格式錯誤"
+  },
+  {
+    "Error_Type": "HostCommandAlarm",
+    "Error_Code": "8480C000",
+    "Error_Name": "ECD_CMD_PAUSE_FAIL",
+    "Error_Cause_English": "CommandPauseError",
+    "Error_Cause": "執行暫停命令失敗"
+  },
+  {
+    "Error_Type": "PointtoPiontAlarm",
+    "Error_Code": "85800000",
+    "Error_Name": "ECD_P2P_SPD_OVER_RANGE",
+    "Error_Cause_English": "SpeedOverRange(0~100)",
+    "Error_Cause": "速度超出範圍"
+  },
+  {
+    "Error_Type": "PointtoPiontAlarm",
+    "Error_Code": "85801000",
+    "Error_Name": "ECD_P2P_SPD_TYPE_ERROR",
+    "Error_Cause_English": "SpeedTypeError",
+    "Error_Cause": "速度的選擇超出範圍(Normal,Teach,ORG)"
+  },
+  {
+    "Error_Type": "PointtoPiontAlarm",
+    "Error_Code": "85802000",
+    "Error_Name": "ECD_P2P_POINT_NO",
+    "Error_Cause_English": "PointNo.OverRange",
+    "Error_Cause": "移動命令的點位參數超出範圍"
+  },
+  {
+    "Error_Type": "PointtoPiontAlarm",
+    "Error_Code": "85803000",
+    "Error_Name": "ECD_P2P_ARM_NO",
+    "Error_Cause_English": "ArmNo.OverRange",
+    "Error_Cause": "移動命令的Arm參數超出範圍"
+  },
+  {
+    "Error_Type": "PointtoPiontAlarm",
+    "Error_Code": "85804000",
+    "Error_Name": "ECD_P2P_SIDE_NO",
+    "Error_Cause_English": "SideNo.OverRange",
+    "Error_Cause": "SideNumber超出範圍"
+  },
+  {
+    "Error_Type": "PointtoPiontAlarm",
+    "Error_Code": "85805000",
+    "Error_Name": "ECD_P2P_REFS_CASSETTE",
+    "Error_Cause_English": "RefsCassetteNo.Fail(EqualtoItself)",
+    "Error_Cause": "PointData中\"ReferenceCassette\"指向自己"
+  },
+  {
+    "Error_Type": "PointtoPiontAlarm",
+    "Error_Code": "85806000",
+    "Error_Name": "ECD_P2P_REFS_POSITION",
+    "Error_Cause_English": "RefsPositionNo.Fail(EqualtoItself)",
+    "Error_Cause": "PointData中\"ReferencePosition\"指向自己"
+  },
+  {
+    "Error_Type": "PointtoPiontAlarm",
+    "Error_Code": "85807000",
+    "Error_Name": "ECD_P2P_SLOT_NO",
+    "Error_Cause_English": "CassetteSlotNo.OverRange",
+    "Error_Cause": "移動命令的Slot參數超出範圍"
+  },
+  {
+    "Error_Type": "PointtoPiontAlarm",
+    "Error_Code": "85808000",
+    "Error_Name": "ECD_P2P_COLUMN_NO",
+    "Error_Cause_English": "CassetteColumnNo.OverRange",
+    "Error_Cause": "移動命令的Column參數超出範圍"
+  },
+  {
+    "Error_Type": "PointtoPiontAlarm",
+    "Error_Code": "85809000",
+    "Error_Name": "ECD_P2P_ROW_NO",
+    "Error_Cause_English": "CassetteRowNo.OverRange",
+    "Error_Cause": "移動命令的Row參數超出範圍"
+  },
+  {
+    "Error_Type": "PointtoPiontAlarm",
+    "Error_Code": "8580A000",
+    "Error_Name": "ECD_P2P_POSITION_DATA_EMPTY",
+    "Error_Cause_English": "PositionDataisEmpty",
+    "Error_Cause": "移動命令的點位資料沒有被設定"
+  },
+  {
+    "Error_Type": "PointtoPiontAlarm",
+    "Error_Code": "8580B000",
+    "Error_Name": "ECD_P2P_RL_GOR_P_DISABLE",
+    "Error_Cause_English": "RL-GorPDisabled",
+    "Error_Cause": "R/L軸同動功能被關閉"
+  },
+  {
+    "Error_Type": "PointtoPiontAlarm",
+    "Error_Code": "8580C000",
+    "Error_Name": "ECD_P2P_SLOT_TYPE",
+    "Error_Cause_English": "SlotTypeError",
+    "Error_Cause": "移動命令所指定的Slot型式錯誤"
+  },
+  {
+    "Error_Type": "PointtoPiontAlarm",
+    "Error_Code": "95810000",
+    "Error_Name": "ECD_P2P_AXIS_DISABLED",
+    "Error_Cause_English": "AxisDisabled",
+    "Error_Cause": "軸已被關閉，無法進行動作"
+  },
+  {
+    "Error_Type": "PointtoPiontAlarm",
+    "Error_Code": "95811000",
+    "Error_Name": "ECD_P2P_OVER_RANGE",
+    "Error_Cause_English": "MoveOverRange",
+    "Error_Cause": "要移動的位置超出可移動範圍"
+  },
+  {
+    "Error_Type": "PointtoPiontAlarm",
+    "Error_Code": "95812000",
+    "Error_Name": "ECD_P2P_OVER_SOFT_LIMIT",
+    "Error_Cause_English": "OverSoftLimit",
+    "Error_Cause": "要移動的位置超出軟體極限值"
+  },
+  {
+    "Error_Type": "PointtoPiontAlarm",
+    "Error_Code": "95813000",
+    "Error_Name": "ECD_P2P_SET_SPEED",
+    "Error_Cause_English": "SetSpeedFail",
+    "Error_Cause": "速度參數錯誤導致設定失敗"
+  },
+  {
+    "Error_Type": "forParameterSettingError",
+    "Error_Code": "95821000",
+    "Error_Name": "ECD_P2P_PARAM_SPD_HIGH",
+    "Error_Cause_English": "Param.SpeedHigh",
+    "Error_Cause": "移動速度參數設定錯誤(高速)"
+  },
+  {
+    "Error_Type": "forParameterSettingError",
+    "Error_Code": "95822000",
+    "Error_Name": "ECD_P2P_PARAM_SPD_LOW",
+    "Error_Cause_English": "Param.SpeedLow",
+    "Error_Cause": "移動速度參數設定錯誤(低速)"
+  },
+  {
+    "Error_Type": "forParameterSettingError",
+    "Error_Code": "95823000",
+    "Error_Name": "ECD_P2P_PARAM_SPD_UAC",
+    "Error_Cause_English": "Param.SpeedUAC",
+    "Error_Cause": "移動速度參數設定錯誤(加速度)"
+  },
+  {
+    "Error_Type": "forParameterSettingError",
+    "Error_Code": "95824000",
+    "Error_Name": "ECD_P2P_PARAM_SPD_USC",
+    "Error_Cause_English": "Param.SpeedUSC",
+    "Error_Cause": "移動速度參數設定錯誤(S-Curve加速度)"
+  },
+  {
+    "Error_Type": "forParameterSettingError",
+    "Error_Code": "95825000",
+    "Error_Name": "ECD_P2P_PARAM_SPD_OFFSET",
+    "Error_Cause_English": "Param.SpeedOffset",
+    "Error_Cause": "移動速度參數設定錯誤(Offset)"
+  },
+  {
+    "Error_Type": "forParameterSettingError",
+    "Error_Code": "95826000",
+    "Error_Name": "ECD_P2P_PARAM_PULSE_BUNSI",
+    "Error_Cause_English": "Param.PulseBunsi",
+    "Error_Cause": "齒輪比分子設定錯誤"
+  },
+  {
+    "Error_Type": "forParameterSettingError",
+    "Error_Code": "95827000",
+    "Error_Name": "ECD_P2P_PARAM_PULSE_BUNBO",
+    "Error_Cause_English": "Param.PulseBunbo",
+    "Error_Cause": "齒輪比分母設定錯誤"
+  },
+  {
+    "Error_Type": "forParameterSettingError",
+    "Error_Code": "95828000",
+    "Error_Name": "ECD_P2P_PARAM_LEAD",
+    "Error_Cause_English": "Param.Lead",
+    "Error_Cause": "導程設定錯誤"
+  },
+  {
+    "Error_Type": "forParameterSettingError",
+    "Error_Code": "85829000",
+    "Error_Name": "ECD_P2P_PARAM_LINKARM",
+    "Error_Cause_English": "Param.Link-Arm",
+    "Error_Cause": "Link-Arm參數設定錯誤"
+  }
+]

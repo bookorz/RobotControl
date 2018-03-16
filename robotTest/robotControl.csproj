@@ -51,8 +51,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Base\Alarm.cs" />
     <Compile Include="Base\Common.cs" />
     <Compile Include="Base\ControllerInfo.cs" />
+    <Compile Include="Communication\IConnection.cs" />
+    <Compile Include="Controller\AlignerController.cs" />
+    <Compile Include="Controller\RobotCommand.cs" />
     <Compile Include="Base\Job.cs" />
     <Compile Include="Base\ObjectView.cs" />
     <Compile Include="Base\RobotStatus.cs" />
@@ -60,7 +64,6 @@
     <Compile Include="Controller\Command.cs" />
     <Compile Include="Controller\ICommandReport.cs" />
     <Compile Include="Controller\IController.cs" />
-    <Compile Include="Controller\RouteServce.cs" />
     <Compile Include="FileHandle\ConfigReader.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -73,7 +76,7 @@
     <Compile Include="Controller\ReturnMsg.cs" />
     <Compile Include="Controller\RobotController.cs" />
     <Compile Include="Communication\SocketClient.cs" />
-    <Compile Include="Communication\ISocketMessage.cs" />
+    <Compile Include="Communication\IConnectionReport.cs" />
     <Compile Include="Log4NetAppender\TextBoxAppender.cs" />
     <Compile Include="RobotStatusFrm.cs">
       <SubType>Form</SubType>

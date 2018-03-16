@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace robotTest
 {
-    class RobotController : IConnectionReport, IController
+    class AlignerController : IConnectionReport, IController
     {
         IConnection cmdSck;
         ILog logger = LogManager.GetLogger(typeof(RobotController));
@@ -58,7 +58,7 @@ namespace robotTest
             tObj.On_Status_Changed(ControllerName, GetStatus());
         }
 
-        public RobotController(string _IP, int _Port, int _Timeout, string _ControllerName, ICommandReport _tObj)
+        public AlignerController(string _IP, int _Port, int _Timeout, string _ControllerName, ICommandReport _tObj)
         {
             IP = _IP;
             Port = _Port;
@@ -86,7 +86,7 @@ namespace robotTest
         {
             timeOutTimer.Enabled = false; SetStatus(Idle);
             logger.Error("Time out! Send to:" + IP + ":" + Port + " Command:" + LastSendCommand);
-            tObj.On_Command_TimeOut(ControllerName, LastSendCommand,LastJob);
+            tObj.On_Command_TimeOut(ControllerName, LastSendCommand, LastJob);
 
         }
 
@@ -108,7 +108,7 @@ namespace robotTest
                 {
                     SetStatus(Waiting);
                     LastSendCommand = command;
-                    
+
                     if (!command.GetFLG().Equals("DELAY"))
                     {
                         cmdSck.SckSSend(command.GetCommandStr());
@@ -141,112 +141,33 @@ namespace robotTest
 
         //}
 
-        public void DoWork(RobotCommand Type,Job Job)
+        public void DoWork(RobotCommand Type, Job Job)
         {
             switch (Type)
             {
-                
-                case RobotCommand.Get:
-                    Get(Job);
+
+                case RobotCommand.ALIGN:
+                    ALIGN(Job);
                     break;
-                case RobotCommand.Put:
-                    Put(Job);
-                    break;
-                case RobotCommand.GetAndWait:
-                    GetAndWait(Job);
-                    break;
-                case RobotCommand.GetAfterWait:
-                    GetAfterWait(Job);
-                    break;
-                case RobotCommand.PutAndWait:
-                    PutAndWait(Job);
-                    break;
+               
             }
         }
 
-        public void Map(string Position)
-        {
-            LastJob = null;
-            Command Cmd = new Command();
-            Cmd.SetADR("1");
-            Cmd.SetFLG("CMD");
-            Cmd.SetCMD("MAP__");
-            Cmd.SetDAT(Position + ",1,0");
-            Cmd.Desc = "Map";
-            SendCommand(Cmd);
-        }
+       
 
-        public void GetMap()
-        {
-            LastJob = null;
-            Command Cmd = new Command();
-            Cmd.SetADR("1");
-            Cmd.SetFLG("GET");
-            Cmd.SetCMD("MAP__");
-            Cmd.SetDAT("1");
-            Cmd.Desc = "GetMap";
-            SendCommand(Cmd);
-        }
-
-        public void Get(Job Job)
+        public void ALIGN(Job Job)
         {
             LastJob = Job;
             Command Cmd = new Command();
-            Cmd.SetADR("1");
+            Cmd.SetADR("3");
             Cmd.SetFLG("CMD");
-            Cmd.SetCMD("GET__");
-            Cmd.SetDAT(Job.From + "," + Job.Slot + ",1,0,0");
-            Cmd.Desc="Get";
+            Cmd.SetCMD("ALIGN");
+            Cmd.SetDAT(Job.NotchDegree);
+            Cmd.Desc = "ALIGN";
             SendCommand(Cmd);
         }
 
-        public void GetAndWait(Job Job)
-        {
-            LastJob = Job;
-            Command Cmd = new Command();
-            Cmd.SetADR("1");
-            Cmd.SetFLG("CMD");
-            Cmd.SetCMD("GET__");
-            Cmd.SetDAT(Job.From + ",0,1,0,1");
-            Cmd.Desc = "GetAndWait";
-            SendCommand(Cmd);
-        }
-
-        public void GetAfterWait(Job Job)
-        {
-            LastJob = Job;
-            Command Cmd = new Command();
-            Cmd.SetADR("1");
-            Cmd.SetFLG("CMD");
-            Cmd.SetCMD("GET__");
-            Cmd.SetDAT(Job.From + ","+Job.Slot+",1,0,3");
-            Cmd.Desc = "GetAfterWait";
-            SendCommand(Cmd);
-        }
-
-        public void Put(Job Job)
-        {
-            LastJob = Job;
-            Command Cmd = new Command();
-            Cmd.SetADR("1");
-            Cmd.SetFLG("CMD");
-            Cmd.SetCMD("PUT__");
-            Cmd.SetDAT(Job.To + "," + Job.ToSlot + ",1,0");
-            Cmd.Desc = "Put";
-            SendCommand(Cmd);
-        }
-
-        public void PutAndWait(Job Job)
-        {
-            LastJob = Job;
-            Command Cmd = new Command();
-            Cmd.SetADR("1");
-            Cmd.SetFLG("CMD");
-            Cmd.SetCMD("PUT__");
-            Cmd.SetDAT(Job.To + "," + Job.ToSlot + ",1,2");
-            Cmd.Desc = "Put";
-            SendCommand(Cmd);
-        }
+        
 
         void IController.Connect()
         {

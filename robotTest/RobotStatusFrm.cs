@@ -146,7 +146,7 @@ namespace robotTest
 
         void ICommandReport.On_Event_Trigger(string Device_ID, string Event)
         {
-         
+            "".Split(new char[] { } , StringSplitOptions.None);
         }
 
         void ICommandReport.On_Status_Changed(string Device_ID, string Status)

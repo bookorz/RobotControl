@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace robotTest
 {
-    interface ISocketMessage
+    interface IConnectionReport
     {
         void OnSocketMessage(string Msg);
         void OnConnecting();

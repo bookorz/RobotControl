@@ -1,13 +1,462 @@
-2018-03-15 18:05:53,639 [6] INFO  robotTest.SocketClient - [Snd-->]$1CMD:PUT__:1204,1,1,0(To Robot_Cmd_001 192.168.0.127:23)
-2018-03-15 18:05:53,743 [6] INFO  robotTest.SocketClient - [Rev<--]$1ACK:PUT__(From Robot_Cmd_001 192.168.0.127:23)
-2018-03-15 18:06:02,941 [6] INFO  robotTest.SocketClient - [Rev<--]$1FIN:PUT__:00000000(From Robot_Cmd_001 192.168.0.127:23)
-2018-03-15 18:06:03,081 [6] INFO  robotTest.SocketClient - [Snd-->]$1CMD:GET__:1201,2,1,0,0(To Robot_Cmd_001 192.168.0.127:23)
-2018-03-15 18:06:03,176 [6] INFO  robotTest.SocketClient - [Rev<--]$1ACK:GET__(From Robot_Cmd_001 192.168.0.127:23)
-2018-03-15 18:06:07,087 [6] ERROR robotTest.SocketClient - (From Robot_Cmd_001 192.168.0.127:23)連線已被您主機上的軟體中止。
+2018-03-16 16:19:27,293 [5] INFO  robotTest.SocketClient - [Snd-->]$1SET:SP___:10(To Robot_Cmd_001 127.0.0.1:23)
+2018-03-16 16:19:27,345 [5] INFO  robotTest.SocketClient - [Rev<--]$1ACK:GET__(From Robot_Cmd_001 127.0.0.1:23)
+2018-03-16 16:19:27,495 [5] INFO  robotTest.SocketClient - [Snd-->]$1SET:MODE_:1(To Robot_Cmd_001 127.0.0.1:23)
+2018-03-16 16:19:27,543 [5] INFO  robotTest.SocketClient - [Rev<--]$1ACK:GET__(From Robot_Cmd_001 127.0.0.1:23)
+2018-03-16 16:19:27,668 [5] INFO  robotTest.SocketClient - [Snd-->]$1GET:SP___(To Robot_Cmd_001 127.0.0.1:23)
+2018-03-16 16:19:27,715 [5] INFO  robotTest.SocketClient - [Rev<--]$1ACK:GET__(From Robot_Cmd_001 127.0.0.1:23)
+2018-03-16 16:19:27,849 [5] INFO  robotTest.SocketClient - [Snd-->]$1CMD:HOME_(To Robot_Cmd_001 127.0.0.1:23)
+2018-03-16 16:19:27,892 [5] INFO  robotTest.SocketClient - [Rev<--]$1ACK:GET__(From Robot_Cmd_001 127.0.0.1:23)
+2018-03-16 16:19:27,992 [5] INFO  robotTest.SocketClient - [Rev<--]$1FIN:GET__:00000000(From Robot_Cmd_001 127.0.0.1:23)
+2018-03-16 16:19:28,077 [5] INFO  robotTest.SocketClient - [Snd-->]$1CMD:GET__:0023,1,1,0,0(To Robot_Cmd_001 127.0.0.1:23)
+2018-03-16 16:19:28,108 [5] INFO  robotTest.SocketClient - [Rev<--]$1ACK:GET__(From Robot_Cmd_001 127.0.0.1:23)
+2018-03-16 16:19:28,228 [5] INFO  robotTest.SocketClient - [Rev<--]$1FIN:GET__:00000000(From Robot_Cmd_001 127.0.0.1:23)
+2018-03-16 16:19:28,295 [5] INFO  robotTest.SocketClient - [Snd-->]$1CMD:HOME_(To Robot_Cmd_001 127.0.0.1:23)
+2018-03-16 16:19:28,347 [5] INFO  robotTest.SocketClient - [Rev<--]$1ACK:GET__(From Robot_Cmd_001 127.0.0.1:23)
+2018-03-16 16:19:28,456 [5] INFO  robotTest.SocketClient - [Rev<--]$1FIN:GET__:00000000(From Robot_Cmd_001 127.0.0.1:23)
+2018-03-16 16:19:28,545 [5] INFO  robotTest.SocketClient - [Snd-->]$1CMD:GET__:0024,2,3,0,1(To Robot_Cmd_001 127.0.0.1:23)
+2018-03-16 16:19:28,592 [5] INFO  robotTest.SocketClient - [Rev<--]$1ACK:GET__(From Robot_Cmd_001 127.0.0.1:23)
+2018-03-16 16:19:28,692 [5] INFO  robotTest.SocketClient - [Rev<--]$1FIN:GET__:00000000(From Robot_Cmd_001 127.0.0.1:23)
+2018-03-16 16:19:31,827 [4] INFO  robotTest.SocketClient - [Snd-->]$1CMD:GET__:0024,2,3,0,3(To Robot_Cmd_001 127.0.0.1:23)
+2018-03-16 16:19:31,891 [5] INFO  robotTest.SocketClient - [Rev<--]$1ACK:GET__(From Robot_Cmd_001 127.0.0.1:23)
+2018-03-16 16:19:32,025 [5] INFO  robotTest.SocketClient - [Rev<--]$1FIN:GET__:00000000(From Robot_Cmd_001 127.0.0.1:23)
+2018-03-16 16:19:32,082 [5] INFO  robotTest.SocketClient - [Snd-->]$1CMD:HOME_(To Robot_Cmd_001 127.0.0.1:23)
+2018-03-16 16:19:32,141 [5] INFO  robotTest.SocketClient - [Rev<--]$1ACK:GET__(From Robot_Cmd_001 127.0.0.1:23)
+2018-03-16 16:19:32,242 [5] INFO  robotTest.SocketClient - [Rev<--]$1FIN:GET__:00000000(From Robot_Cmd_001 127.0.0.1:23)
+2018-03-16 16:19:32,326 [5] INFO  robotTest.SocketClient - [Snd-->]$1SET:SP___:10(To Robot_Cmd_001 127.0.0.1:23)
+2018-03-16 16:19:32,376 [5] INFO  robotTest.SocketClient - [Rev<--]$1ACK:GET__(From Robot_Cmd_001 127.0.0.1:23)
+2018-03-16 16:19:32,516 [5] INFO  robotTest.SocketClient - [Snd-->]$1SET:MODE_:1(To Robot_Cmd_001 127.0.0.1:23)
+2018-03-16 16:19:32,563 [5] INFO  robotTest.SocketClient - [Rev<--]$1ACK:GET__(From Robot_Cmd_001 127.0.0.1:23)
+2018-03-16 16:19:32,696 [5] INFO  robotTest.SocketClient - [Snd-->]$1GET:SP___(To Robot_Cmd_001 127.0.0.1:23)
+2018-03-16 16:19:32,744 [5] INFO  robotTest.SocketClient - [Rev<--]$1ACK:GET__(From Robot_Cmd_001 127.0.0.1:23)
+2018-03-16 16:19:32,897 [5] INFO  robotTest.SocketClient - [Snd-->]$1CMD:HOME_(To Robot_Cmd_001 127.0.0.1:23)
+2018-03-16 16:19:32,929 [5] INFO  robotTest.SocketClient - [Rev<--]$1ACK:GET__(From Robot_Cmd_001 127.0.0.1:23)
+2018-03-16 16:19:33,025 [5] INFO  robotTest.SocketClient - [Rev<--]$1FIN:GET__:00000000(From Robot_Cmd_001 127.0.0.1:23)
+2018-03-16 16:19:33,111 [5] INFO  robotTest.SocketClient - [Snd-->]$1CMD:GET__:0023,1,1,0,0(To Robot_Cmd_001 127.0.0.1:23)
+2018-03-16 16:19:33,159 [5] INFO  robotTest.SocketClient - [Rev<--]$1ACK:GET__(From Robot_Cmd_001 127.0.0.1:23)
+2018-03-16 16:19:33,250 [5] INFO  robotTest.SocketClient - [Rev<--]$1FIN:GET__:00000000(From Robot_Cmd_001 127.0.0.1:23)
+2018-03-16 16:19:33,332 [5] INFO  robotTest.SocketClient - [Snd-->]$1CMD:HOME_(To Robot_Cmd_001 127.0.0.1:23)
+2018-03-16 16:19:33,375 [5] INFO  robotTest.SocketClient - [Rev<--]$1ACK:GET__(From Robot_Cmd_001 127.0.0.1:23)
+2018-03-16 16:19:33,490 [5] INFO  robotTest.SocketClient - [Rev<--]$1FIN:GET__:00000000(From Robot_Cmd_001 127.0.0.1:23)
+2018-03-16 16:19:33,579 [5] INFO  robotTest.SocketClient - [Snd-->]$1CMD:GET__:0024,2,3,0,1(To Robot_Cmd_001 127.0.0.1:23)
+2018-03-16 16:19:33,625 [5] INFO  robotTest.SocketClient - [Rev<--]$1ACK:GET__(From Robot_Cmd_001 127.0.0.1:23)
+2018-03-16 16:19:33,734 [5] INFO  robotTest.SocketClient - [Rev<--]$1FIN:GET__:00000000(From Robot_Cmd_001 127.0.0.1:23)
+2018-03-16 16:19:36,825 [4] INFO  robotTest.SocketClient - [Snd-->]$1CMD:GET__:0024,2,3,0,3(To Robot_Cmd_001 127.0.0.1:23)
+2018-03-16 16:19:36,910 [5] INFO  robotTest.SocketClient - [Rev<--]$1ACK:GET__(From Robot_Cmd_001 127.0.0.1:23)
+2018-03-16 16:19:37,024 [5] INFO  robotTest.SocketClient - [Rev<--]$1FIN:GET__:00000000(From Robot_Cmd_001 127.0.0.1:23)
+2018-03-16 16:19:37,111 [5] INFO  robotTest.SocketClient - [Snd-->]$1CMD:HOME_(To Robot_Cmd_001 127.0.0.1:23)
+2018-03-16 16:19:37,159 [5] INFO  robotTest.SocketClient - [Rev<--]$1ACK:GET__(From Robot_Cmd_001 127.0.0.1:23)
+2018-03-16 16:19:37,258 [5] INFO  robotTest.SocketClient - [Rev<--]$1FIN:GET__:00000000(From Robot_Cmd_001 127.0.0.1:23)
+2018-03-16 16:19:37,346 [5] INFO  robotTest.SocketClient - [Snd-->]$1SET:SP___:10(To Robot_Cmd_001 127.0.0.1:23)
+2018-03-16 16:19:37,392 [5] INFO  robotTest.SocketClient - [Rev<--]$1ACK:GET__(From Robot_Cmd_001 127.0.0.1:23)
+2018-03-16 16:19:37,529 [5] INFO  robotTest.SocketClient - [Snd-->]$1SET:MODE_:1(To Robot_Cmd_001 127.0.0.1:23)
+2018-03-16 16:19:37,562 [5] INFO  robotTest.SocketClient - [Rev<--]$1ACK:GET__(From Robot_Cmd_001 127.0.0.1:23)
+2018-03-16 16:19:37,697 [5] INFO  robotTest.SocketClient - [Snd-->]$1GET:SP___(To Robot_Cmd_001 127.0.0.1:23)
+2018-03-16 16:19:37,742 [5] INFO  robotTest.SocketClient - [Rev<--]$1ACK:GET__(From Robot_Cmd_001 127.0.0.1:23)
+2018-03-16 16:19:37,880 [5] INFO  robotTest.SocketClient - [Snd-->]$1CMD:HOME_(To Robot_Cmd_001 127.0.0.1:23)
+2018-03-16 16:19:37,924 [5] INFO  robotTest.SocketClient - [Rev<--]$1ACK:GET__(From Robot_Cmd_001 127.0.0.1:23)
+2018-03-16 16:19:38,024 [5] INFO  robotTest.SocketClient - [Rev<--]$1FIN:GET__:00000000(From Robot_Cmd_001 127.0.0.1:23)
+2018-03-16 16:19:38,109 [5] INFO  robotTest.SocketClient - [Snd-->]$1CMD:GET__:0023,1,1,0,0(To Robot_Cmd_001 127.0.0.1:23)
+2018-03-16 16:19:38,160 [5] INFO  robotTest.SocketClient - [Rev<--]$1ACK:GET__(From Robot_Cmd_001 127.0.0.1:23)
+2018-03-16 16:19:38,259 [5] INFO  robotTest.SocketClient - [Rev<--]$1FIN:GET__:00000000(From Robot_Cmd_001 127.0.0.1:23)
+2018-03-16 16:19:38,343 [5] INFO  robotTest.SocketClient - [Snd-->]$1CMD:HOME_(To Robot_Cmd_001 127.0.0.1:23)
+2018-03-16 16:19:38,396 [5] INFO  robotTest.SocketClient - [Rev<--]$1ACK:GET__(From Robot_Cmd_001 127.0.0.1:23)
+2018-03-16 16:19:38,507 [5] INFO  robotTest.SocketClient - [Rev<--]$1FIN:GET__:00000000(From Robot_Cmd_001 127.0.0.1:23)
+2018-03-16 16:19:38,595 [5] INFO  robotTest.SocketClient - [Snd-->]$1CMD:GET__:0024,2,3,0,1(To Robot_Cmd_001 127.0.0.1:23)
+2018-03-16 16:19:38,642 [5] INFO  robotTest.SocketClient - [Rev<--]$1ACK:GET__(From Robot_Cmd_001 127.0.0.1:23)
+2018-03-16 16:19:38,741 [5] INFO  robotTest.SocketClient - [Rev<--]$1FIN:GET__:00000000(From Robot_Cmd_001 127.0.0.1:23)
+2018-03-16 16:19:41,862 [4] INFO  robotTest.SocketClient - [Snd-->]$1CMD:GET__:0024,2,3,0,3(To Robot_Cmd_001 127.0.0.1:23)
+2018-03-16 16:19:41,930 [5] INFO  robotTest.SocketClient - [Rev<--]$1ACK:GET__(From Robot_Cmd_001 127.0.0.1:23)
+2018-03-16 16:19:42,058 [5] INFO  robotTest.SocketClient - [Rev<--]$1FIN:GET__:00000000(From Robot_Cmd_001 127.0.0.1:23)
+2018-03-16 16:19:42,145 [5] INFO  robotTest.SocketClient - [Snd-->]$1CMD:HOME_(To Robot_Cmd_001 127.0.0.1:23)
+2018-03-16 16:19:42,191 [5] INFO  robotTest.SocketClient - [Rev<--]$1ACK:GET__(From Robot_Cmd_001 127.0.0.1:23)
+2018-03-16 16:19:42,278 [5] INFO  robotTest.SocketClient - [Rev<--]$1FIN:GET__:00000000(From Robot_Cmd_001 127.0.0.1:23)
+2018-03-16 16:19:42,365 [5] INFO  robotTest.SocketClient - [Snd-->]$1SET:SP___:10(To Robot_Cmd_001 127.0.0.1:23)
+2018-03-16 16:19:42,418 [5] INFO  robotTest.SocketClient - [Rev<--]$1ACK:GET__(From Robot_Cmd_001 127.0.0.1:23)
+2018-03-16 16:19:42,547 [5] INFO  robotTest.SocketClient - [Snd-->]$1SET:MODE_:1(To Robot_Cmd_001 127.0.0.1:23)
+2018-03-16 16:19:42,594 [5] INFO  robotTest.SocketClient - [Rev<--]$1ACK:GET__(From Robot_Cmd_001 127.0.0.1:23)
+2018-03-16 16:19:42,730 [5] INFO  robotTest.SocketClient - [Snd-->]$1GET:SP___(To Robot_Cmd_001 127.0.0.1:23)
+2018-03-16 16:19:42,775 [5] INFO  robotTest.SocketClient - [Rev<--]$1ACK:GET__(From Robot_Cmd_001 127.0.0.1:23)
+2018-03-16 16:19:42,914 [5] INFO  robotTest.SocketClient - [Snd-->]$1CMD:HOME_(To Robot_Cmd_001 127.0.0.1:23)
+2018-03-16 16:19:42,965 [5] INFO  robotTest.SocketClient - [Rev<--]$1ACK:GET__(From Robot_Cmd_001 127.0.0.1:23)
+2018-03-16 16:19:43,057 [5] INFO  robotTest.SocketClient - [Rev<--]$1FIN:GET__:00000000(From Robot_Cmd_001 127.0.0.1:23)
+2018-03-16 16:19:43,159 [5] INFO  robotTest.SocketClient - [Snd-->]$1CMD:GET__:0023,1,1,0,0(To Robot_Cmd_001 127.0.0.1:23)
+2018-03-16 16:19:43,193 [5] INFO  robotTest.SocketClient - [Rev<--]$1ACK:GET__(From Robot_Cmd_001 127.0.0.1:23)
+2018-03-16 16:19:43,292 [5] INFO  robotTest.SocketClient - [Rev<--]$1FIN:GET__:00000000(From Robot_Cmd_001 127.0.0.1:23)
+2018-03-16 16:19:43,339 [5] INFO  robotTest.SocketClient - [Snd-->]$1CMD:HOME_(To Robot_Cmd_001 127.0.0.1:23)
+2018-03-16 16:19:43,395 [5] INFO  robotTest.SocketClient - [Rev<--]$1ACK:GET__(From Robot_Cmd_001 127.0.0.1:23)
+2018-03-16 16:19:43,558 [5] INFO  robotTest.SocketClient - [Rev<--]$1FIN:GET__:00000000(From Robot_Cmd_001 127.0.0.1:23)
+2018-03-16 16:19:43,682 [5] INFO  robotTest.SocketClient - [Snd-->]$1CMD:GET__:0024,2,3,0,1(To Robot_Cmd_001 127.0.0.1:23)
+2018-03-16 16:19:43,710 [5] INFO  robotTest.SocketClient - [Rev<--]$1ACK:GET__(From Robot_Cmd_001 127.0.0.1:23)
+2018-03-16 16:19:43,808 [5] INFO  robotTest.SocketClient - [Rev<--]$1FIN:GET__:00000000(From Robot_Cmd_001 127.0.0.1:23)
+2018-03-16 16:19:46,958 [8] INFO  robotTest.SocketClient - [Snd-->]$1CMD:GET__:0024,2,3,0,3(To Robot_Cmd_001 127.0.0.1:23)
+2018-03-16 16:19:47,025 [5] INFO  robotTest.SocketClient - [Rev<--]$1ACK:GET__(From Robot_Cmd_001 127.0.0.1:23)
+2018-03-16 16:19:47,157 [5] INFO  robotTest.SocketClient - [Rev<--]$1FIN:GET__:00000000(From Robot_Cmd_001 127.0.0.1:23)
+2018-03-16 16:19:47,188 [5] ERROR robotTest.RobotController - OnSocketMessage:並未將物件參考設定為物件的執行個體。
+   於 robotTest.Form1.On_Command_Finished(String Device_ID, ReturnMsg Msg, Command Cmd, Job Job) 於 C:\Users\ethan_huang\source\repos\robotTest\robotTest\Form1.cs: 行 608
+   於 robotTest.RobotController.robotTest.IConnectionReport.OnSocketMessage(String Msg) 於 C:\Users\ethan_huang\source\repos\robotTest\robotTest\Controller\RobotController.cs: 行 308
+2018-03-16 16:19:50,757 [5] ERROR robotTest.SocketClient - (From Robot_Cmd_001 127.0.0.1:23)遠端主機已強制關閉一個現存的連線。
    於 System.Net.Sockets.Socket.Receive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
    於 System.Net.Sockets.Socket.Receive(Byte[] buffer)
-   於 robotTest.SocketClient.SckSReceiveProc() 於 C:\Users\ethan_huang\source\repos\robotTest\robotTest\Communication\SocketClient.cs: 行 103
-2018-03-15 18:06:07,087 [5] ERROR robotTest.SocketClient - (From Robot_Read_001 192.168.0.127:8900)連線已被您主機上的軟體中止。
+   於 robotTest.SocketClient.SckSReceiveProc() 於 C:\Users\ethan_huang\source\repos\robotTest\robotTest\Communication\SocketClient.cs: 行 109
+2018-03-16 16:31:40,885 [1] INFO  robotTest.Form1 - initial complete.
+2018-03-16 16:31:55,546 [1] INFO  robotTest.Form1 - initial complete.
+2018-03-16 16:34:21,330 [1] INFO  robotTest.Form1 - initial complete.
+2018-03-16 16:34:53,650 [1] INFO  robotTest.Form1 - initial complete.
+2018-03-16 16:35:55,006 [1] INFO  robotTest.Form1 - initial complete.
+2018-03-16 16:36:00,067 [1] ERROR robotTest.FileHandle.ConfigReader`1[[robotTest.Base.Common, robotTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] - ReadFile:找不到路徑 'C:\Users\ethan_huang\source\repos\robotTest\robotTest\bin\Debug\config\Command\d\SanwaRobot\CommandType.json' 的一部分。
+   於 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   於 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   於 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   於 System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   於 System.IO.File.InternalReadAllText(String path, Encoding encoding, Boolean checkHost)
+   於 System.IO.File.ReadAllText(String path, Encoding encoding)
+   於 robotTest.FileHandle.ConfigReader`1.ReadFile(String FilePath) 於 C:\Users\ethan_huang\source\repos\robotTest\robotTest\FileHandle\ConfigReader.cs: 行 22
+2018-03-16 16:37:21,093 [1] INFO  robotTest.Form1 - initial complete.
+2018-03-16 16:38:13,775 [1] INFO  robotTest.Form1 - initial complete.
+2018-03-16 16:38:32,061 [1] INFO  robotTest.Form1 - initial complete.
+2018-03-16 16:44:05,212 [1] INFO  robotTest.Form1 - initial complete.
+2018-03-16 16:49:54,399 [1] INFO  robotTest.Form1 - initial complete.
+2018-03-16 16:50:19,643 [3] ERROR robotTest.SocketClient - (ConnectServer Robot_Cmd_001 192.168.0.127:23)連線嘗試失敗，因為連線對象有一段時間並未正確回應，或是連線建立失敗，因為連線的主機無法回應。 192.168.0.127:23
+   於 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   於 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   於 robotTest.SocketClient.ConnectServer() 於 C:\Users\ethan_huang\source\repos\robotTest\robotTest\Communication\SocketClient.cs: 行 59
+2018-03-16 16:50:19,671 [4] ERROR robotTest.SocketClient - (ConnectServer Robot_Cmd_001 192.168.0.127:23)嘗試操作的對象不是通訊端。 192.168.0.127:23
+   於 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   於 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   於 robotTest.SocketClient.ConnectServer() 於 C:\Users\ethan_huang\source\repos\robotTest\robotTest\Communication\SocketClient.cs: 行 59
+2018-03-16 16:50:58,555 [1] INFO  robotTest.Form1 - initial complete.
+2018-03-16 16:51:53,315 [1] INFO  robotTest.Form1 - initial complete.
+2018-03-16 16:51:55,716 [3] INFO  robotTest.SocketClient - Connected! 192.168.0.21:23
+2018-03-16 16:52:18,535 [1] INFO  robotTest.SocketClient - [Snd-->]$3CMD:ORG__(To Aligner_001 192.168.0.21:23)
+2018-03-16 16:52:18,557 [4] INFO  robotTest.SocketClient - [Rev<--]$3ACK:ORG__(From Aligner_001 192.168.0.21:23)
+2018-03-16 16:52:25,260 [4] INFO  robotTest.SocketClient - [Rev<--]$3FIN:ORG__:00000000(From Aligner_001 192.168.0.21:23)
+2018-03-16 16:52:31,289 [1] INFO  robotTest.SocketClient - [Snd-->]$3CMD:RET__(To Aligner_001 192.168.0.21:23)
+2018-03-16 16:52:31,311 [4] INFO  robotTest.SocketClient - [Rev<--]$3ACK:RET__(From Aligner_001 192.168.0.21:23)
+2018-03-16 16:52:32,941 [4] INFO  robotTest.SocketClient - [Rev<--]$3FIN:RET__:00000000(From Aligner_001 192.168.0.21:23)
+2018-03-16 16:52:43,031 [1] INFO  robotTest.SocketClient - [Snd-->]$3SET:MODE_:1(To Aligner_001 192.168.0.21:23)
+2018-03-16 16:52:43,053 [4] INFO  robotTest.SocketClient - [Rev<--]$3ACK:MODE_(From Aligner_001 192.168.0.21:23)
+2018-03-16 16:53:06,517 [1] INFO  robotTest.SocketClient - [Snd-->]$3CMD:ALIGN:30000(To Aligner_001 192.168.0.21:23)
+2018-03-16 16:53:06,541 [4] INFO  robotTest.SocketClient - [Rev<--]$3ACK:ALIGN(From Aligner_001 192.168.0.21:23)
+2018-03-16 16:53:08,949 [4] INFO  robotTest.SocketClient - [Rev<--]$3FIN:ALIGN:00000000(From Aligner_001 192.168.0.21:23)
+2018-03-16 16:54:15,140 [1] INFO  robotTest.SocketClient - [Snd-->]$3CMD:ALIGN:30000(To Aligner_001 192.168.0.21:23)
+2018-03-16 16:54:15,166 [4] INFO  robotTest.SocketClient - [Rev<--]$3ACK:ALIGN(From Aligner_001 192.168.0.21:23)
+2018-03-16 16:54:17,582 [4] INFO  robotTest.SocketClient - [Rev<--]$3FIN:ALIGN:00000000(From Aligner_001 192.168.0.21:23)
+2018-03-16 16:54:20,344 [1] INFO  robotTest.SocketClient - [Snd-->]$3CMD:ALIGN:30000(To Aligner_001 192.168.0.21:23)
+2018-03-16 16:54:20,367 [4] INFO  robotTest.SocketClient - [Rev<--]$3ACK:ALIGN(From Aligner_001 192.168.0.21:23)
+2018-03-16 16:54:22,774 [4] INFO  robotTest.SocketClient - [Rev<--]$3FIN:ALIGN:00000000(From Aligner_001 192.168.0.21:23)
+2018-03-16 16:54:24,810 [1] INFO  robotTest.SocketClient - [Snd-->]$3CMD:ALIGN:30000(To Aligner_001 192.168.0.21:23)
+2018-03-16 16:54:24,844 [4] INFO  robotTest.SocketClient - [Rev<--]$3ACK:ALIGN(From Aligner_001 192.168.0.21:23)
+2018-03-16 16:54:27,263 [4] INFO  robotTest.SocketClient - [Rev<--]$3FIN:ALIGN:00000000(From Aligner_001 192.168.0.21:23)
+2018-03-16 16:54:27,545 [1] INFO  robotTest.SocketClient - [Snd-->]$3CMD:ALIGN:30000(To Aligner_001 192.168.0.21:23)
+2018-03-16 16:54:27,588 [4] INFO  robotTest.SocketClient - [Rev<--]$3ACK:ALIGN(From Aligner_001 192.168.0.21:23)
+2018-03-16 16:54:29,987 [4] INFO  robotTest.SocketClient - [Rev<--]$3FIN:ALIGN:00000000(From Aligner_001 192.168.0.21:23)
+2018-03-16 16:55:20,996 [4] ERROR robotTest.SocketClient - (From Aligner_001 192.168.0.21:23)連線已被您主機上的軟體中止。
    於 System.Net.Sockets.Socket.Receive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
    於 System.Net.Sockets.Socket.Receive(Byte[] buffer)
-   於 robotTest.SocketClient.SckSReceiveProc() 於 C:\Users\ethan_huang\source\repos\robotTest\robotTest\Communication\SocketClient.cs: 行 103
+   於 robotTest.SocketClient.SckSReceiveProc() 於 C:\Users\ethan_huang\source\repos\robotTest\robotTest\Communication\SocketClient.cs: 行 109
+2018-03-16 17:30:34,154 [1] INFO  robotTest.Form1 - initial complete.
+2018-03-16 17:30:46,758 [4] INFO  robotTest.SocketClient - Connected! 192.168.0.21:23
+2018-03-16 17:30:46,758 [3] INFO  robotTest.SocketClient - Connected! 192.168.0.127:23
+2018-03-16 17:30:52,620 [1] INFO  robotTest.SocketClient - [Snd-->]$1CMD:GET__:1201,1,1,0,0(To Robot_Cmd_001 192.168.0.127:23)
+2018-03-16 17:30:52,659 [6] INFO  robotTest.SocketClient - [Rev<--]$1ACK:GET__(From Robot_Cmd_001 192.168.0.127:23)
+2018-03-16 17:30:58,447 [6] INFO  robotTest.SocketClient - [Rev<--]$1FIN:GET__:00000000(From Robot_Cmd_001 192.168.0.127:23)
+2018-03-16 17:30:58,604 [6] INFO  robotTest.SocketClient - [Snd-->]$1CMD:PUT__:101,1,1,2(To Robot_Cmd_001 192.168.0.127:23)
+2018-03-16 17:30:58,682 [6] INFO  robotTest.SocketClient - [Rev<--]$1ACK:PUT__(From Robot_Cmd_001 192.168.0.127:23)
+2018-03-16 17:31:04,470 [6] INFO  robotTest.SocketClient - [Rev<--]$1FIN:PUT__:00000000(From Robot_Cmd_001 192.168.0.127:23)
+2018-03-16 17:32:12,645 [1] INFO  robotTest.SocketClient - [Snd-->]$1CMD:RET__(To Robot_Cmd_001 192.168.0.127:23)
+2018-03-16 17:32:12,664 [6] INFO  robotTest.SocketClient - [Rev<--]$1ACK:RET__(From Robot_Cmd_001 192.168.0.127:23)
+2018-03-16 17:32:13,666 [6] INFO  robotTest.SocketClient - [Rev<--]$1FIN:RET__:00000000(From Robot_Cmd_001 192.168.0.127:23)
+2018-03-16 17:32:22,563 [1] INFO  robotTest.Form1 - initial complete.
+2018-03-16 17:32:25,286 [3] INFO  robotTest.SocketClient - Connected! 192.168.0.127:23
+2018-03-16 17:32:25,287 [4] INFO  robotTest.SocketClient - Connected! 192.168.0.21:23
+2018-03-16 17:32:32,916 [1] INFO  robotTest.SocketClient - [Snd-->]$1CMD:GET__:1201,1,1,0,0(To Robot_Cmd_001 192.168.0.127:23)
+2018-03-16 17:32:32,946 [5] INFO  robotTest.SocketClient - [Rev<--]$1ACK:GET__(From Robot_Cmd_001 192.168.0.127:23)
+2018-03-16 17:32:38,732 [5] INFO  robotTest.SocketClient - [Rev<--]$1FIN:GET__:00000000(From Robot_Cmd_001 192.168.0.127:23)
+2018-03-16 17:32:38,951 [5] INFO  robotTest.SocketClient - [Snd-->]$1CMD:PUT__:101,1,1,2(To Robot_Cmd_001 192.168.0.127:23)
+2018-03-16 17:32:39,038 [5] INFO  robotTest.SocketClient - [Rev<--]$1ACK:PUT__(From Robot_Cmd_001 192.168.0.127:23)
+2018-03-16 17:32:44,828 [5] INFO  robotTest.SocketClient - [Rev<--]$1FIN:PUT__:00000000(From Robot_Cmd_001 192.168.0.127:23)
+2018-03-16 17:33:54,070 [1] INFO  robotTest.Form1 - initial complete.
+2018-03-16 17:33:56,548 [3] INFO  robotTest.SocketClient - Connected! 192.168.0.127:23
+2018-03-16 17:33:56,549 [4] INFO  robotTest.SocketClient - Connected! 192.168.0.21:23
+2018-03-16 17:34:15,072 [1] INFO  robotTest.SocketClient - [Snd-->]$1CMD:RET__(To Robot_Cmd_001 192.168.0.127:23)
+2018-03-16 17:34:15,096 [5] INFO  robotTest.SocketClient - [Rev<--]$1ACK:RET__(From Robot_Cmd_001 192.168.0.127:23)
+2018-03-16 17:34:16,093 [5] INFO  robotTest.SocketClient - [Rev<--]$1FIN:RET__:00000000(From Robot_Cmd_001 192.168.0.127:23)
+2018-03-16 17:34:23,193 [1] INFO  robotTest.SocketClient - [Snd-->]$1CMD:GET__:1201,1,1,0,0(To Robot_Cmd_001 192.168.0.127:23)
+2018-03-16 17:34:23,219 [5] INFO  robotTest.SocketClient - [Rev<--]$1ACK:GET__(From Robot_Cmd_001 192.168.0.127:23)
+2018-03-16 17:34:29,019 [5] INFO  robotTest.SocketClient - [Rev<--]$1FIN:GET__:00000000(From Robot_Cmd_001 192.168.0.127:23)
+2018-03-16 17:34:29,213 [5] INFO  robotTest.SocketClient - [Snd-->]$1CMD:PUT__:101,1,1,2(To Robot_Cmd_001 192.168.0.127:23)
+2018-03-16 17:34:29,298 [5] INFO  robotTest.SocketClient - [Rev<--]$1ACK:PUT__(From Robot_Cmd_001 192.168.0.127:23)
+2018-03-16 17:34:35,097 [5] INFO  robotTest.SocketClient - [Rev<--]$1FIN:PUT__:00000000(From Robot_Cmd_001 192.168.0.127:23)
+2018-03-16 17:34:35,229 [5] INFO  robotTest.SocketClient - [Snd-->]$3CMD:ALIGN:30000(To Aligner_001 192.168.0.21:23)
+2018-03-16 17:34:35,306 [6] INFO  robotTest.SocketClient - [Rev<--]$3ACK:ALIGN(From Aligner_001 192.168.0.21:23)
+2018-03-16 17:34:37,707 [6] INFO  robotTest.SocketClient - [Rev<--]$3FIN:ALIGN:00000000(From Aligner_001 192.168.0.21:23)
+2018-03-16 17:34:37,806 [6] INFO  robotTest.SocketClient - [Snd-->]$1CMD:GET__:101,1,1,0,3(To Robot_Cmd_001 192.168.0.127:23)
+2018-03-16 17:34:37,899 [5] INFO  robotTest.SocketClient - [Rev<--]$1ACK:GET__(From Robot_Cmd_001 192.168.0.127:23)
+2018-03-16 17:34:40,895 [5] INFO  robotTest.SocketClient - [Rev<--]$1FIN:GET__:00000000(From Robot_Cmd_001 192.168.0.127:23)
+2018-03-16 17:34:41,019 [5] INFO  robotTest.SocketClient - [Snd-->]$1CMD:PUT__:1204,1,1,0(To Robot_Cmd_001 192.168.0.127:23)
+2018-03-16 17:34:41,113 [5] INFO  robotTest.SocketClient - [Rev<--]$1ACK:PUT__(From Robot_Cmd_001 192.168.0.127:23)
+2018-03-16 17:34:50,313 [5] INFO  robotTest.SocketClient - [Rev<--]$1FIN:PUT__:00000000(From Robot_Cmd_001 192.168.0.127:23)
+2018-03-16 17:34:50,386 [5] INFO  robotTest.SocketClient - [Snd-->]$1CMD:GET__:1201,2,1,0,0(To Robot_Cmd_001 192.168.0.127:23)
+2018-03-16 17:34:50,491 [5] INFO  robotTest.SocketClient - [Rev<--]$1ACK:GET__(From Robot_Cmd_001 192.168.0.127:23)
+2018-03-16 17:34:57,490 [5] INFO  robotTest.SocketClient - [Rev<--]$1FIN:GET__:00000000(From Robot_Cmd_001 192.168.0.127:23)
+2018-03-16 17:34:57,619 [5] INFO  robotTest.SocketClient - [Snd-->]$1CMD:PUT__:101,1,1,2(To Robot_Cmd_001 192.168.0.127:23)
+2018-03-16 17:34:57,715 [5] INFO  robotTest.SocketClient - [Rev<--]$1ACK:PUT__(From Robot_Cmd_001 192.168.0.127:23)
+2018-03-16 17:35:03,509 [5] INFO  robotTest.SocketClient - [Rev<--]$1FIN:PUT__:00000000(From Robot_Cmd_001 192.168.0.127:23)
+2018-03-16 17:35:03,576 [5] INFO  robotTest.SocketClient - [Snd-->]$3CMD:ALIGN:30000(To Aligner_001 192.168.0.21:23)
+2018-03-16 17:35:03,671 [6] INFO  robotTest.SocketClient - [Rev<--]$3ACK:ALIGN(From Aligner_001 192.168.0.21:23)
+2018-03-16 17:35:06,078 [6] INFO  robotTest.SocketClient - [Rev<--]$3FIN:ALIGN:00000000(From Aligner_001 192.168.0.21:23)
+2018-03-16 17:35:06,180 [6] INFO  robotTest.SocketClient - [Snd-->]$1CMD:GET__:101,1,1,0,3(To Robot_Cmd_001 192.168.0.127:23)
+2018-03-16 17:35:06,272 [5] INFO  robotTest.SocketClient - [Rev<--]$1ACK:GET__(From Robot_Cmd_001 192.168.0.127:23)
+2018-03-16 17:35:09,267 [5] INFO  robotTest.SocketClient - [Rev<--]$1FIN:GET__:00000000(From Robot_Cmd_001 192.168.0.127:23)
+2018-03-16 17:35:09,333 [5] INFO  robotTest.SocketClient - [Snd-->]$1CMD:PUT__:1204,1,1,0(To Robot_Cmd_001 192.168.0.127:23)
+2018-03-16 17:35:09,425 [5] INFO  robotTest.SocketClient - [Rev<--]$1ACK:PUT__(From Robot_Cmd_001 192.168.0.127:23)
+2018-03-16 17:35:18,624 [5] INFO  robotTest.SocketClient - [Rev<--]$1FIN:PUT__:00000000(From Robot_Cmd_001 192.168.0.127:23)
+2018-03-16 17:35:18,688 [5] INFO  robotTest.SocketClient - [Snd-->]$1CMD:GET__:1201,2,1,0,0(To Robot_Cmd_001 192.168.0.127:23)
+2018-03-16 17:35:18,787 [5] INFO  robotTest.SocketClient - [Rev<--]$1ACK:GET__(From Robot_Cmd_001 192.168.0.127:23)
+2018-03-16 17:35:25,782 [5] INFO  robotTest.SocketClient - [Rev<--]$1FIN:GET__:00000000(From Robot_Cmd_001 192.168.0.127:23)
+2018-03-16 17:35:25,903 [5] INFO  robotTest.SocketClient - [Snd-->]$1CMD:PUT__:101,1,1,2(To Robot_Cmd_001 192.168.0.127:23)
+2018-03-16 17:35:25,986 [5] INFO  robotTest.SocketClient - [Rev<--]$1ACK:PUT__(From Robot_Cmd_001 192.168.0.127:23)
+2018-03-16 17:35:31,781 [5] INFO  robotTest.SocketClient - [Rev<--]$1FIN:PUT__:00000000(From Robot_Cmd_001 192.168.0.127:23)
+2018-03-16 17:35:31,893 [5] INFO  robotTest.SocketClient - [Snd-->]$3CMD:ALIGN:30000(To Aligner_001 192.168.0.21:23)
+2018-03-16 17:35:31,989 [6] INFO  robotTest.SocketClient - [Rev<--]$3ACK:ALIGN(From Aligner_001 192.168.0.21:23)
+2018-03-16 17:35:34,389 [6] INFO  robotTest.SocketClient - [Rev<--]$3FIN:ALIGN:00000000(From Aligner_001 192.168.0.21:23)
+2018-03-16 17:35:34,421 [6] INFO  robotTest.SocketClient - [Snd-->]$1CMD:GET__:101,1,1,0,3(To Robot_Cmd_001 192.168.0.127:23)
+2018-03-16 17:35:34,520 [5] INFO  robotTest.SocketClient - [Rev<--]$1ACK:GET__(From Robot_Cmd_001 192.168.0.127:23)
+2018-03-16 17:35:37,519 [5] INFO  robotTest.SocketClient - [Rev<--]$1FIN:GET__:00000000(From Robot_Cmd_001 192.168.0.127:23)
+2018-03-16 17:35:37,651 [5] INFO  robotTest.SocketClient - [Snd-->]$1CMD:PUT__:1204,1,1,0(To Robot_Cmd_001 192.168.0.127:23)
+2018-03-16 17:35:37,752 [5] INFO  robotTest.SocketClient - [Rev<--]$1ACK:PUT__(From Robot_Cmd_001 192.168.0.127:23)
+2018-03-16 17:35:46,947 [5] INFO  robotTest.SocketClient - [Rev<--]$1FIN:PUT__:00000000(From Robot_Cmd_001 192.168.0.127:23)
+2018-03-16 17:35:47,033 [5] INFO  robotTest.SocketClient - [Snd-->]$1CMD:GET__:1201,2,1,0,0(To Robot_Cmd_001 192.168.0.127:23)
+2018-03-16 17:35:47,135 [5] INFO  robotTest.SocketClient - [Rev<--]$1ACK:GET__(From Robot_Cmd_001 192.168.0.127:23)
+2018-03-16 17:35:51,380 [5] ERROR robotTest.SocketClient - (From Robot_Cmd_001 192.168.0.127:23)連線已被您主機上的軟體中止。
+   於 System.Net.Sockets.Socket.Receive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
+   於 System.Net.Sockets.Socket.Receive(Byte[] buffer)
+   於 robotTest.SocketClient.SckSReceiveProc() 於 C:\Users\ethan_huang\source\repos\robotTest\robotTest\Communication\SocketClient.cs: 行 109
+2018-03-16 17:35:51,381 [6] ERROR robotTest.SocketClient - (From Aligner_001 192.168.0.21:23)連線已被您主機上的軟體中止。
+   於 System.Net.Sockets.Socket.Receive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
+   於 System.Net.Sockets.Socket.Receive(Byte[] buffer)
+   於 robotTest.SocketClient.SckSReceiveProc() 於 C:\Users\ethan_huang\source\repos\robotTest\robotTest\Communication\SocketClient.cs: 行 109
+2018-03-16 17:35:58,148 [1] INFO  robotTest.Form1 - initial complete.
+2018-03-16 17:36:00,787 [4] INFO  robotTest.SocketClient - Connected! 192.168.0.21:23
+2018-03-16 17:36:00,788 [3] INFO  robotTest.SocketClient - Connected! 192.168.0.127:23
+2018-03-16 17:36:21,402 [1] INFO  robotTest.SocketClient - [Snd-->]$1SET:SP___:50(To Robot_Cmd_001 192.168.0.127:23)
+2018-03-16 17:36:21,428 [6] INFO  robotTest.SocketClient - [Rev<--]$1ACK:SP___(From Robot_Cmd_001 192.168.0.127:23)
+2018-03-16 17:36:45,229 [1] INFO  robotTest.SocketClient - [Snd-->]$1SET:SP___:50(To Aligner_001 192.168.0.21:23)
+2018-03-16 17:36:55,266 [3] ERROR robotTest.RobotController - Time out! Send to:192.168.0.21:23 Command:robotTest.Command
+2018-03-16 17:37:00,271 [1] INFO  robotTest.SocketClient - [Snd-->]$1SET:SP___:50(To Aligner_001 192.168.0.21:23)
+2018-03-16 17:37:10,294 [3] ERROR robotTest.RobotController - Time out! Send to:192.168.0.21:23 Command:robotTest.Command
+2018-03-16 17:37:48,864 [1] INFO  robotTest.SocketClient - [Snd-->]$1SET:SP___:50(To Aligner_001 192.168.0.21:23)
+2018-03-16 17:38:04,071 [7] ERROR robotTest.RobotController - Time out! Send to:192.168.0.21:23 Command:robotTest.Command
+2018-03-16 17:38:26,606 [1] INFO  robotTest.SocketClient - [Snd-->]$3SET:SP___:50(To Aligner_001 192.168.0.21:23)
+2018-03-16 17:38:26,630 [5] INFO  robotTest.SocketClient - [Rev<--]$3ACK:SP___(From Aligner_001 192.168.0.21:23)
+2018-03-16 17:38:33,381 [1] INFO  robotTest.SocketClient - [Snd-->]$1CMD:GET__:1201,1,1,0,0(To Robot_Cmd_001 192.168.0.127:23)
+2018-03-16 17:38:33,407 [6] INFO  robotTest.SocketClient - [Rev<--]$1ACK:GET__(From Robot_Cmd_001 192.168.0.127:23)
+2018-03-16 17:38:36,406 [6] INFO  robotTest.SocketClient - [Rev<--]$1FIN:GET__:00000000(From Robot_Cmd_001 192.168.0.127:23)
+2018-03-16 17:38:36,571 [6] INFO  robotTest.SocketClient - [Snd-->]$1CMD:PUT__:101,1,1,2(To Robot_Cmd_001 192.168.0.127:23)
+2018-03-16 17:38:36,663 [6] INFO  robotTest.SocketClient - [Rev<--]$1ACK:PUT__(From Robot_Cmd_001 192.168.0.127:23)
+2018-03-16 17:38:40,760 [6] INFO  robotTest.SocketClient - [Rev<--]$1FIN:PUT__:00000000(From Robot_Cmd_001 192.168.0.127:23)
+2018-03-16 17:38:40,881 [6] INFO  robotTest.SocketClient - [Snd-->]$3CMD:ALIGN:30000(To Aligner_001 192.168.0.21:23)
+2018-03-16 17:38:40,962 [5] INFO  robotTest.SocketClient - [Rev<--]$3ACK:ALIGN(From Aligner_001 192.168.0.21:23)
+2018-03-16 17:38:42,158 [5] INFO  robotTest.SocketClient - [Rev<--]$3FIN:ALIGN:00000000(From Aligner_001 192.168.0.21:23)
+2018-03-16 17:38:42,267 [5] INFO  robotTest.SocketClient - [Snd-->]$1CMD:GET__:101,1,1,0,3(To Robot_Cmd_001 192.168.0.127:23)
+2018-03-16 17:38:42,362 [6] INFO  robotTest.SocketClient - [Rev<--]$1ACK:GET__(From Robot_Cmd_001 192.168.0.127:23)
+2018-03-16 17:38:44,363 [6] INFO  robotTest.SocketClient - [Rev<--]$1FIN:GET__:00000000(From Robot_Cmd_001 192.168.0.127:23)
+2018-03-16 17:38:44,498 [6] INFO  robotTest.SocketClient - [Snd-->]$1CMD:PUT__:1204,1,1,0(To Robot_Cmd_001 192.168.0.127:23)
+2018-03-16 17:38:44,594 [6] INFO  robotTest.SocketClient - [Rev<--]$1ACK:PUT__(From Robot_Cmd_001 192.168.0.127:23)
+2018-03-16 17:38:50,189 [6] INFO  robotTest.SocketClient - [Rev<--]$1FIN:PUT__:00000000(From Robot_Cmd_001 192.168.0.127:23)
+2018-03-16 17:38:50,256 [6] INFO  robotTest.SocketClient - [Snd-->]$1CMD:GET__:1201,2,1,0,0(To Robot_Cmd_001 192.168.0.127:23)
+2018-03-16 17:38:50,346 [6] INFO  robotTest.SocketClient - [Rev<--]$1ACK:GET__(From Robot_Cmd_001 192.168.0.127:23)
+2018-03-16 17:38:54,459 [6] INFO  robotTest.SocketClient - [Rev<--]$1FIN:GET__:00000000(From Robot_Cmd_001 192.168.0.127:23)
+2018-03-16 17:38:54,580 [6] INFO  robotTest.SocketClient - [Snd-->]$1CMD:PUT__:101,1,1,2(To Robot_Cmd_001 192.168.0.127:23)
+2018-03-16 17:38:54,674 [6] INFO  robotTest.SocketClient - [Rev<--]$1ACK:PUT__(From Robot_Cmd_001 192.168.0.127:23)
+2018-03-16 17:38:58,770 [6] INFO  robotTest.SocketClient - [Rev<--]$1FIN:PUT__:00000000(From Robot_Cmd_001 192.168.0.127:23)
+2018-03-16 17:38:58,841 [6] INFO  robotTest.SocketClient - [Snd-->]$3CMD:ALIGN:30000(To Aligner_001 192.168.0.21:23)
+2018-03-16 17:38:58,934 [5] INFO  robotTest.SocketClient - [Rev<--]$3ACK:ALIGN(From Aligner_001 192.168.0.21:23)
+2018-03-16 17:39:00,128 [5] INFO  robotTest.SocketClient - [Rev<--]$3FIN:ALIGN:00000000(From Aligner_001 192.168.0.21:23)
+2018-03-16 17:39:00,159 [5] INFO  robotTest.SocketClient - [Snd-->]$1CMD:GET__:101,1,1,0,3(To Robot_Cmd_001 192.168.0.127:23)
+2018-03-16 17:39:00,247 [6] INFO  robotTest.SocketClient - [Rev<--]$1ACK:GET__(From Robot_Cmd_001 192.168.0.127:23)
+2018-03-16 17:39:02,259 [6] INFO  robotTest.SocketClient - [Rev<--]$1FIN:GET__:00000000(From Robot_Cmd_001 192.168.0.127:23)
+2018-03-16 17:39:02,502 [5] ERROR robotTest.SocketClient - (From Aligner_001 192.168.0.21:23)連線已被您主機上的軟體中止。
+   於 System.Net.Sockets.Socket.Receive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
+   於 System.Net.Sockets.Socket.Receive(Byte[] buffer)
+   於 robotTest.SocketClient.SckSReceiveProc() 於 C:\Users\ethan_huang\source\repos\robotTest\robotTest\Communication\SocketClient.cs: 行 109
+2018-03-16 17:39:11,257 [1] INFO  robotTest.Form1 - initial complete.
+2018-03-16 17:39:13,973 [4] INFO  robotTest.SocketClient - Connected! 192.168.0.21:23
+2018-03-16 17:39:13,974 [3] INFO  robotTest.SocketClient - Connected! 192.168.0.127:23
+2018-03-16 17:39:32,731 [1] INFO  robotTest.SocketClient - [Snd-->]$1SET:SP___:90(To Robot_Cmd_001 192.168.0.127:23)
+2018-03-16 17:39:32,752 [6] INFO  robotTest.SocketClient - [Rev<--]$1ACK:SP___(From Robot_Cmd_001 192.168.0.127:23)
+2018-03-16 17:39:44,322 [1] INFO  robotTest.SocketClient - [Snd-->]$3SET:SP___:90(To Aligner_001 192.168.0.21:23)
+2018-03-16 17:39:44,345 [5] INFO  robotTest.SocketClient - [Rev<--]$3ACK:SP___(From Aligner_001 192.168.0.21:23)
+2018-03-16 17:39:51,737 [1] INFO  robotTest.SocketClient - [Snd-->]$1CMD:GET__:1201,1,1,0,0(To Robot_Cmd_001 192.168.0.127:23)
+2018-03-16 17:39:51,766 [6] INFO  robotTest.SocketClient - [Rev<--]$1ACK:GET__(From Robot_Cmd_001 192.168.0.127:23)
+2018-03-16 17:39:54,746 [6] INFO  robotTest.SocketClient - [Rev<--]$1FIN:GET__:00000000(From Robot_Cmd_001 192.168.0.127:23)
+2018-03-16 17:39:54,949 [6] INFO  robotTest.SocketClient - [Snd-->]$1CMD:PUT__:101,1,1,2(To Robot_Cmd_001 192.168.0.127:23)
+2018-03-16 17:39:55,028 [6] INFO  robotTest.SocketClient - [Rev<--]$1ACK:PUT__(From Robot_Cmd_001 192.168.0.127:23)
+2018-03-16 17:39:58,533 [6] INFO  robotTest.SocketClient - [Rev<--]$1FIN:PUT__:00000000(From Robot_Cmd_001 192.168.0.127:23)
+2018-03-16 17:39:58,655 [6] INFO  robotTest.SocketClient - [Snd-->]$3CMD:ALIGN:30000(To Aligner_001 192.168.0.21:23)
+2018-03-16 17:39:58,746 [5] INFO  robotTest.SocketClient - [Rev<--]$3ACK:ALIGN(From Aligner_001 192.168.0.21:23)
+2018-03-16 17:39:59,548 [5] INFO  robotTest.SocketClient - [Rev<--]$3FIN:ALIGN:00000000(From Aligner_001 192.168.0.21:23)
+2018-03-16 17:39:59,650 [5] INFO  robotTest.SocketClient - [Snd-->]$1CMD:GET__:101,1,1,0,3(To Robot_Cmd_001 192.168.0.127:23)
+2018-03-16 17:39:59,776 [6] INFO  robotTest.SocketClient - [Rev<--]$1ACK:GET__(From Robot_Cmd_001 192.168.0.127:23)
+2018-03-16 17:40:01,481 [6] INFO  robotTest.SocketClient - [Rev<--]$1FIN:GET__:00000000(From Robot_Cmd_001 192.168.0.127:23)
+2018-03-16 17:40:01,577 [6] INFO  robotTest.SocketClient - [Snd-->]$1CMD:PUT__:1204,1,1,0(To Robot_Cmd_001 192.168.0.127:23)
+2018-03-16 17:40:01,659 [6] INFO  robotTest.SocketClient - [Rev<--]$1ACK:PUT__(From Robot_Cmd_001 192.168.0.127:23)
+2018-03-16 17:40:06,057 [6] INFO  robotTest.SocketClient - [Rev<--]$1FIN:PUT__:00000000(From Robot_Cmd_001 192.168.0.127:23)
+2018-03-16 17:40:06,197 [6] INFO  robotTest.SocketClient - [Snd-->]$1CMD:GET__:1201,2,1,0,0(To Robot_Cmd_001 192.168.0.127:23)
+2018-03-16 17:40:06,277 [6] INFO  robotTest.SocketClient - [Rev<--]$1ACK:GET__(From Robot_Cmd_001 192.168.0.127:23)
+2018-03-16 17:40:09,476 [6] INFO  robotTest.SocketClient - [Rev<--]$1FIN:GET__:00000000(From Robot_Cmd_001 192.168.0.127:23)
+2018-03-16 17:40:09,615 [6] INFO  robotTest.SocketClient - [Snd-->]$1CMD:PUT__:101,1,1,2(To Robot_Cmd_001 192.168.0.127:23)
+2018-03-16 17:40:09,692 [6] INFO  robotTest.SocketClient - [Rev<--]$1ACK:PUT__(From Robot_Cmd_001 192.168.0.127:23)
+2018-03-16 17:40:13,181 [6] INFO  robotTest.SocketClient - [Rev<--]$1FIN:PUT__:00000000(From Robot_Cmd_001 192.168.0.127:23)
+2018-03-16 17:40:13,252 [6] INFO  robotTest.SocketClient - [Snd-->]$3CMD:ALIGN:30000(To Aligner_001 192.168.0.21:23)
+2018-03-16 17:40:13,341 [5] INFO  robotTest.SocketClient - [Rev<--]$3ACK:ALIGN(From Aligner_001 192.168.0.21:23)
+2018-03-16 17:40:14,134 [5] INFO  robotTest.SocketClient - [Rev<--]$3FIN:ALIGN:00000000(From Aligner_001 192.168.0.21:23)
+2018-03-16 17:40:14,248 [5] INFO  robotTest.SocketClient - [Snd-->]$1CMD:GET__:101,1,1,0,3(To Robot_Cmd_001 192.168.0.127:23)
+2018-03-16 17:40:14,340 [6] INFO  robotTest.SocketClient - [Rev<--]$1ACK:GET__(From Robot_Cmd_001 192.168.0.127:23)
+2018-03-16 17:40:16,043 [6] INFO  robotTest.SocketClient - [Rev<--]$1FIN:GET__:00000000(From Robot_Cmd_001 192.168.0.127:23)
+2018-03-16 17:40:16,140 [6] INFO  robotTest.SocketClient - [Snd-->]$1CMD:PUT__:1204,1,1,0(To Robot_Cmd_001 192.168.0.127:23)
+2018-03-16 17:40:16,226 [6] INFO  robotTest.SocketClient - [Rev<--]$1ACK:PUT__(From Robot_Cmd_001 192.168.0.127:23)
+2018-03-16 17:40:20,731 [6] INFO  robotTest.SocketClient - [Rev<--]$1FIN:PUT__:00000000(From Robot_Cmd_001 192.168.0.127:23)
+2018-03-16 17:40:20,806 [6] INFO  robotTest.SocketClient - [Snd-->]$1CMD:GET__:1201,2,1,0,0(To Robot_Cmd_001 192.168.0.127:23)
+2018-03-16 17:40:20,892 [6] INFO  robotTest.SocketClient - [Rev<--]$1ACK:GET__(From Robot_Cmd_001 192.168.0.127:23)
+2018-03-16 17:40:24,096 [6] INFO  robotTest.SocketClient - [Rev<--]$1FIN:GET__:00000000(From Robot_Cmd_001 192.168.0.127:23)
+2018-03-16 17:40:24,282 [6] INFO  robotTest.SocketClient - [Snd-->]$1CMD:PUT__:101,1,1,2(To Robot_Cmd_001 192.168.0.127:23)
+2018-03-16 17:40:24,376 [6] INFO  robotTest.SocketClient - [Rev<--]$1ACK:PUT__(From Robot_Cmd_001 192.168.0.127:23)
+2018-03-16 17:40:27,865 [6] INFO  robotTest.SocketClient - [Rev<--]$1FIN:PUT__:00000000(From Robot_Cmd_001 192.168.0.127:23)
+2018-03-16 17:40:27,995 [6] INFO  robotTest.SocketClient - [Snd-->]$3CMD:ALIGN:30000(To Aligner_001 192.168.0.21:23)
+2018-03-16 17:40:28,075 [5] INFO  robotTest.SocketClient - [Rev<--]$3ACK:ALIGN(From Aligner_001 192.168.0.21:23)
+2018-03-16 17:40:28,876 [5] INFO  robotTest.SocketClient - [Rev<--]$3FIN:ALIGN:00000000(From Aligner_001 192.168.0.21:23)
+2018-03-16 17:40:28,915 [5] INFO  robotTest.SocketClient - [Snd-->]$1CMD:GET__:101,1,1,0,3(To Robot_Cmd_001 192.168.0.127:23)
+2018-03-16 17:40:29,008 [6] INFO  robotTest.SocketClient - [Rev<--]$1ACK:GET__(From Robot_Cmd_001 192.168.0.127:23)
+2018-03-16 17:40:30,702 [6] INFO  robotTest.SocketClient - [Rev<--]$1FIN:GET__:00000000(From Robot_Cmd_001 192.168.0.127:23)
+2018-03-16 17:40:30,767 [6] INFO  robotTest.SocketClient - [Snd-->]$1CMD:PUT__:1204,1,1,0(To Robot_Cmd_001 192.168.0.127:23)
+2018-03-16 17:40:30,858 [6] INFO  robotTest.SocketClient - [Rev<--]$1ACK:PUT__(From Robot_Cmd_001 192.168.0.127:23)
+2018-03-16 17:40:35,361 [6] INFO  robotTest.SocketClient - [Rev<--]$1FIN:PUT__:00000000(From Robot_Cmd_001 192.168.0.127:23)
+2018-03-16 17:40:35,436 [6] INFO  robotTest.SocketClient - [Snd-->]$1CMD:GET__:1201,2,1,0,0(To Robot_Cmd_001 192.168.0.127:23)
+2018-03-16 17:40:35,523 [6] INFO  robotTest.SocketClient - [Rev<--]$1ACK:GET__(From Robot_Cmd_001 192.168.0.127:23)
+2018-03-16 17:40:38,721 [6] INFO  robotTest.SocketClient - [Rev<--]$1FIN:GET__:00000000(From Robot_Cmd_001 192.168.0.127:23)
+2018-03-16 17:40:38,903 [6] INFO  robotTest.SocketClient - [Snd-->]$1CMD:PUT__:101,1,1,2(To Robot_Cmd_001 192.168.0.127:23)
+2018-03-16 17:40:38,990 [6] INFO  robotTest.SocketClient - [Rev<--]$1ACK:PUT__(From Robot_Cmd_001 192.168.0.127:23)
+2018-03-16 17:40:42,501 [6] INFO  robotTest.SocketClient - [Rev<--]$1FIN:PUT__:00000000(From Robot_Cmd_001 192.168.0.127:23)
+2018-03-16 17:40:42,631 [6] INFO  robotTest.SocketClient - [Snd-->]$3CMD:ALIGN:30000(To Aligner_001 192.168.0.21:23)
+2018-03-16 17:40:42,708 [5] INFO  robotTest.SocketClient - [Rev<--]$3ACK:ALIGN(From Aligner_001 192.168.0.21:23)
+2018-03-16 17:40:43,515 [5] INFO  robotTest.SocketClient - [Rev<--]$3FIN:ALIGN:00000000(From Aligner_001 192.168.0.21:23)
+2018-03-16 17:40:43,552 [5] INFO  robotTest.SocketClient - [Snd-->]$1CMD:GET__:101,1,1,0,3(To Robot_Cmd_001 192.168.0.127:23)
+2018-03-16 17:40:43,643 [6] INFO  robotTest.SocketClient - [Rev<--]$1ACK:GET__(From Robot_Cmd_001 192.168.0.127:23)
+2018-03-16 17:40:45,342 [6] INFO  robotTest.SocketClient - [Rev<--]$1FIN:GET__:00000000(From Robot_Cmd_001 192.168.0.127:23)
+2018-03-16 17:40:45,473 [6] INFO  robotTest.SocketClient - [Snd-->]$1CMD:PUT__:1204,1,1,0(To Robot_Cmd_001 192.168.0.127:23)
+2018-03-16 17:40:45,567 [6] INFO  robotTest.SocketClient - [Rev<--]$1ACK:PUT__(From Robot_Cmd_001 192.168.0.127:23)
+2018-03-16 17:40:49,962 [6] INFO  robotTest.SocketClient - [Rev<--]$1FIN:PUT__:00000000(From Robot_Cmd_001 192.168.0.127:23)
+2018-03-16 17:40:50,056 [6] INFO  robotTest.SocketClient - [Snd-->]$1CMD:GET__:1201,2,1,0,0(To Robot_Cmd_001 192.168.0.127:23)
+2018-03-16 17:40:50,193 [6] INFO  robotTest.SocketClient - [Rev<--]$1ACK:GET__(From Robot_Cmd_001 192.168.0.127:23)
+2018-03-16 17:40:53,396 [6] INFO  robotTest.SocketClient - [Rev<--]$1FIN:GET__:00000000(From Robot_Cmd_001 192.168.0.127:23)
+2018-03-16 17:40:53,564 [6] INFO  robotTest.SocketClient - [Snd-->]$1CMD:PUT__:101,1,1,2(To Robot_Cmd_001 192.168.0.127:23)
+2018-03-16 17:40:53,655 [6] INFO  robotTest.SocketClient - [Rev<--]$1ACK:PUT__(From Robot_Cmd_001 192.168.0.127:23)
+2018-03-16 17:40:57,152 [6] INFO  robotTest.SocketClient - [Rev<--]$1FIN:PUT__:00000000(From Robot_Cmd_001 192.168.0.127:23)
+2018-03-16 17:40:57,273 [6] INFO  robotTest.SocketClient - [Snd-->]$3CMD:ALIGN:30000(To Aligner_001 192.168.0.21:23)
+2018-03-16 17:40:57,355 [5] INFO  robotTest.SocketClient - [Rev<--]$3ACK:ALIGN(From Aligner_001 192.168.0.21:23)
+2018-03-16 17:40:58,247 [5] INFO  robotTest.SocketClient - [Rev<--]$3FIN:ALIGN:00000000(From Aligner_001 192.168.0.21:23)
+2018-03-16 17:40:58,287 [5] INFO  robotTest.SocketClient - [Snd-->]$1CMD:GET__:101,1,1,0,3(To Robot_Cmd_001 192.168.0.127:23)
+2018-03-16 17:40:58,376 [6] INFO  robotTest.SocketClient - [Rev<--]$1ACK:GET__(From Robot_Cmd_001 192.168.0.127:23)
+2018-03-16 17:41:00,074 [6] INFO  robotTest.SocketClient - [Rev<--]$1FIN:GET__:00000000(From Robot_Cmd_001 192.168.0.127:23)
+2018-03-16 17:41:00,185 [6] INFO  robotTest.SocketClient - [Snd-->]$1CMD:PUT__:1204,1,1,0(To Robot_Cmd_001 192.168.0.127:23)
+2018-03-16 17:41:00,274 [6] INFO  robotTest.SocketClient - [Rev<--]$1ACK:PUT__(From Robot_Cmd_001 192.168.0.127:23)
+2018-03-16 17:41:04,769 [6] INFO  robotTest.SocketClient - [Rev<--]$1FIN:PUT__:00000000(From Robot_Cmd_001 192.168.0.127:23)
+2018-03-16 17:41:04,860 [6] INFO  robotTest.SocketClient - [Snd-->]$1CMD:GET__:1201,2,1,0,0(To Robot_Cmd_001 192.168.0.127:23)
+2018-03-16 17:41:04,956 [6] INFO  robotTest.SocketClient - [Rev<--]$1ACK:GET__(From Robot_Cmd_001 192.168.0.127:23)
+2018-03-16 17:41:08,141 [6] INFO  robotTest.SocketClient - [Rev<--]$1FIN:GET__:00000000(From Robot_Cmd_001 192.168.0.127:23)
+2018-03-16 17:41:08,253 [6] INFO  robotTest.SocketClient - [Snd-->]$1CMD:PUT__:101,1,1,2(To Robot_Cmd_001 192.168.0.127:23)
+2018-03-16 17:41:08,340 [6] INFO  robotTest.SocketClient - [Rev<--]$1ACK:PUT__(From Robot_Cmd_001 192.168.0.127:23)
+2018-03-16 17:41:11,832 [6] INFO  robotTest.SocketClient - [Rev<--]$1FIN:PUT__:00000000(From Robot_Cmd_001 192.168.0.127:23)
+2018-03-16 17:41:11,977 [6] INFO  robotTest.SocketClient - [Snd-->]$3CMD:ALIGN:30000(To Aligner_001 192.168.0.21:23)
+2018-03-16 17:41:12,074 [5] INFO  robotTest.SocketClient - [Rev<--]$3ACK:ALIGN(From Aligner_001 192.168.0.21:23)
+2018-03-16 17:41:12,970 [5] INFO  robotTest.SocketClient - [Rev<--]$3FIN:ALIGN:00000000(From Aligner_001 192.168.0.21:23)
+2018-03-16 17:41:12,997 [5] INFO  robotTest.SocketClient - [Snd-->]$1CMD:GET__:101,1,1,0,3(To Robot_Cmd_001 192.168.0.127:23)
+2018-03-16 17:41:13,100 [6] INFO  robotTest.SocketClient - [Rev<--]$1ACK:GET__(From Robot_Cmd_001 192.168.0.127:23)
+2018-03-16 17:41:14,801 [6] INFO  robotTest.SocketClient - [Rev<--]$1FIN:GET__:00000000(From Robot_Cmd_001 192.168.0.127:23)
+2018-03-16 17:41:14,920 [6] INFO  robotTest.SocketClient - [Snd-->]$1CMD:PUT__:1204,1,1,0(To Robot_Cmd_001 192.168.0.127:23)
+2018-03-16 17:41:15,011 [6] INFO  robotTest.SocketClient - [Rev<--]$1ACK:PUT__(From Robot_Cmd_001 192.168.0.127:23)
+2018-03-16 17:41:19,499 [6] INFO  robotTest.SocketClient - [Rev<--]$1FIN:PUT__:00000000(From Robot_Cmd_001 192.168.0.127:23)
+2018-03-16 17:41:19,676 [6] INFO  robotTest.SocketClient - [Snd-->]$1CMD:GET__:1201,2,1,0,0(To Robot_Cmd_001 192.168.0.127:23)
+2018-03-16 17:41:19,756 [6] INFO  robotTest.SocketClient - [Rev<--]$1ACK:GET__(From Robot_Cmd_001 192.168.0.127:23)
+2018-03-16 17:41:22,963 [6] INFO  robotTest.SocketClient - [Rev<--]$1FIN:GET__:00000000(From Robot_Cmd_001 192.168.0.127:23)
+2018-03-16 17:41:23,051 [6] INFO  robotTest.SocketClient - [Snd-->]$1CMD:PUT__:101,1,1,2(To Robot_Cmd_001 192.168.0.127:23)
+2018-03-16 17:41:23,138 [6] INFO  robotTest.SocketClient - [Rev<--]$1ACK:PUT__(From Robot_Cmd_001 192.168.0.127:23)
+2018-03-16 17:41:26,734 [6] INFO  robotTest.SocketClient - [Rev<--]$1FIN:PUT__:00000000(From Robot_Cmd_001 192.168.0.127:23)
+2018-03-16 17:41:26,889 [6] INFO  robotTest.SocketClient - [Snd-->]$3CMD:ALIGN:30000(To Aligner_001 192.168.0.21:23)
+2018-03-16 17:41:26,972 [5] INFO  robotTest.SocketClient - [Rev<--]$3ACK:ALIGN(From Aligner_001 192.168.0.21:23)
+2018-03-16 17:41:27,876 [5] INFO  robotTest.SocketClient - [Rev<--]$3FIN:ALIGN:00000000(From Aligner_001 192.168.0.21:23)
+2018-03-16 17:41:27,975 [5] INFO  robotTest.SocketClient - [Snd-->]$1CMD:GET__:101,1,1,0,3(To Robot_Cmd_001 192.168.0.127:23)
+2018-03-16 17:41:28,058 [6] INFO  robotTest.SocketClient - [Rev<--]$1ACK:GET__(From Robot_Cmd_001 192.168.0.127:23)
+2018-03-16 17:41:29,756 [6] INFO  robotTest.SocketClient - [Rev<--]$1FIN:GET__:00000000(From Robot_Cmd_001 192.168.0.127:23)
+2018-03-16 17:41:29,883 [6] INFO  robotTest.SocketClient - [Snd-->]$1CMD:PUT__:1204,1,1,0(To Robot_Cmd_001 192.168.0.127:23)
+2018-03-16 17:41:29,971 [6] INFO  robotTest.SocketClient - [Rev<--]$1ACK:PUT__(From Robot_Cmd_001 192.168.0.127:23)
+2018-03-16 17:41:34,464 [6] INFO  robotTest.SocketClient - [Rev<--]$1FIN:PUT__:00000000(From Robot_Cmd_001 192.168.0.127:23)
+2018-03-16 17:41:34,575 [6] INFO  robotTest.SocketClient - [Snd-->]$1CMD:GET__:1201,2,1,0,0(To Robot_Cmd_001 192.168.0.127:23)
+2018-03-16 17:41:34,674 [6] INFO  robotTest.SocketClient - [Rev<--]$1ACK:GET__(From Robot_Cmd_001 192.168.0.127:23)
+2018-03-16 17:41:37,884 [6] INFO  robotTest.SocketClient - [Rev<--]$1FIN:GET__:00000000(From Robot_Cmd_001 192.168.0.127:23)
+2018-03-16 17:41:38,031 [6] INFO  robotTest.SocketClient - [Snd-->]$1CMD:PUT__:101,1,1,2(To Robot_Cmd_001 192.168.0.127:23)
+2018-03-16 17:41:38,127 [6] INFO  robotTest.SocketClient - [Rev<--]$1ACK:PUT__(From Robot_Cmd_001 192.168.0.127:23)
+2018-03-16 17:41:41,624 [6] INFO  robotTest.SocketClient - [Rev<--]$1FIN:PUT__:00000000(From Robot_Cmd_001 192.168.0.127:23)
+2018-03-16 17:41:41,683 [6] INFO  robotTest.SocketClient - [Snd-->]$3CMD:ALIGN:30000(To Aligner_001 192.168.0.21:23)
+2018-03-16 17:41:41,774 [5] INFO  robotTest.SocketClient - [Rev<--]$3ACK:ALIGN(From Aligner_001 192.168.0.21:23)
+2018-03-16 17:41:42,581 [5] INFO  robotTest.SocketClient - [Rev<--]$3FIN:ALIGN:00000000(From Aligner_001 192.168.0.21:23)
+2018-03-16 17:41:42,618 [5] INFO  robotTest.SocketClient - [Snd-->]$1CMD:GET__:101,1,1,0,3(To Robot_Cmd_001 192.168.0.127:23)
+2018-03-16 17:41:42,707 [6] INFO  robotTest.SocketClient - [Rev<--]$1ACK:GET__(From Robot_Cmd_001 192.168.0.127:23)
+2018-03-16 17:41:44,412 [6] INFO  robotTest.SocketClient - [Rev<--]$1FIN:GET__:00000000(From Robot_Cmd_001 192.168.0.127:23)
+2018-03-16 17:41:44,538 [6] INFO  robotTest.SocketClient - [Snd-->]$1CMD:PUT__:1204,1,1,0(To Robot_Cmd_001 192.168.0.127:23)
+2018-03-16 17:41:44,624 [6] INFO  robotTest.SocketClient - [Rev<--]$1ACK:PUT__(From Robot_Cmd_001 192.168.0.127:23)
+2018-03-16 17:41:49,024 [6] INFO  robotTest.SocketClient - [Rev<--]$1FIN:PUT__:00000000(From Robot_Cmd_001 192.168.0.127:23)
+2018-03-16 17:41:49,217 [6] INFO  robotTest.SocketClient - [Snd-->]$1CMD:GET__:1201,2,1,0,0(To Robot_Cmd_001 192.168.0.127:23)
+2018-03-16 17:41:49,312 [6] INFO  robotTest.SocketClient - [Rev<--]$1ACK:GET__(From Robot_Cmd_001 192.168.0.127:23)
+2018-03-16 17:41:52,512 [6] INFO  robotTest.SocketClient - [Rev<--]$1FIN:GET__:00000000(From Robot_Cmd_001 192.168.0.127:23)
+2018-03-16 17:41:52,655 [6] INFO  robotTest.SocketClient - [Snd-->]$1CMD:PUT__:101,1,1,2(To Robot_Cmd_001 192.168.0.127:23)
+2018-03-16 17:41:52,755 [6] INFO  robotTest.SocketClient - [Rev<--]$1ACK:PUT__(From Robot_Cmd_001 192.168.0.127:23)
+2018-03-16 17:41:56,247 [6] INFO  robotTest.SocketClient - [Rev<--]$1FIN:PUT__:00000000(From Robot_Cmd_001 192.168.0.127:23)
+2018-03-16 17:41:56,309 [6] INFO  robotTest.SocketClient - [Snd-->]$3CMD:ALIGN:30000(To Aligner_001 192.168.0.21:23)
+2018-03-16 17:41:56,404 [5] INFO  robotTest.SocketClient - [Rev<--]$3ACK:ALIGN(From Aligner_001 192.168.0.21:23)
+2018-03-16 17:41:57,201 [5] INFO  robotTest.SocketClient - [Rev<--]$3FIN:ALIGN:00000000(From Aligner_001 192.168.0.21:23)
+2018-03-16 17:41:57,237 [5] INFO  robotTest.SocketClient - [Snd-->]$1CMD:GET__:101,1,1,0,3(To Robot_Cmd_001 192.168.0.127:23)
+2018-03-16 17:41:57,320 [6] INFO  robotTest.SocketClient - [Rev<--]$1ACK:GET__(From Robot_Cmd_001 192.168.0.127:23)
+2018-03-16 17:41:59,023 [6] INFO  robotTest.SocketClient - [Rev<--]$1FIN:GET__:00000000(From Robot_Cmd_001 192.168.0.127:23)
+2018-03-16 17:41:59,073 [6] INFO  robotTest.SocketClient - [Snd-->]$1CMD:PUT__:1204,1,1,0(To Robot_Cmd_001 192.168.0.127:23)
+2018-03-16 17:41:59,173 [6] INFO  robotTest.SocketClient - [Rev<--]$1ACK:PUT__(From Robot_Cmd_001 192.168.0.127:23)
+2018-03-16 17:42:03,671 [6] INFO  robotTest.SocketClient - [Rev<--]$1FIN:PUT__:00000000(From Robot_Cmd_001 192.168.0.127:23)
+2018-03-16 17:42:03,791 [6] INFO  robotTest.SocketClient - [Snd-->]$1CMD:GET__:1201,2,1,0,0(To Robot_Cmd_001 192.168.0.127:23)
+2018-03-16 17:42:03,887 [6] INFO  robotTest.SocketClient - [Rev<--]$1ACK:GET__(From Robot_Cmd_001 192.168.0.127:23)
+2018-03-16 17:42:07,083 [6] INFO  robotTest.SocketClient - [Rev<--]$1FIN:GET__:00000000(From Robot_Cmd_001 192.168.0.127:23)
+2018-03-16 17:42:07,150 [6] INFO  robotTest.SocketClient - [Snd-->]$1CMD:PUT__:101,1,1,2(To Robot_Cmd_001 192.168.0.127:23)
+2018-03-16 17:42:07,240 [6] INFO  robotTest.SocketClient - [Rev<--]$1ACK:PUT__(From Robot_Cmd_001 192.168.0.127:23)
+2018-03-16 17:42:10,735 [6] INFO  robotTest.SocketClient - [Rev<--]$1FIN:PUT__:00000000(From Robot_Cmd_001 192.168.0.127:23)
+2018-03-16 17:42:10,857 [6] INFO  robotTest.SocketClient - [Snd-->]$3CMD:ALIGN:30000(To Aligner_001 192.168.0.21:23)
+2018-03-16 17:42:10,937 [5] INFO  robotTest.SocketClient - [Rev<--]$3ACK:ALIGN(From Aligner_001 192.168.0.21:23)
+2018-03-16 17:42:11,750 [5] INFO  robotTest.SocketClient - [Rev<--]$3FIN:ALIGN:00000000(From Aligner_001 192.168.0.21:23)
+2018-03-16 17:42:11,849 [5] INFO  robotTest.SocketClient - [Snd-->]$1CMD:GET__:101,1,1,0,3(To Robot_Cmd_001 192.168.0.127:23)
+2018-03-16 17:42:11,938 [6] INFO  robotTest.SocketClient - [Rev<--]$1ACK:GET__(From Robot_Cmd_001 192.168.0.127:23)
+2018-03-16 17:42:13,620 [6] INFO  robotTest.SocketClient - [Rev<--]$1FIN:GET__:00000000(From Robot_Cmd_001 192.168.0.127:23)
+2018-03-16 17:42:13,683 [6] INFO  robotTest.SocketClient - [Snd-->]$1CMD:PUT__:1204,1,1,0(To Robot_Cmd_001 192.168.0.127:23)
+2018-03-16 17:42:13,769 [6] INFO  robotTest.SocketClient - [Rev<--]$1ACK:PUT__(From Robot_Cmd_001 192.168.0.127:23)
+2018-03-16 17:42:18,170 [6] INFO  robotTest.SocketClient - [Rev<--]$1FIN:PUT__:00000000(From Robot_Cmd_001 192.168.0.127:23)
+2018-03-16 17:42:18,348 [6] INFO  robotTest.SocketClient - [Snd-->]$1CMD:GET__:1201,2,1,0,0(To Robot_Cmd_001 192.168.0.127:23)
+2018-03-16 17:42:18,437 [6] INFO  robotTest.SocketClient - [Rev<--]$1ACK:GET__(From Robot_Cmd_001 192.168.0.127:23)
+2018-03-16 17:42:21,634 [6] INFO  robotTest.SocketClient - [Rev<--]$1FIN:GET__:00000000(From Robot_Cmd_001 192.168.0.127:23)
+2018-03-16 17:42:21,765 [6] INFO  robotTest.SocketClient - [Snd-->]$1CMD:PUT__:101,1,1,2(To Robot_Cmd_001 192.168.0.127:23)
+2018-03-16 17:42:21,856 [6] INFO  robotTest.SocketClient - [Rev<--]$1ACK:PUT__(From Robot_Cmd_001 192.168.0.127:23)
+2018-03-16 17:42:25,358 [6] INFO  robotTest.SocketClient - [Rev<--]$1FIN:PUT__:00000000(From Robot_Cmd_001 192.168.0.127:23)
+2018-03-16 17:42:25,495 [6] INFO  robotTest.SocketClient - [Snd-->]$3CMD:ALIGN:30000(To Aligner_001 192.168.0.21:23)
+2018-03-16 17:42:25,611 [5] INFO  robotTest.SocketClient - [Rev<--]$3ACK:ALIGN(From Aligner_001 192.168.0.21:23)
+2018-03-16 17:42:26,410 [5] INFO  robotTest.SocketClient - [Rev<--]$3FIN:ALIGN:00000000(From Aligner_001 192.168.0.21:23)
+2018-03-16 17:42:26,509 [5] INFO  robotTest.SocketClient - [Snd-->]$1CMD:GET__:101,1,1,0,3(To Robot_Cmd_001 192.168.0.127:23)
+2018-03-16 17:42:26,605 [6] INFO  robotTest.SocketClient - [Rev<--]$1ACK:GET__(From Robot_Cmd_001 192.168.0.127:23)
+2018-03-16 17:42:28,302 [6] INFO  robotTest.SocketClient - [Rev<--]$1FIN:GET__:00000000(From Robot_Cmd_001 192.168.0.127:23)
+2018-03-16 17:42:28,355 [6] INFO  robotTest.SocketClient - [Snd-->]$1CMD:PUT__:1204,1,1,0(To Robot_Cmd_001 192.168.0.127:23)
+2018-03-16 17:42:28,440 [6] INFO  robotTest.SocketClient - [Rev<--]$1ACK:PUT__(From Robot_Cmd_001 192.168.0.127:23)
+2018-03-16 17:42:32,851 [6] INFO  robotTest.SocketClient - [Rev<--]$1FIN:PUT__:00000000(From Robot_Cmd_001 192.168.0.127:23)
+2018-03-16 17:43:12,118 [6] ERROR robotTest.SocketClient - (From Robot_Cmd_001 192.168.0.127:23)連線已被您主機上的軟體中止。
+   於 System.Net.Sockets.Socket.Receive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
+   於 System.Net.Sockets.Socket.Receive(Byte[] buffer)
+   於 robotTest.SocketClient.SckSReceiveProc() 於 C:\Users\ethan_huang\source\repos\robotTest\robotTest\Communication\SocketClient.cs: 行 109
+2018-03-16 17:43:12,118 [5] ERROR robotTest.SocketClient - (From Aligner_001 192.168.0.21:23)連線已被您主機上的軟體中止。
+   於 System.Net.Sockets.Socket.Receive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
+   於 System.Net.Sockets.Socket.Receive(Byte[] buffer)
+   於 robotTest.SocketClient.SckSReceiveProc() 於 C:\Users\ethan_huang\source\repos\robotTest\robotTest\Communication\SocketClient.cs: 行 109

@@ -63,10 +63,12 @@
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.label6 = new System.Windows.Forms.Label();
             this.ALComplete_bt = new System.Windows.Forms.Button();
             this.Aligner_gv = new System.Windows.Forms.DataGridView();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.ControllerType_cb = new System.Windows.Forms.ComboBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Conn_gv)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Script_gv)).BeginInit();
@@ -138,6 +140,8 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.ControllerType_cb);
+            this.groupBox2.Controls.Add(this.label7);
             this.groupBox2.Controls.Add(this.Stop_bt);
             this.groupBox2.Controls.Add(this.Delete_bt);
             this.groupBox2.Controls.Add(this.Down_bt);
@@ -451,6 +455,15 @@
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Aligner";
             // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(114, 328);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(33, 12);
+            this.label6.TabIndex = 2;
+            this.label6.Text = "label6";
+            // 
             // ALComplete_bt
             // 
             this.ALComplete_bt.Location = new System.Drawing.Point(7, 322);
@@ -484,14 +497,23 @@
             this.tabPage1.Text = "跑Script";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
-            // label6
+            // label7
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(114, 328);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(33, 12);
-            this.label6.TabIndex = 2;
-            this.label6.Text = "label6";
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(251, 22);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(29, 12);
+            this.label7.TabIndex = 19;
+            this.label7.Text = "類型";
+            // 
+            // ControllerType_cb
+            // 
+            this.ControllerType_cb.FormattingEnabled = true;
+            this.ControllerType_cb.Location = new System.Drawing.Point(286, 19);
+            this.ControllerType_cb.Name = "ControllerType_cb";
+            this.ControllerType_cb.Size = new System.Drawing.Size(121, 20);
+            this.ControllerType_cb.TabIndex = 20;
+            this.ControllerType_cb.SelectedIndexChanged += new System.EventHandler(this.ControllerType_cb_SelectedIndexChanged);
             // 
             // Form1
             // 
@@ -565,6 +587,8 @@
         private System.Windows.Forms.Button LDCM_bt;
         private System.Windows.Forms.Button ALComplete_bt;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.ComboBox ControllerType_cb;
+        private System.Windows.Forms.Label label7;
     }
 }
 

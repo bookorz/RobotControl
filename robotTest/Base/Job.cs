@@ -16,26 +16,29 @@ namespace robotTest.Base
         public string From { get; set; }
         public string To { get; set; }
         public string ToSlot { get; set; }
-        public string FromWay { get; set; }
-        public string ToWay { get; set; }
+        public string NotchDegree { get; set; }
+        public RobotCommand FromWay { get; set; }
+        public RobotCommand ToWay { get; set; }
+        public string Producer { get; set; }
+        public RobotCommand ProcessWay { get; set; }
 
-        const string Port_1 = "1201";
-        const string Port_2 = "1204";
-        const string Aligner_1 = "101";
+
 
         public void GetNext()
         {
             switch (Position)
             {
-                case Aligner_1:
+                case Form1.Aligner_1:
                     Deliver = "Robot_Cmd_001";
                     Slot = "1";
-                    From = Aligner_1;
-                    FromWay = "GetAfterWait";
-                    To = Port_2;
-                    ToWay = "Put";
+                    From = Form1.Aligner_1;
+                    FromWay = RobotCommand.GetAfterWait;
+                    To = Form1.Port_2;
+                    ToWay = RobotCommand.Put;
+                    Producer = "Aligner_001";
+                    ProcessWay = RobotCommand.ALIGN;
                     break;
-                case Port_2:
+                case Form1.Port_2:
                     Deliver = "";
                     break;
             }
